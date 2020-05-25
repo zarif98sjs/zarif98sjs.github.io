@@ -6,9 +6,30 @@
     <description>Recent content on zarif98sjs</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>/home/me/</link>
+      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/home/me/</guid>
+      <description> Md. Zarif Ul Alam  CS Undergrad , BUET</description>
+    </item>
+    
+    <item>
+      <title>About Me</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Hi , my name is Md. Zarif Ul Alam. I am from Dhaka , Bangladesh .
+Besides pursuing my higher studies from Department of Computer Science and Engineering , BUET , I like to do competitive programming and my interests include Machine Learning and Cryptography . I like to work on small pet projects of my own whenever I have some idea .
+Besides that , I like to read books and enjoy traveling .</description>
+    </item>
     
     <item>
       <title>Projects</title>
@@ -23,6 +44,20 @@ GitHub Repo   DURBEEN : THE DAWN OF PROGRAMMING LEARNING TOOL FOR PROGRAMMING IN
 A java based bangla learning tool for programming inspired from Scratch .
 &amp;lt;/&amp;gt; java JavaFX
 GitHub Repo   KichuPariNa ChatBot A CHATBOT USING CLOUD API</description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
+      <link>/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/skills/</guid>
+      <description> Programming Languages c c++ python java sql
+  Platforms &amp;amp; Frameworks JavaFX Django OpenCV Tensorflow
+  DBMS Oracle
+  Version Control Git
+  Miscellaneous Microsoft Powerpoint Adobe Illustrator
+ </description>
     </item>
     
   </channel>
