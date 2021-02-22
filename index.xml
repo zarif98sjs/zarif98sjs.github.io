@@ -1,60 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Convoluted Mess</title>
-    <link>https://zarif98sjs.github.io/</link>
-    <description>Recent content on Convoluted Mess</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 25 Jan 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://zarif98sjs.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title></title>
-      <link>https://zarif98sjs.github.io/home/me/</link>
-      <pubDate>Fri, 25 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://zarif98sjs.github.io/home/me/</guid>
-      <description> Md. Zarif Ul Alam  CS Undergrad , BUET</description>
-    </item>
-    
-    <item>
-      <title>About Me</title>
-      <link>https://zarif98sjs.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zarif98sjs.github.io/about/</guid>
-      <description>Hi , my name is Md. Zarif Ul Alam. I am from Dhaka , Bangladesh .
-Besides pursuing my higher studies from Department of Computer Science and Engineering , BUET , I like to do competitive programming and my interests include Machine Learning and Cryptography . I like to work on small pet projects of my own whenever I have some idea .
-Besides that , I like to read books and enjoy traveling .</description>
-    </item>
-    
-    <item>
-      <title>Projects</title>
-      <link>https://zarif98sjs.github.io/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zarif98sjs.github.io/projects/</guid>
-      <description>GAME OF PAWNS CHESS GAME
-A chess game with multiplayer , single player ( dummy AI :p ) and blitz mode . This game is made using C++ and iGraphics library .
-&amp;lt;/&amp;gt; c++ iGraphics
-GitHub Repo   DURBEEN : THE DAWN OF PROGRAMMING LEARNING TOOL FOR PROGRAMMING IN BANGLA FOR KIDS
-A java based bangla learning tool for programming inspired from Scratch .
-&amp;lt;/&amp;gt; java JavaFX
-GitHub Repo   KichuPariNa ChatBot A CHATBOT USING CLOUD API</description>
-    </item>
-    
-    <item>
-      <title>Skills</title>
-      <link>https://zarif98sjs.github.io/skills/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zarif98sjs.github.io/skills/</guid>
-      <description> Programming Languages c c++ python java sql
-  Platforms &amp;amp; Frameworks JavaFX Django OpenCV Tensorflow
-  DBMS Oracle
-  Version Control Git
-  Miscellaneous Microsoft Powerpoint Adobe Illustrator
- </description>
-    </item>
-    
-  </channel>
-</rss>
