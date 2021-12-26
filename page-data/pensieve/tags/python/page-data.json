@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/pensieve/tags/python/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"The Hitchhiker\"s Guide to Linear Algebra","description":null,"date":"6","slug":null,"tags":["python"]}}}]}},"pageContext":{"tag":"python"}},
+    "staticQueryHashes": ["1364744041","1374383533","2543263646","3149095931","3469851102","3539500889","3563071106"]}

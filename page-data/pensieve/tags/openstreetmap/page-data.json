@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/pensieve/tags/openstreetmap/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Route de Dhaka","description":null,"date":"4","slug":null,"tags":["OPENSTREETMAP","KEYHOLE MARKUP LANGUAGE","PYTHON"]}}}]}},"pageContext":{"tag":"OPENSTREETMAP"}},
+    "staticQueryHashes": ["1364744041","1374383533","2543263646","3149095931","3469851102","3539500889","3563071106"]}

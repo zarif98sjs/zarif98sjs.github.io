@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/pensieve/tags/c/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":6,"edges":[{"node":{"frontmatter":{"title":"Red Black Tree : An Intuitive Approach","description":null,"date":"7","slug":null,"tags":["C++"]}}},{"node":{"frontmatter":{"title":"Competitive Programming","description":null,"date":"5","slug":null,"tags":["C++"]}}},{"node":{"frontmatter":{"title":"Offline Memorial","description":null,"date":"4","slug":null,"tags":["C","C++","Python","Java"]}}},{"node":{"frontmatter":{"title":"Spring Challenge 2020","description":null,"date":"3","slug":null,"tags":["C++"]}}},{"node":{"frontmatter":{"title":"Balanced Binary Search Trees","description":null,"date":"1","slug":null,"tags":["C++"]}}},{"node":{"frontmatter":{"title":"Game Of Pawns","description":null,"date":"1","slug":null,"tags":["OPENGL","iGRAPHiCS","C++"]}}}]}},"pageContext":{"tag":"C++"}},
+    "staticQueryHashes": ["1364744041","1374383533","2543263646","3149095931","3469851102","3539500889","3563071106"]}

@@ -1,0 +1,630 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><meta name="generator" content="Gatsby 3.14.6"/><title data-react-helmet="true">Go to production with Heroku | Md. Zarif Ul Alam</title><meta data-react-helmet="true" name="description" content="Md. Zarif Ul Alam is a software engineer who loves to create different kind of projects and share them."/><meta data-react-helmet="true" name="image" content="https://zarif98sjs.github.io/og.png"/><meta data-react-helmet="true" property="og:title" content="Md. Zarif Ul Alam"/><meta data-react-helmet="true" property="og:description" content="Md. Zarif Ul Alam is a software engineer who loves to create different kind of projects and share them."/><meta data-react-helmet="true" property="og:image" content="https://zarif98sjs.github.io/og.png"/><meta data-react-helmet="true" property="og:url" content="https://zarif98sjs.github.io/pensieve/heroku"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator"/><meta data-react-helmet="true" name="twitter:title" content="Md. Zarif Ul Alam"/><meta data-react-helmet="true" name="twitter:description" content="Md. Zarif Ul Alam is a software engineer who loves to create different kind of projects and share them."/><meta data-react-helmet="true" name="twitter:image" content="https://zarif98sjs.github.io/og.png"/><meta data-react-helmet="true" name="google-site-verification" content="DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk"/><style data-styled="" data-styled-version="5.3.3">@font-face{font-family:'Calibre';src:url(/static/Calibre-Regular-b0d4cbb1201155ddccc21d1b8059a670.woff2) format('woff2'), url(/static/Calibre-Regular-98526589fa32315c552129869e08427e.woff) format('woff');font-weight:400;font-style:normal;font-display:auto;}/*!sc*/
+@font-face{font-family:'Calibre';src:url(/static/Calibre-Medium-568dce56f869a519a015d3b69443b067.woff2) format('woff2'), url(/static/Calibre-Medium-46693d9b57a6b8a657b5393258f6e899.woff) format('woff');font-weight:500;font-style:normal;font-display:auto;}/*!sc*/
+@font-face{font-family:'Calibre';src:url(/static/Calibre-Semibold-94fc73852539d6733dc0d80252c5e3fb.woff2) format('woff2'), url(/static/Calibre-Semibold-6972688a249bd53a6c7e69a89e50cdd6.woff) format('woff');font-weight:600;font-style:normal;font-display:auto;}/*!sc*/
+@font-face{font-family:'Calibre';src:url(/static/Calibre-RegularItalic-5f875bd7b669f1e11b622d4d6d71b5b0.woff2) format('woff2'), url(/static/Calibre-RegularItalic-57371b9e514dbbe9da31dad1a298de2d.woff) format('woff');font-weight:400;font-style:italic;font-display:auto;}/*!sc*/
+@font-face{font-family:'Calibre';src:url(/static/Calibre-MediumItalic-7aa140573fd9ed30ae01e117c418b12b.woff2) format('woff2'), url(/static/Calibre-MediumItalic-aa285f95879aa2c2d26b228d5e422da6.woff) format('woff');font-weight:500;font-style:italic;font-display:auto;}/*!sc*/
+@font-face{font-family:'Calibre';src:url(/static/Calibre-SemiboldItalic-5f04bffe7ce988169806d66e417a966a.woff2) format('woff2'), url(/static/Calibre-SemiboldItalic-ad4bd95abee7bca1bdd6a93398f84a04.woff) format('woff');font-weight:600;font-style:italic;font-display:auto;}/*!sc*/
+@font-face{font-family:'SF Mono';src:url(/static/SFMono-Regular-8799e6387338d58f2f137df821c86eb4.woff2) format('woff2'), url(/static/SFMono-Regular-e36fa5257c93fc7711eae342068f9eda.woff) format('woff');font-weight:400;font-style:normal;font-display:auto;}/*!sc*/
+@font-face{font-family:'SF Mono';src:url(/static/SFMono-Semibold-6e6f6c93f4bdf9cbd090c60e97a017e2.woff2) format('woff2'), url(/static/SFMono-Semibold-ee054046915420413d0068fb1e7105c3.woff) format('woff');font-weight:600;font-style:normal;font-display:auto;}/*!sc*/
+@font-face{font-family:'SF Mono';src:url(/static/SFMono-RegularItalic-a596917f86217b40000ff1b894cd0e52.woff2) format('woff2'), url(/static/SFMono-RegularItalic-3a20a00dfdeb4ba538473fa7bf625cbd.woff) format('woff');font-weight:400;font-style:italic;font-display:auto;}/*!sc*/
+@font-face{font-family:'SF Mono';src:url(/static/SFMono-SemiboldItalic-9a0ae6382e12c5e28a7342ffb41cf4da.woff2) format('woff2'), url(/static/SFMono-SemiboldItalic-10eb596e904940cd1aebb2cc6286015c.woff) format('woff');font-weight:600;font-style:italic;font-display:auto;}/*!sc*/
+:root{--font-sans:'Calibre','Inter','San Francisco','SF Pro Text',-apple-system,system-ui,sans-serif;--font-mono:'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;--fz-xxs:12px;--fz-xs:13px;--fz-sm:14px;--fz-md:16px;--fz-lg:18px;--fz-xl:20px;--fz-xxl:22px;--fz-heading:32px;--border-radius:4px;--nav-height:100px;--nav-scroll-height:70px;--tab-height:42px;--tab-width:120px;--easing:cubic-bezier(0.645,0.045,0.355,1);--transition:all 0.25s cubic-bezier(0.645,0.045,0.355,1);--hamburger-width:30px;--ham-before:top 0.1s ease-in 0.25s,opacity 0.1s ease-in;--ham-before-active:top 0.1s ease-out,opacity 0.1s ease-out 0.12s;--ham-after:bottom 0.1s ease-in 0.25s,transform 0.22s cubic-bezier(0.55,0.055,0.675,0.19);--ham-after-active:bottom 0.1s ease-out,transform 0.22s cubic-bezier(0.215,0.61,0.355,1) 0.12s;}/*!sc*/
+html{box-sizing:border-box;width:100%;-webkit-scroll-behavior:smooth;-moz-scroll-behavior:smooth;-ms-scroll-behavior:smooth;scroll-behavior:smooth;}/*!sc*/
+*,*:before,*:after{box-sizing:inherit;}/*!sc*/
+::selection{background-color:#ced4da;color:#ffffff;}/*!sc*/
+:focus{outline:2px dashed #e63946;outline-offset:3px;}/*!sc*/
+html{-webkit-scrollbar-width:thin;-moz-scrollbar-width:thin;-ms-scrollbar-width:thin;scrollbar-width:thin;-webkit-scrollbar-color:#495670 #000000;-moz-scrollbar-color:#495670 #000000;-ms-scrollbar-color:#495670 #000000;scrollbar-color:#495670 #000000;}/*!sc*/
+body::-webkit-scrollbar{width:12px;}/*!sc*/
+body::-webkit-scrollbar-track{background:#000000;}/*!sc*/
+body::-webkit-scrollbar-thumb{background-color:#495670;border:3px solid #000000;border-radius:10px;}/*!sc*/
+body{margin:0;width:100%;min-height:100%;overflow-x:hidden;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;background-color:#000000;color:#ffffff;font-family:var(--font-sans);font-size:var(--fz-xl);line-height:1.3;}/*!sc*/
+@media (max-width:480px){body{font-size:var(--fz-lg);}}/*!sc*/
+body.hidden{overflow:hidden;}/*!sc*/
+body.blur{overflow:hidden;}/*!sc*/
+body.blur header{background-color:transparent;}/*!sc*/
+body.blur #content > *{-webkit-filter:blur(5px) brightness(0.7);filter:blur(5px) brightness(0.7);-webkit-transition:var(--transition);transition:var(--transition);pointer-events:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}/*!sc*/
+#root{min-height:100vh;display:grid;grid-template-rows:1fr auto;grid-template-columns:100%;}/*!sc*/
+main{margin:0 auto;width:100%;max-width:1600px;min-height:100vh;padding:200px 150px;}/*!sc*/
+@media (max-width:1080px){main{padding:200px 100px;}}/*!sc*/
+@media (max-width:768px){main{padding:150px 50px;}}/*!sc*/
+@media (max-width:480px){main{padding:125px 25px;}}/*!sc*/
+main.fillHeight{padding:0 150px;}/*!sc*/
+@media (max-width:1080px){main.fillHeight{padding:0 100px;}}/*!sc*/
+@media (max-width:768px){main.fillHeight{padding:0 50px;}}/*!sc*/
+@media (max-width:480px){main.fillHeight{padding:0 25px;}}/*!sc*/
+section{margin:0 auto;padding:100px 0;max-width:1000px;}/*!sc*/
+@media (max-width:768px){section{padding:80px 0;}}/*!sc*/
+@media (max-width:480px){section{padding:60px 0;}}/*!sc*/
+h1,h2,h3,h4,h5,h6{margin:0 0 10px 0;font-weight:600;color:#ffffff;line-height:1.1;}/*!sc*/
+.big-heading{margin:0;font-size:clamp(40px,8vw,80px);}/*!sc*/
+.medium-heading{margin:0;font-size:clamp(40px,8vw,60px);}/*!sc*/
+.numbered-heading{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;margin:10px 0 40px;width:100%;font-size:clamp(26px,5vw,var(--fz-heading));white-space:nowrap;}/*!sc*/
+.numbered-heading:before{position:relative;bottom:4px;counter-increment:section;content:'0' counter(section) '.';margin-right:10px;color:#e63946;font-family:var(--font-mono);font-size:clamp(var(--fz-md),3vw,var(--fz-xl));font-weight:400;}/*!sc*/
+@media (max-width:480px){.numbered-heading:before{margin-bottom:-3px;margin-right:5px;}}/*!sc*/
+.numbered-heading:after{content:'';display:block;position:relative;top:-5px;width:300px;height:1px;margin-left:20px;background-color:#ced4da;}/*!sc*/
+@media (max-width:1080px){.numbered-heading:after{width:200px;}}/*!sc*/
+@media (max-width:768px){.numbered-heading:after{width:100%;}}/*!sc*/
+@media (max-width:600px){.numbered-heading:after{margin-left:10px;}}/*!sc*/
+img,svg,.gatsby-image-wrapper{width:100%;max-width:100%;vertical-align:middle;}/*!sc*/
+img[alt=""],img:not([alt]){-webkit-filter:blur(5px);filter:blur(5px);}/*!sc*/
+svg{width:100%;height:100%;fill:currentColor;vertical-align:middle;}/*!sc*/
+svg.feather{fill:none;}/*!sc*/
+a{display:inline-block;-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;color:inherit;position:relative;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+a:hover,a:focus{color:#e63946;}/*!sc*/
+a.inline-link{display:inline-block;-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;position:relative;-webkit-transition:var(--transition);transition:var(--transition);color:#e63946;}/*!sc*/
+a.inline-link:hover,a.inline-link:focus,a.inline-link:active{color:#e63946;outline:0;}/*!sc*/
+a.inline-link:hover:after,a.inline-link:focus:after,a.inline-link:active:after{width:100%;}/*!sc*/
+a.inline-link:hover > *,a.inline-link:focus > *,a.inline-link:active > *{color:#e63946 !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+a.inline-link:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:#e63946;-webkit-transition:var(--transition);transition:var(--transition);opacity:0.5;}/*!sc*/
+button{cursor:pointer;border:0;border-radius:0;}/*!sc*/
+input,textarea{border-radius:0;outline:0;}/*!sc*/
+input:focus,textarea:focus{outline:0;}/*!sc*/
+input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder,input:active::-webkit-input-placeholder,textarea:active::-webkit-input-placeholder{opacity:0.5;}/*!sc*/
+input:focus::-moz-placeholder,textarea:focus::-moz-placeholder,input:active::-moz-placeholder,textarea:active::-moz-placeholder{opacity:0.5;}/*!sc*/
+input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder,input:active:-ms-input-placeholder,textarea:active:-ms-input-placeholder{opacity:0.5;}/*!sc*/
+input:focus::placeholder,textarea:focus::placeholder,input:active::placeholder,textarea:active::placeholder{opacity:0.5;}/*!sc*/
+p{margin:0 0 15px 0;}/*!sc*/
+p:last-child,p:last-of-type{margin:0;}/*!sc*/
+p > a{display:inline-block;-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;position:relative;-webkit-transition:var(--transition);transition:var(--transition);color:#e63946;}/*!sc*/
+p > a:hover,p > a:focus,p > a:active{color:#e63946;outline:0;}/*!sc*/
+p > a:hover:after,p > a:focus:after,p > a:active:after{width:100%;}/*!sc*/
+p > a:hover > *,p > a:focus > *,p > a:active > *{color:#e63946 !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+p > a:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:#e63946;-webkit-transition:var(--transition);transition:var(--transition);opacity:0.5;}/*!sc*/
+p > code{background-color:#011627;color:#e6f1ff;font-size:var(--fz-sm);border-radius:var(--border-radius);padding:0.3em 0.5em;}/*!sc*/
+ul.fancy-list{padding:0;margin:0;list-style:none;font-size:var(--fz-lg);}/*!sc*/
+ul.fancy-list li{position:relative;padding-left:30px;margin-bottom:10px;}/*!sc*/
+ul.fancy-list li:before{content:'▹';position:absolute;left:0;color:#e63946;}/*!sc*/
+blockquote{border-left-color:#e63946;border-left-style:solid;border-left-width:1px;margin-left:0px;margin-right:0px;padding-left:1.5rem;}/*!sc*/
+blockquote p{font-style:italic;font-size:24px;}/*!sc*/
+hr{background-color:#ced4da;height:1px;border-width:0px;border-style:initial;border-color:initial;border-image:initial;margin:1rem;}/*!sc*/
+code{font-family:var(--font-mono);font-size:var(--fz-md);}/*!sc*/
+.skip-to-content{color:#e63946;background-color:transparent;border:1px solid #e63946;border-radius:var(--border-radius);font-size:var(--fz-xs);font-family:var(--font-mono);line-height:1;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;-webkit-transition:var(--transition);transition:var(--transition);padding:1.25rem 1.75rem;position:absolute;top:auto;left:-999px;width:1px;height:1px;overflow:hidden;z-index:-99;}/*!sc*/
+.skip-to-content:hover,.skip-to-content:focus,.skip-to-content:active{background-color:rgba(230,57,70,0.1);outline:none;}/*!sc*/
+.skip-to-content:after{display:none !important;}/*!sc*/
+.skip-to-content:focus,.skip-to-content:active{background-color:#e63946;color:#000000;top:0;left:0;width:auto;height:auto;overflow:auto;z-index:99;}/*!sc*/
+#logo{color:#e63946;}/*!sc*/
+.overline{color:#e63946;font-family:var(--font-mono);font-size:var(--fz-md);font-weight:400;}/*!sc*/
+.subtitle{color:#e63946;margin:0 0 20px 0;font-size:var(--fz-md);font-family:var(--font-mono);font-weight:400;line-height:1.5;}/*!sc*/
+@media (max-width:1080px){.subtitle{font-size:var(--fz-sm);}}/*!sc*/
+@media (max-width:768px){.subtitle{font-size:var(--fz-xs);}}/*!sc*/
+.subtitle a{display:inline-block;-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;position:relative;-webkit-transition:var(--transition);transition:var(--transition);color:#e63946;line-height:1.5;}/*!sc*/
+.subtitle a:hover,.subtitle a:focus,.subtitle a:active{color:#e63946;outline:0;}/*!sc*/
+.subtitle a:hover:after,.subtitle a:focus:after,.subtitle a:active:after{width:100%;}/*!sc*/
+.subtitle a:hover > *,.subtitle a:focus > *,.subtitle a:active > *{color:#e63946 !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+.subtitle a:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:#e63946;-webkit-transition:var(--transition);transition:var(--transition);opacity:0.5;}/*!sc*/
+.breadcrumb{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:50px;color:#e63946;}/*!sc*/
+.breadcrumb .arrow{display:block;margin-right:10px;padding-top:4px;}/*!sc*/
+.breadcrumb a{display:inline-block;-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;position:relative;-webkit-transition:var(--transition);transition:var(--transition);color:#e63946;font-family:var(--font-mono);font-size:var(--fz-sm);font-weight:600;line-height:1.5;text-transform:uppercase;-webkit-letter-spacing:0.1em;-moz-letter-spacing:0.1em;-ms-letter-spacing:0.1em;letter-spacing:0.1em;}/*!sc*/
+.breadcrumb a:hover,.breadcrumb a:focus,.breadcrumb a:active{color:#e63946;outline:0;}/*!sc*/
+.breadcrumb a:hover:after,.breadcrumb a:focus:after,.breadcrumb a:active:after{width:100%;}/*!sc*/
+.breadcrumb a:hover > *,.breadcrumb a:focus > *,.breadcrumb a:active > *{color:#e63946 !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+.breadcrumb a:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:#e63946;-webkit-transition:var(--transition);transition:var(--transition);opacity:0.5;}/*!sc*/
+.gatsby-image-outer-wrapper{height:100%;}/*!sc*/
+.fadeup-enter{opacity:0.01;-webkit-transform:translateY(20px);-ms-transform:translateY(20px);transform:translateY(20px);-webkit-transition:opacity 300ms var(--easing),-webkit-transform 300ms var(--easing);-webkit-transition:opacity 300ms var(--easing),transform 300ms var(--easing);transition:opacity 300ms var(--easing),transform 300ms var(--easing);}/*!sc*/
+.fadeup-enter-active{opacity:1;-webkit-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px);-webkit-transition:opacity 300ms var(--easing),-webkit-transform 300ms var(--easing);-webkit-transition:opacity 300ms var(--easing),transform 300ms var(--easing);transition:opacity 300ms var(--easing),transform 300ms var(--easing);}/*!sc*/
+.fadedown-enter{opacity:0.01;-webkit-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px);-webkit-transition:opacity 300ms var(--easing),-webkit-transform 300ms var(--easing);-webkit-transition:opacity 300ms var(--easing),transform 300ms var(--easing);transition:opacity 300ms var(--easing),transform 300ms var(--easing);}/*!sc*/
+.fadedown-enter-active{opacity:1;-webkit-transform:translateY(0px);-ms-transform:translateY(0px);transform:translateY(0px);-webkit-transition:opacity 300ms var(--easing),-webkit-transform 300ms var(--easing);-webkit-transition:opacity 300ms var(--easing),transform 300ms var(--easing);transition:opacity 300ms var(--easing),transform 300ms var(--easing);}/*!sc*/
+.fade-enter{opacity:0;}/*!sc*/
+.fade-enter-active{opacity:1;-webkit-transition:opacity 300ms var(--easing);transition:opacity 300ms var(--easing);}/*!sc*/
+.fade-exit{opacity:1;}/*!sc*/
+.fade-exit-active{opacity:0;-webkit-transition:opacity 300ms var(--easing);transition:opacity 300ms var(--easing);}/*!sc*/
+.gatsby-highlight{background-color:#112340;border-radius:var(--border-radius);margin:2em 0;padding:1.25em;overflow:auto;position:relative;font-family:var(--font-mono);font-size:var(--fz-md);}/*!sc*/
+.gatsby-highlight code[class*='language-'],.gatsby-highlight pre[class*='language-']{height:auto !important;font-size:var(--fz-sm);line-height:1.5;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;tab-size:2;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none;}/*!sc*/
+.gatsby-highlight pre[class*='language-']{background-color:transparent;margin:0;padding:0;overflow:initial;float:left;min-width:100%;padding-top:2em;}/*!sc*/
+.gatsby-code-title{padding:1em 1.5em;font-family:var(--font-mono);font-size:var(--fz-xs);background-color:#112340;color:#a2aabc;border-top-left-radius:var(--border-radius);border-top-right-radius:var(--border-radius);border-bottom:1px solid #1d2d50;}/*!sc*/
+.gatsby-code-title + .gatsby-highlight{margin-top:0;border-top-left-radius:0;border-top-right-radius:0;}/*!sc*/
+.gatsby-highlight-code-line{display:block;background-color:#1d2d50;border-left:2px solid #e63946;padding-left:calc(1em + 2px);padding-right:1em;margin-right:-1.35em;margin-left:-1.35em;}/*!sc*/
+.gatsby-highlight pre[class*='language-']::before{background:#454647;color:#e6f1ff;font-size:var(--fz-xxs);font-family:var(--font-mono);line-height:1.5;-webkit-letter-spacing:0.1em;-moz-letter-spacing:0.1em;-ms-letter-spacing:0.1em;letter-spacing:0.1em;text-transform:uppercase;border-radius:0 0 3px 3px;position:absolute;top:0;left:1.25rem;padding:0.25rem 0.5rem;}/*!sc*/
+.gatsby-highlight pre[class='language-javascript']::before{content:'js';}/*!sc*/
+.gatsby-highlight pre[class='language-js']::before{content:'js';}/*!sc*/
+.gatsby-highlight pre[class='language-jsx']::before{content:'jsx';}/*!sc*/
+.gatsby-highlight pre[class='language-graphql']::before{content:'GraphQL';}/*!sc*/
+.gatsby-highlight pre[class='language-html']::before{content:'html';}/*!sc*/
+.gatsby-highlight pre[class='language-css']::before{content:'css';}/*!sc*/
+.gatsby-highlight pre[class='language-mdx']::before{content:'mdx';}/*!sc*/
+.gatsby-highlight pre[class='language-shell']::before{content:'shell';}/*!sc*/
+.gatsby-highlight pre[class='language-sh']::before{content:'sh';}/*!sc*/
+.gatsby-highlight pre[class='language-bash']::before{content:'bash';}/*!sc*/
+.gatsby-highlight pre[class='language-yaml']::before{content:'yaml';}/*!sc*/
+.gatsby-highlight pre[class='language-markdown']::before{content:'md';}/*!sc*/
+.gatsby-highlight pre[class='language-json']::before,.gatsby-highlight pre[class='language-json5']::before{content:'json';}/*!sc*/
+.gatsby-highlight pre[class='language-diff']::before{content:'diff';}/*!sc*/
+.gatsby-highlight pre[class='language-text']::before{content:'text';}/*!sc*/
+.gatsby-highlight pre[class='language-flow']::before{content:'flow';}/*!sc*/
+.token{display:inline;}/*!sc*/
+.token.comment,.token.block-comment,.token.prolog,.token.doctype,.token.cdata{color:#8695b799;}/*!sc*/
+.token.punctuation{color:#a2aabc;}/*!sc*/
+.token.namespace,.token.deleted{color:#ef6b73;}/*!sc*/
+.token.function-name,.token.function,.token.class-name,.token.constant,.token.symbol{color:#ffd580;}/*!sc*/
+.token.attr-name,.token.operator,.token.rule{color:#ffae57;}/*!sc*/
+.token.keyword,.token.boolean,.token.number,.token.property{color:#c3a6ff;}/*!sc*/
+.token.tag,.token.selector,.token.important,.token.atrule,.token.builtin,.token.entity,.token.url{color:#5ccfe6;}/*!sc*/
+.token.string,.token.char,.token.attr-value,.token.regex,.token.variable,.token.inserted{color:#bae67e;}/*!sc*/
+.token.important,.token.bold{font-weight:600;}/*!sc*/
+.token.italic{font-style:italic;}/*!sc*/
+.token.entity{cursor:help;}/*!sc*/
+.namespace{opacity:0.7;}/*!sc*/
+data-styled.g1[id="sc-global-ipPYjN1"]{content:"sc-global-ipPYjN1,"}/*!sc*/
+.hXMTVL{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;min-height:100vh;}/*!sc*/
+data-styled.g2[id="layout__StyledContent-sc-j669pm-0"]{content:"hXMTVL,"}/*!sc*/
+.enyri{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:fixed;top:0;z-index:11;padding:0px 50px;width:100%;height:var(--nav-height);background-color:rgba(2,4,15,0.85);-webkit-filter:none !important;filter:none !important;pointer-events:auto !important;-webkit-user-select:auto !important;-moz-user-select:auto !important;-ms-user-select:auto !important;user-select:auto !important;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+@media (max-width:1080px){.enyri{padding:0 40px;}}/*!sc*/
+@media (max-width:768px){.enyri{padding:0 25px;}}/*!sc*/
+@media (prefers-reduced-motion:no-preference){}/*!sc*/
+data-styled.g3[id="nav__StyledHeader-sc-11mrlhm-0"]{content:"enyri,"}/*!sc*/
+.gZQoOR{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;width:100%;color:#ffffff;font-family:var(--font-mono);counter-reset:item 0;z-index:12;}/*!sc*/
+.gZQoOR .dark-mode{width:42px;height:42px;background-color:transparent;}/*!sc*/
+.gZQoOR .dark-mode > svg{color:#e63946;}/*!sc*/
+.gZQoOR .logo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+.gZQoOR .logo a{color:#e63946;width:42px;height:42px;}/*!sc*/
+.gZQoOR .logo a:hover svg,.gZQoOR .logo a:focus svg{fill:rgba(230,57,70,0.1);}/*!sc*/
+.gZQoOR .logo a svg{fill:none;-webkit-transition:var(--transition);transition:var(--transition);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}/*!sc*/
+data-styled.g4[id="nav__StyledNav-sc-11mrlhm-1"]{content:"gZQoOR,"}/*!sc*/
+.glkKgF{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}/*!sc*/
+@media (max-width:768px){.glkKgF{display:none;}}/*!sc*/
+.glkKgF ol{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0;margin:0;list-style:none;}/*!sc*/
+.glkKgF ol li{margin:0 5px;position:relative;counter-increment:item 1;font-size:var(--fz-xs);}/*!sc*/
+.glkKgF ol li a{padding:10px;}/*!sc*/
+.glkKgF ol li a:before{content:'0' counter(item) '.';margin-right:5px;color:#e63946;font-size:var(--fz-xxs);text-align:right;}/*!sc*/
+.glkKgF .resume-button{color:#e63946;background-color:transparent;border:1px solid #e63946;border-radius:var(--border-radius);padding:0.75rem 1rem;font-size:var(--fz-xs);font-family:var(--font-mono);line-height:1;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;-webkit-transition:var(--transition);transition:var(--transition);margin-left:15px;font-size:var(--fz-xs);}/*!sc*/
+.glkKgF .resume-button:hover,.glkKgF .resume-button:focus,.glkKgF .resume-button:active{background-color:rgba(230,57,70,0.1);outline:none;}/*!sc*/
+.glkKgF .resume-button:after{display:none !important;}/*!sc*/
+data-styled.g5[id="nav__StyledLinks-sc-11mrlhm-2"]{content:"glkKgF,"}/*!sc*/
+.cpEYiK{display:none;}/*!sc*/
+@media (max-width:768px){.cpEYiK{display:block;}}/*!sc*/
+data-styled.g6[id="menu__StyledMenu-sc-tga5i0-0"]{content:"cpEYiK,"}/*!sc*/
+.fwEEwo{display:none;}/*!sc*/
+@media (max-width:768px){.fwEEwo{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;z-index:10;margin-right:-15px;padding:15px;border:0;background-color:transparent;color:inherit;text-transform:none;-webkit-transition-timing-function:linear;transition-timing-function:linear;-webkit-transition-duration:0.15s;transition-duration:0.15s;-webkit-transition-property:opacity,filter;transition-property:opacity,filter;}}/*!sc*/
+.fwEEwo .ham-box{display:inline-block;position:relative;width:var(--hamburger-width);height:24px;}/*!sc*/
+.fwEEwo .ham-box-inner{position:absolute;top:50%;right:0;width:var(--hamburger-width);height:2px;border-radius:var(--border-radius);background-color:#e63946;-webkit-transition-duration:0.22s;transition-duration:0.22s;-webkit-transition-property:-webkit-transform;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-delay:0s;transition-delay:0s;-webkit-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition-timing-function:cubic-bezier( 0.55,0.055,0.675,0.19 );transition-timing-function:cubic-bezier( 0.55,0.055,0.675,0.19 );}/*!sc*/
+.fwEEwo .ham-box-inner:before,.fwEEwo .ham-box-inner:after{content:'';display:block;position:absolute;left:auto;right:0;width:var(--hamburger-width);height:2px;border-radius:4px;background-color:#e63946;-webkit-transition-timing-function:ease;transition-timing-function:ease;-webkit-transition-duration:0.15s;transition-duration:0.15s;-webkit-transition-property:-webkit-transform;-webkit-transition-property:transform;transition-property:transform;}/*!sc*/
+.fwEEwo .ham-box-inner:before{width:120%;top:-10px;opacity:1;-webkit-transition:var(--ham-before);transition:var(--ham-before);}/*!sc*/
+.fwEEwo .ham-box-inner:after{width:80%;bottom:-10px;-webkit-transform:rotate(0);-ms-transform:rotate(0);transform:rotate(0);-webkit-transition:var(--ham-after);transition:var(--ham-after);}/*!sc*/
+data-styled.g7[id="menu__StyledHamburgerButton-sc-tga5i0-1"]{content:"fwEEwo,"}/*!sc*/
+.gMvAfk{display:none;}/*!sc*/
+@media (max-width:768px){.gMvAfk{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:fixed;top:0;bottom:0;right:0;padding:50px 10px;width:min(75vw,400px);height:100vh;outline:0;background-color:#011627;box-shadow:-10px 0px 30px -15px rgba(2,12,27,0.7);z-index:9;-webkit-transform:translateX(100vw);-ms-transform:translateX(100vw);transform:translateX(100vw);visibility:hidden;-webkit-transition:var(--transition);transition:var(--transition);}}/*!sc*/
+.gMvAfk nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:100%;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;color:#ffffff;font-family:var(--font-mono);text-align:center;}/*!sc*/
+.gMvAfk ol{padding:0;margin:0;list-style:none;width:100%;}/*!sc*/
+.gMvAfk ol li{position:relative;margin:0 auto 20px;counter-increment:item 1;font-size:clamp(var(--fz-sm),4vw,var(--fz-lg));}/*!sc*/
+@media (max-width:600px){.gMvAfk ol li{margin:0 auto 10px;}}/*!sc*/
+.gMvAfk ol li:before{content:'0' counter(item) '.';display:block;margin-bottom:5px;color:#e63946;font-size:var(--fz-sm);}/*!sc*/
+.gMvAfk ol a{display:inline-block;-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;color:inherit;position:relative;-webkit-transition:var(--transition);transition:var(--transition);width:100%;padding:3px 20px 20px;}/*!sc*/
+.gMvAfk ol a:hover,.gMvAfk ol a:active,.gMvAfk ol a:focus{color:#e63946;outline:0;}/*!sc*/
+.gMvAfk .resume-link{color:#e63946;background-color:transparent;border:1px solid #e63946;border-radius:var(--border-radius);padding:1.25rem 1.75rem;font-size:var(--fz-sm);font-family:var(--font-mono);line-height:1;-webkit-text-decoration:none;text-decoration:none;cursor:pointer;-webkit-transition:var(--transition);transition:var(--transition);padding:18px 50px;margin:10% auto 0;width:-webkit-max-content;width:-moz-max-content;width:max-content;}/*!sc*/
+.gMvAfk .resume-link:hover,.gMvAfk .resume-link:focus,.gMvAfk .resume-link:active{background-color:rgba(230,57,70,0.1);outline:none;}/*!sc*/
+.gMvAfk .resume-link:after{display:none !important;}/*!sc*/
+data-styled.g8[id="menu__StyledSidebar-sc-tga5i0-2"]{content:"gMvAfk,"}/*!sc*/
+.hKNlwI{width:40px;position:fixed;bottom:0;left:40px;right:auto;z-index:10;color:#ced4da;}/*!sc*/
+@media (max-width:1080px){.hKNlwI{left:20px;right:auto;}}/*!sc*/
+@media (max-width:768px){.hKNlwI{display:none;}}/*!sc*/
+.bdkqyQ{width:40px;position:fixed;bottom:0;left:auto;right:40px;z-index:10;color:#ced4da;}/*!sc*/
+@media (max-width:1080px){.bdkqyQ{left:auto;right:20px;}}/*!sc*/
+@media (max-width:768px){.bdkqyQ{display:none;}}/*!sc*/
+data-styled.g9[id="side__StyledSideElement-sc-1tmst9c-0"]{content:"hKNlwI,bdkqyQ,"}/*!sc*/
+.bbuuQN{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0;padding:0;list-style:none;}/*!sc*/
+.bbuuQN:after{content:'';display:block;width:1px;height:90px;margin:0 auto;background-color:#ced4da;}/*!sc*/
+.bbuuQN li:last-of-type{margin-bottom:20px;}/*!sc*/
+.bbuuQN li a{padding:10px;}/*!sc*/
+.bbuuQN li a:hover,.bbuuQN li a:focus{-webkit-transform:translateY(-3px);-ms-transform:translateY(-3px);transform:translateY(-3px);}/*!sc*/
+.bbuuQN li a svg{width:20px;height:20px;}/*!sc*/
+data-styled.g10[id="social__StyledSocialList-sc-1czjlco-0"]{content:"bbuuQN,"}/*!sc*/
+.icLWVY{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;}/*!sc*/
+.icLWVY:after{content:'';display:block;width:1px;height:90px;margin:0 auto;background-color:#ced4da;}/*!sc*/
+.icLWVY a{margin:20px auto;padding:10px;font-family:var(--font-mono);font-size:var(--fz-xxs);line-height:var(--fz-lg);-webkit-letter-spacing:0.1em;-moz-letter-spacing:0.1em;-ms-letter-spacing:0.1em;letter-spacing:0.1em;-webkit-writing-mode:vertical-rl;-ms-writing-mode:tb-rl;writing-mode:vertical-rl;}/*!sc*/
+.icLWVY a:hover,.icLWVY a:focus{-webkit-transform:translateY(-3px);-ms-transform:translateY(-3px);transform:translateY(-3px);}/*!sc*/
+data-styled.g11[id="email__StyledLinkWrapper-sc-5jclrl-0"]{content:"icLWVY,"}/*!sc*/
+.khBNzL{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:auto;min-height:70px;padding:15px;text-align:center;}/*!sc*/
+data-styled.g12[id="footer__StyledFooter-sc-273yn6-0"]{content:"khBNzL,"}/*!sc*/
+.eEbFpt{display:none;}/*!sc*/
+@media (max-width:768px){.eEbFpt{display:block;width:100%;max-width:270px;margin:0 auto 10px;color:#ced4da;}}/*!sc*/
+.eEbFpt ul{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:0;margin:0;list-style:none;}/*!sc*/
+.eEbFpt ul a{padding:10px;}/*!sc*/
+.eEbFpt ul a svg{width:20px;height:20px;}/*!sc*/
+data-styled.g13[id="footer__StyledSocialLinks-sc-273yn6-1"]{content:"eEbFpt,"}/*!sc*/
+.dMrhlM{color:#ced4da;font-family:var(--font-mono);font-size:var(--fz-xxs);line-height:1;}/*!sc*/
+.dMrhlM a{padding:10px;}/*!sc*/
+.dMrhlM .github-stats{margin-top:10px;}/*!sc*/
+.dMrhlM .github-stats > span{display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 7px;}/*!sc*/
+.dMrhlM .github-stats svg{display:inline-block;margin-right:5px;width:14px;height:14px;}/*!sc*/
+data-styled.g14[id="footer__StyledCredit-sc-273yn6-2"]{content:"dMrhlM,"}/*!sc*/
+.jjxcWT{max-width:1000px;}/*!sc*/
+data-styled.g51[id="post__StyledPostContainer-sc-w4p48l-0"]{content:"jjxcWT,"}/*!sc*/
+.jgzrWc{margin-bottom:50px;}/*!sc*/
+.jgzrWc .tag{margin-right:10px;}/*!sc*/
+data-styled.g52[id="post__StyledPostHeader-sc-w4p48l-1"]{content:"jgzrWc,"}/*!sc*/
+.iOsZIU{margin-bottom:100px;}/*!sc*/
+.iOsZIU h1,.iOsZIU h2,.iOsZIU h3,.iOsZIU h4,.iOsZIU h5,.iOsZIU h6{margin:2em 0 1em;}/*!sc*/
+.iOsZIU p{margin:1em 0;line-height:1.5;color:#ced4da;}/*!sc*/
+.iOsZIU a{display:inline-block;-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;position:relative;-webkit-transition:var(--transition);transition:var(--transition);color:#e63946;}/*!sc*/
+.iOsZIU a:hover,.iOsZIU a:focus,.iOsZIU a:active{color:#e63946;outline:0;}/*!sc*/
+.iOsZIU a:hover:after,.iOsZIU a:focus:after,.iOsZIU a:active:after{width:100%;}/*!sc*/
+.iOsZIU a:hover > *,.iOsZIU a:focus > *,.iOsZIU a:active > *{color:#e63946 !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+.iOsZIU a:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:#e63946;-webkit-transition:var(--transition);transition:var(--transition);opacity:0.5;}/*!sc*/
+.iOsZIU code{background-color:#454647;color:#e6f1ff;border-radius:var(--border-radius);font-size:var(--fz-sm);padding:0.2em 0.4em;}/*!sc*/
+.iOsZIU pre code{background-color:transparent;padding:0;}/*!sc*/
+data-styled.g53[id="post__StyledPostContent-sc-w4p48l-2"]{content:"iOsZIU,"}/*!sc*/
+.eREcKh{text-align:center;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}/*!sc*/
+.eREcKh svg{width:40px;height:40px;margin:10px;}/*!sc*/
+.eREcKh a{display:inline-block;-webkit-text-decoration:none;text-decoration:none;-webkit-text-decoration-skip-ink:auto;text-decoration-skip-ink:auto;position:relative;-webkit-transition:var(--transition);transition:var(--transition);color:#e63946;}/*!sc*/
+.eREcKh a:hover,.eREcKh a:focus,.eREcKh a:active{color:#e63946;outline:0;}/*!sc*/
+.eREcKh a:hover:after,.eREcKh a:focus:after,.eREcKh a:active:after{width:100%;}/*!sc*/
+.eREcKh a:hover > *,.eREcKh a:focus > *,.eREcKh a:active > *{color:#e63946 !important;-webkit-transition:var(--transition);transition:var(--transition);}/*!sc*/
+.eREcKh a:after{content:'';display:block;width:0;height:1px;position:relative;bottom:0.37em;background-color:#e63946;-webkit-transition:var(--transition);transition:var(--transition);opacity:0.5;}/*!sc*/
+data-styled.g54[id="post__StyledPostSharing-sc-w4p48l-3"]{content:"eREcKh,"}/*!sc*/
+</style><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><link rel="sitemap" type="application/xml" href="/sitemap/sitemap-index.xml"/><link rel="icon" href="/favicon-32x32.png?v=fa53b00c7998e8fcb10e643ec7e27eee" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#0d1b2a"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=fa53b00c7998e8fcb10e643ec7e27eee"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=fa53b00c7998e8fcb10e643ec7e27eee"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=fa53b00c7998e8fcb10e643ec7e27eee"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=fa53b00c7998e8fcb10e643ec7e27eee"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=fa53b00c7998e8fcb10e643ec7e27eee"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=fa53b00c7998e8fcb10e643ec7e27eee"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=fa53b00c7998e8fcb10e643ec7e27eee"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=fa53b00c7998e8fcb10e643ec7e27eee"/><link rel="preconnect" href="https://www.googletagmanager.com"/><link rel="dns-prefetch" href="https://www.googletagmanager.com"/><link as="script" rel="preload" href="/webpack-runtime-f71ea0bb735b6a2c06c9.js"/><link as="script" rel="preload" href="/framework-f9ac7edc69e8d45cd40e.js"/><link as="script" rel="preload" href="/app-1aab392e0f46a84972c6.js"/><link as="script" rel="preload" href="/546641dfde76ed00139ea2c3eae09499c5f2164a-905cb37e935d13b6e8ff.js"/><link as="script" rel="preload" href="/component---src-templates-post-js-4de1c5e30f3acfc8061b.js"/><link as="fetch" rel="preload" href="/page-data/pensieve/heroku/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1364744041.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1374383533.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2543263646.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3149095931.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3469851102.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3539500889.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/3563071106.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body class=""><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div id="root"><a class="skip-to-content" href="#content">Skip to Content</a><div class="layout__StyledContent-sc-j669pm-0 hXMTVL"><header class="nav__StyledHeader-sc-11mrlhm-0 enyri"><nav class="nav__StyledNav-sc-11mrlhm-1 gZQoOR"><div class="logo" tabindex="-1"><a aria-label="home" href="/"><img src="/static/logo-678ab33e6cf16cedd06b20a2f3029ef6.png" alt="Logo"/></a></div><div class="nav__StyledLinks-sc-11mrlhm-2 glkKgF"><ol><li style="transition-delay:0ms"><a href="/#about">About</a></li><li style="transition-delay:0ms"><a href="/#jobs">Work</a></li><li style="transition-delay:0ms"><a href="/#skills">Skills</a></li><li style="transition-delay:0ms"><a href="/#projects">Projects</a></li><li style="transition-delay:0ms"><a href="/#research">Research</a></li><li style="transition-delay:0ms"><a href="/#blog">Blog</a></li><li style="transition-delay:0ms"><a href="/#contact">Contact</a></li></ol><div style="transition-delay:0ms"><a class="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></div></div><div style="display:flex;align-items:center"><button class="dark-mode"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><title>Sun</title><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg></button><div class="menu__StyledMenu-sc-tga5i0-0 cpEYiK"><div><button aria-label="Menu" class="menu__StyledHamburgerButton-sc-tga5i0-1 fwEEwo"><div class="ham-box"><div class="ham-box-inner"></div></div></button><aside aria-hidden="true" tabindex="-1" class="menu__StyledSidebar-sc-tga5i0-2 gMvAfk"><nav><ol><li><a href="/#about">About</a></li><li><a href="/#jobs">Work</a></li><li><a href="/#skills">Skills</a></li><li><a href="/#projects">Projects</a></li><li><a href="/#research">Research</a></li><li><a href="/#blog">Blog</a></li><li><a href="/#contact">Contact</a></li></ol><a href="/resume.pdf" class="resume-link">Resume</a></nav></aside></div></div></div></nav></header><div orientation="left" class="side__StyledSideElement-sc-1tmst9c-0 hKNlwI"><ul class="social__StyledSocialList-sc-1czjlco-0 bbuuQN"><li><a href="https://github.com/zarif98sjs/" aria-label="GitHub" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li><li><a href="https://www.linkedin.com/in/zarif98sjs/" aria-label="Linkedin" target="_blank" rel="noreferrer"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li></ul></div><div orientation="right" class="side__StyledSideElement-sc-1tmst9c-0 bdkqyQ"><div class="email__StyledLinkWrapper-sc-5jclrl-0 icLWVY"><a href="mailto:zarif98sjs@gmail.com">zarif98sjs@gmail.com</a></div></div><div id="content"><main class="post__StyledPostContainer-sc-w4p48l-0 jjxcWT"><span class="breadcrumb"><span class="arrow">←</span><a href="/pensieve">All memories</a></span><header class="post__StyledPostHeader-sc-w4p48l-1 jgzrWc"><h1 class="medium-heading">Go to production with Heroku</h1><p class="subtitle"><time>September 28, 2021</time><span> — </span><a class="tag" href="/pensieve/tags/heroku/">#<!-- -->Heroku</a><a class="tag" href="/pensieve/tags/production/">#<!-- -->Production</a><a class="tag" href="/pensieve/tags/deploy/">#<!-- -->Deploy</a><a class="tag" href="/pensieve/tags/app/">#<!-- -->App</a><a class="tag" href="/pensieve/tags/nodejs/">#<!-- -->Nodejs</a><a class="tag" href="/pensieve/tags/github/">#<!-- -->Github</a><a class="tag" href="/pensieve/tags/integration/">#<!-- -->Integration</a></p></header><div class="post__StyledPostContent-sc-w4p48l-2 iOsZIU"><h1>Go to production with Heroku</h1>
+<h2>Introduction</h2>
+<p>We are going to see in this blog post how you can deploy your first <code class="language-text">nodejs</code> application to <a href="https://www.heroku.com/" target="_blank" rel="nofollow noopener noreferrer">Heroku</a>. This will allows you to have it online with a custom <code class="language-text">URL</code> if you want.</p>
+<p>Heroku is a simple provider that allows you to deploy any web application. It is faster hence their integration with your Github profile. Is pretty much the same thing that we did previously in the <a href="https://hmounir.com/pensieve/netlify" target="_blank" rel="nofollow noopener noreferrer">Netlify</a> blog post.</p>
+<h2>Create a new app</h2>
+<p>Let's start with a new application. You can create a new one on your dashboard, and just follow the lead! Should be very easy! Define the <code class="language-text">name</code> of your application and choose a suitable region.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b119ce6846d3adb7985552daf874c2e1/56ba3/new.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 54.85714285714286%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'220\'%20viewBox=\'0%200%20400%20220\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M25%2060v9l1%208h160l163-1%201-8c0-10-2-10-2%200v8H27V61l161-1%20161-1H187L25%2060m0%20116v9l1%206h51v-16l-26-1H26l-1%202\'%20fill=\'%23f34\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="New"
+        title="New"
+        src="/static/b119ce6846d3adb7985552daf874c2e1/39600/new.png"
+        srcset="/static/b119ce6846d3adb7985552daf874c2e1/1aaec/new.png 175w,
+/static/b119ce6846d3adb7985552daf874c2e1/98287/new.png 350w,
+/static/b119ce6846d3adb7985552daf874c2e1/39600/new.png 700w,
+/static/b119ce6846d3adb7985552daf874c2e1/57cd1/new.png 1050w,
+/static/b119ce6846d3adb7985552daf874c2e1/4af54/new.png 1400w,
+/static/b119ce6846d3adb7985552daf874c2e1/56ba3/new.png 1542w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Repository</h2>
+<p>Once you created your application you can connect it to a GitHub repository which is the aim of the blog post here. Helping you to get the possibility to go into production with simple integration. Of course, you can use the Heroku CLI also to build it in another way.</p>
+<p>We choose here the Github integration which is way cooler.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a351eed4a681c2e370f588f05bc8a5de/2f09c/repo.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 29.714285714285715%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'120\'%20viewBox=\'0%200%20400%20120\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M218%2063a90%2090%200%20000%209l78%201h79V63l-79-1-78%201m1%205v4h133v-9H219v5m-27%2011v2h40l39-1c-1-2-5-2-6-1h-3l-1-1-2%201h-1l-5-1c-3%200-5%200-4%201l-1%201-1-1-2-1h-3c0-1-1-1-1%201h-1l-10-1-10%201h-16l-6-1h-5c-1-1-1%200-1%201\'%20fill=\'%23f34\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Repository"
+        title="Repository"
+        src="/static/a351eed4a681c2e370f588f05bc8a5de/39600/repo.png"
+        srcset="/static/a351eed4a681c2e370f588f05bc8a5de/1aaec/repo.png 175w,
+/static/a351eed4a681c2e370f588f05bc8a5de/98287/repo.png 350w,
+/static/a351eed4a681c2e370f588f05bc8a5de/39600/repo.png 700w,
+/static/a351eed4a681c2e370f588f05bc8a5de/57cd1/repo.png 1050w,
+/static/a351eed4a681c2e370f588f05bc8a5de/4af54/repo.png 1400w,
+/static/a351eed4a681c2e370f588f05bc8a5de/2f09c/repo.png 2622w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>Once the connection between Heroku and your Github repository is done, it's there you have an empty application available on the <code class="language-text">dashboard</code>. You can here open the application ( will redirect you to the main URL ).</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/81a2cfe9228ebc2b4055788866d41abf/0a88e/openApp.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 6.2857142857142865%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'26\'%20viewBox=\'0%200%20400%2026\'%20preserveAspectRatio=\'none\'/%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Open App"
+        title="Open App"
+        src="/static/81a2cfe9228ebc2b4055788866d41abf/39600/openApp.png"
+        srcset="/static/81a2cfe9228ebc2b4055788866d41abf/1aaec/openApp.png 175w,
+/static/81a2cfe9228ebc2b4055788866d41abf/98287/openApp.png 350w,
+/static/81a2cfe9228ebc2b4055788866d41abf/39600/openApp.png 700w,
+/static/81a2cfe9228ebc2b4055788866d41abf/57cd1/openApp.png 1050w,
+/static/81a2cfe9228ebc2b4055788866d41abf/4af54/openApp.png 1400w,
+/static/81a2cfe9228ebc2b4055788866d41abf/0a88e/openApp.png 2472w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Config</h2>
+<p>For some applications, you want to add config <code class="language-text">vars</code>. So that on the runtime of your application you use these specific values. It's used most of the time to define for example the <code class="language-text">origins URLs</code>, a port that is using, and more ...</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3a3de974db0a595a8f01db1f6fd7b88c/6c5be/config.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 23.428571428571427%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'93\'%20viewBox=\'0%200%20400%2093\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M225%2042c0%202%200%202%2018%202%2023%201%2027%200%2027-2l-4-1c-3%200-4%200-3%201h-3c-1-2-9-1-10%200h-2c1-2-10-2-11%200h-1l-5-1h-5c-1-1-1-1-1%201\'%20fill=\'%23f34\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Config"
+        title="Config"
+        src="/static/3a3de974db0a595a8f01db1f6fd7b88c/39600/config.png"
+        srcset="/static/3a3de974db0a595a8f01db1f6fd7b88c/1aaec/config.png 175w,
+/static/3a3de974db0a595a8f01db1f6fd7b88c/98287/config.png 350w,
+/static/3a3de974db0a595a8f01db1f6fd7b88c/39600/config.png 700w,
+/static/3a3de974db0a595a8f01db1f6fd7b88c/57cd1/config.png 1050w,
+/static/3a3de974db0a595a8f01db1f6fd7b88c/4af54/config.png 1400w,
+/static/3a3de974db0a595a8f01db1f6fd7b88c/6c5be/config.png 2506w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Logs</h2>
+<p>Heroku has a nice view of logs. You can find them there and also be able to export them and see what happened during the time the application crashes.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 496px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/61227e2d3873cedd2a58300a9fc6c893/07e2a/logs.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 114.28571428571428%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'456\'%20viewBox=\'0%200%20400%20456\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M65%2018c-2%202-2%203-2%2024v22l3%202c4%203%20142%203%20146%200s4-43%201-47l-2-3h-72c-71%200-72%200-74%202m168-1c-3%202-3%205-3%2025%200%2021%200%2021%202%2024l3%202h116l2-2c2-3%202-3%202-24%200-18%200-22-2-24l-1-2h-59l-60%201M66%2019l-1%2023c0%2021%200%2022%202%2023l72%201c67%200%2071%200%2072-2%202-2%203-41%201-44-1-2-3-2-73-2l-73%201m167%201l-1%2022c0%2019%200%2020%202%2022s3%202%2059%202c50%200%2057%200%2058-2%202-2%203-43%201-45l-60-1c-56%200-58%200-59%202M12%2035c-1%203-1%203-5%203-5%200-6%201-2%204%203%202%204%204%202%207-2%204-1%204%203%201l4-2%204%202c4%204%205%203%202-1l-1-4%203-3c4-3%204-4-1-4-4%200-5-1-5-4-2-4-3-4-4%201m80%200c-3%203-3%208%200%2011%204%205%2013%202%2013-5s-8-11-13-6m166%205c0%206%200%208%202%208l1-5v-4l2%204c3%206%204%206%207%200l2-5v5c0%204%200%205%202%205l1-7c0-8%200-8-2-8s-3%201-4%205c-2%206-3%206-5%200-1-3-2-5-4-5s-2%200-2%207m-150%205l1%208%201-2c0-3%200-3%203-3s5-2%205-6-2-5-6-5h-4v8m56%200c0%206%200%208%202%208l1-2c0-3%200-3%203-3%204%200%206-5%204-8-2-2-3-3-6-3h-4v8m13%200c0%206%200%208%202%208l1-2c0-3%200-3%203-3%204%200%206-4%204-8%200-2-1-3-5-3h-5v8m101-6c-2%204-1%206%202%208l3%202%203-2c5-3%203-10-3-10l-5%202m-115%2066c-2%201-2%202-1%204v6c-2%204%204%207%207%204%203-2%202-5-2-6-4%200-4-2%200-2%202-1%203-1%203-3l1-3%201-1c-1-2-8-1-9%201m9%2049v7h4c4%200%206-1%206-6%200-3-2-5-5-5-3%201-3%201-3-1l-1-3-1%208M51%20211c-2%201-1%2016%200%2017%202%202%2020%201%2021-1v-15c0-2-20-3-21-1m41%208l1%207%201-3c0-4%202-4%205%200s4%203%202%200-2-3%200-4c3-3%200-8-5-8h-4v8m-40-4v12h19v-12l-10-1-9%201m4%2041c-3%200-4%202-4%2012l1%209h18v-10l-1-10c-2-1-10-2-14-1m37%202v14l1-2c0-2%201-3%203-3%206%200%207-7%202-9h-6m40%200l-1%202c0%202%200%202-2%201-5-1-8%207-4%2010%201%202%202%202%204%201%204%200%204%200%204-8l-1-6m-80%202v9l1%207h15v-16l-8-1-8%201m6%2065c-4%202-4%202-4%207s1%206%205%208l4%202%205-2c4-2%205-3%205-8s0-5-4-7c-4-4-6-4-11%200m54-1l-2%202c-5%200-7%205-5%209%201%202%202%202%205%202h4v-8c0-7-1-9-2-5m14%200c0%202%200%203-3%202-4-1-7%204-5%209%201%202%202%202%205%202h5l-1-6c0-8-1-11-1-7m36%203l1%2015%201-2c0-3%200-3%203-3%204%200%206-4%204-8%200-2-1-3-5-3l-4%201m18%207l1%208%201-3c0-2%200-3%203-2%203%200%205-2%205-5%200-5-2-6-6-6h-4v8M57%20388c-6%203-7%209-2%2014%204%205%2011%204%2014-2%203-4%201-4-3%200-3%203-7%203-10-1-3-3-3-4%200-7s9-4%208-1c0%201%201%202%203%201%204%200%204%200%203-3s-3-4-3-2h-3c-3-1-4-1-7%201m36-1v14l1-2c0-4%202-4%205%200s4%203%202-1v-3c2-2%201-6-1-7-3-2-6-3-7-1m108%202c0%202%200%202-2%202-4-2-8%203-6%207%201%203%205%205%206%203h3c1%200%202-13%200-14-1-1-1%200-1%202m29%203l-2%204c0%202%203%206%205%206%203%200%206-3%206-6%200-5-5-8-9-4\'%20fill=\'%23f34\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Logs"
+        title="Logs"
+        src="/static/61227e2d3873cedd2a58300a9fc6c893/07e2a/logs.png"
+        srcset="/static/61227e2d3873cedd2a58300a9fc6c893/1aaec/logs.png 175w,
+/static/61227e2d3873cedd2a58300a9fc6c893/98287/logs.png 350w,
+/static/61227e2d3873cedd2a58300a9fc6c893/07e2a/logs.png 496w"
+        sizes="(max-width: 496px) 100vw, 496px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Buildpack</h2>
+<p>To build your application Heroku needs to know which kind of build pack there are going to use. Here for example we have the last application that we did on the <a href="https://hmounir.com/pensieve/validation" target="_blank" rel="nofollow noopener noreferrer">validation blog post</a>.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/ac153443d3c39b7a5704eeb34741cfef/0045d/build.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 17.71428571428571%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'70\'%20viewBox=\'0%200%20400%2070\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M354%2020l1%206h40V15h-41v5\'%20fill=\'%23f34\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Build"
+        title="Build"
+        src="/static/ac153443d3c39b7a5704eeb34741cfef/39600/build.png"
+        srcset="/static/ac153443d3c39b7a5704eeb34741cfef/1aaec/build.png 175w,
+/static/ac153443d3c39b7a5704eeb34741cfef/98287/build.png 350w,
+/static/ac153443d3c39b7a5704eeb34741cfef/39600/build.png 700w,
+/static/ac153443d3c39b7a5704eeb34741cfef/57cd1/build.png 1050w,
+/static/ac153443d3c39b7a5704eeb34741cfef/4af54/build.png 1400w,
+/static/ac153443d3c39b7a5704eeb34741cfef/0045d/build.png 2430w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>It's a nodejs application so let's use the nodejs one.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/a5bc87ffbd52619d08baa98d35fe2a84/acdd1/nodejs.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.14285714285714%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'214\'%20viewBox=\'0%200%20400%20214\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M40%20111c-4%202-4%203-4%208%200%204%200%205%202%206%203%201%205%200%205-2s0-2%202-1h5c2-2%201-4-2-4l-2-1h2l2-1c0-2-5-1-6%201l3%202c3%201%202%202-1%202-2-1-3-2-3-4%200-4-1-2-1%203-1%205-3%205-4-1%200-4%200-5%204-7l3-2%204%202c4%202%204%203%204%206%200%204%200%205-4%207l-5%201-2%201c1%202%204%201%208-1s4-2%204-7c0-6%200-6-4-8-5-2-6-2-10%200m78-1l-1%202-2%202c-2%200-4%204-2%207%201%202%203%203%203%200%201-1%201%200%201%202l2%204c3%201%207%200%207-3l2-1c2%200%204-5%202-8l-2-2c-1%201-2%200-2-1-1-3-7-4-8-2m155%201c-3%202-5%205-7%209%200%203%203%205%2011%206l5%201%202-6c2-7%202-9-2-10h-9m-80%202c-6%203-5%209%202%2011%2011%203%2019-6%209-11h-11m79%2048c-4%201-3%202%202%202%203%200%204%200%203%201l-2%201-1%201h-3c1-3-1-2-3%200-6%206%207%2017%2014%2011l3-2h-6l-7-1h2l3-1h4c1%202%205-1%205-4%200-6-8-11-14-8m-70%200l-6%201c-4%200-5%205%200%205h3l-3%201c-3%201-4%205-1%205l3%201h-3c-1%200-2%201-2%203s0%202%205%202c7-2%207-1%207-11v-8l-3%201m-76%201l2%201c2%201%202%201%201%203h-5c-3-2-8-2-8%200l-2%203c-2%202-3%208-1%208l2-1h9l2%201c3-5%206-12%205-14s-5-3-5-1\'%20fill=\'%23f34\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Nodejs"
+        title="Nodejs"
+        src="/static/a5bc87ffbd52619d08baa98d35fe2a84/39600/nodejs.png"
+        srcset="/static/a5bc87ffbd52619d08baa98d35fe2a84/1aaec/nodejs.png 175w,
+/static/a5bc87ffbd52619d08baa98d35fe2a84/98287/nodejs.png 350w,
+/static/a5bc87ffbd52619d08baa98d35fe2a84/39600/nodejs.png 700w,
+/static/a5bc87ffbd52619d08baa98d35fe2a84/57cd1/nodejs.png 1050w,
+/static/a5bc87ffbd52619d08baa98d35fe2a84/acdd1/nodejs.png 1150w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Domain</h2>
+<p>Of course, you can define your custom domains. To have it on the URL and be 100% professional.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/4ea280d343ff82d7c9d97551b2843da4/f59cd/domain.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 24.571428571428573%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'99\'%20viewBox=\'0%200%20400%2099\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M359%2019l1%206h35V14h-36v5m-167%201c0%201%204%202%2041%202%2040%200%2040%200%2038-2s-7-3-7-1l-2%201-2-1-3-1-4%201h-2c-6-1-10-1-12%201h-1v-2l-1%202-1%201c-1-3-11-3-13-1h-1v-2l-1%202h-1c-1-2-11-2-11%200h-2l-2-1h-2c-3-1-11-1-11%201\'%20fill=\'%23f34\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Domain"
+        title="Domain"
+        src="/static/4ea280d343ff82d7c9d97551b2843da4/39600/domain.png"
+        srcset="/static/4ea280d343ff82d7c9d97551b2843da4/1aaec/domain.png 175w,
+/static/4ea280d343ff82d7c9d97551b2843da4/98287/domain.png 350w,
+/static/4ea280d343ff82d7c9d97551b2843da4/39600/domain.png 700w,
+/static/4ea280d343ff82d7c9d97551b2843da4/57cd1/domain.png 1050w,
+/static/4ea280d343ff82d7c9d97551b2843da4/4af54/domain.png 1400w,
+/static/4ea280d343ff82d7c9d97551b2843da4/f59cd/domain.png 2460w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Deploy</h2>
+<p>This section allows you to deploy any branch that you want manually. Here we chose the <code class="language-text">master</code> because we only want to deploy the main branch. but imagine you have a <code class="language-text">feature</code> branch you can too.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/dc8e12283a5913ce1a081ad6b79ca52c/9b0bc/manual.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 18.857142857142858%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'76\'%20viewBox=\'0%200%20400%2076\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M321%2043v6l1%205h48V42h-24l-25%201\'%20fill=\'%23f34\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Manual Deploy"
+        title="Manual Deploy"
+        src="/static/dc8e12283a5913ce1a081ad6b79ca52c/39600/manual.png"
+        srcset="/static/dc8e12283a5913ce1a081ad6b79ca52c/1aaec/manual.png 175w,
+/static/dc8e12283a5913ce1a081ad6b79ca52c/98287/manual.png 350w,
+/static/dc8e12283a5913ce1a081ad6b79ca52c/39600/manual.png 700w,
+/static/dc8e12283a5913ce1a081ad6b79ca52c/57cd1/manual.png 1050w,
+/static/dc8e12283a5913ce1a081ad6b79ca52c/4af54/manual.png 1400w,
+/static/dc8e12283a5913ce1a081ad6b79ca52c/9b0bc/manual.png 2096w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Automatic Deploy</h2>
+<p>Automatic deployment can be awesome and be such a gain of time. I always use it. Once you merge your feature branch into master, making a release, it will automatically deploy it to production.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 700px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e43a9f4251d871e0b49dec60ef965755/e987f/deploy.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 29.714285714285715%; position: relative; bottom: 0; left: 0; background-image: url('data:image/svg+xml,%3csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'400\'%20height=\'118\'%20viewBox=\'0%200%20400%20118\'%20preserveAspectRatio=\'none\'%3e%3cpath%20d=\'M137%20100v6l1%204h69v-10l-35-1-35%201\'%20fill=\'%23f34\'%20fill-rule=\'evenodd\'/%3e%3c/svg%3e'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Deploy"
+        title="Deploy"
+        src="/static/e43a9f4251d871e0b49dec60ef965755/39600/deploy.png"
+        srcset="/static/e43a9f4251d871e0b49dec60ef965755/1aaec/deploy.png 175w,
+/static/e43a9f4251d871e0b49dec60ef965755/98287/deploy.png 350w,
+/static/e43a9f4251d871e0b49dec60ef965755/39600/deploy.png 700w,
+/static/e43a9f4251d871e0b49dec60ef965755/57cd1/deploy.png 1050w,
+/static/e43a9f4251d871e0b49dec60ef965755/4af54/deploy.png 1400w,
+/static/e43a9f4251d871e0b49dec60ef965755/e987f/deploy.png 2412w"
+        sizes="(max-width: 700px) 100vw, 700px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<h2>Procfile</h2>
+<p>To start your application Heroku needs to know how they will start it once the build is done. For a web application, you can define it as the example below.</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">web: <span class="token function">yarn</span> start</code></pre></div>
+<h2>Slug</h2>
+<p>Sometimes your application or even your repository contains some data that you don't necessarily need to be on the slug of your application. For example, a folder containing logs that you don't use on your application. If they are on your repository they will be added to the build and push to production.</p>
+<p>There is a way to ignore them, you can simply add the path to the file <code class="language-text">.slugignore</code>.</p>
+<p>Example :</p>
+<div class="gatsby-highlight" data-language="shell"><pre class="language-shell"><code class="language-shell">/logs</code></pre></div>
+<h2>Source</h2>
+<p><a href="https://github.com/hamzaPixl/posts-heroku" target="_blank" rel="nofollow noopener noreferrer">Github</a></p>
+<p><a href="https://hmounir.com/pensieve/heroku" target="_blank" rel="nofollow noopener noreferrer">Blog</a></p>
+<p><a href="https://www.heroku.com/home" target="_blank" rel="nofollow noopener noreferrer">Heroku</a></p>
+<h2>License</h2>
+<p>Distributed under the MIT License. See <code class="language-text">LICENSE</code> for more information.</p>
+<h2>Contact</h2>
+<p>Hamza Mounir - <a href="https://twitter.com/pixlhamza" target="_blank" rel="nofollow noopener noreferrer">@pixlhamza</a> - <a href="mailto:hamza.pixelle@gmail.com" target="_blank" rel="nofollow noopener noreferrer">hamza.pixelle@gmail.com</a></p>
+<h2>Support</h2>
+<p>Give a ⭐️ if you like this post!</p></div><div class="post__StyledPostSharing-sc-w4p48l-3 eREcKh"><div>Thanks for the support ! Share.</div><div><a href="https://twitter.com/share?url=undefined&amp;text=Go to production with Heroku&amp;hashtags=Heroku,Production,Deploy,App,Nodejs,Github,Integration" aria-label="Twitter Share"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter"><title>Twitter</title><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a><a href="https://www.linkedin.com/sharing/share-offsite/?url=undefined&amp;Title=Go to production with Heroku" aria-label="Linkedin Share"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a><a href="https://www.facebook.com/sharer.php?u=undefined&amp;t=Go to production with Heroku" aria-label="Facebook Share"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" role="img" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><title>Facebook</title><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a><a href="http://reddit.com/submit?url=undefined&amp;title=Go to production with Heroku" aria-label="Reddit Share"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><title>External Link</title><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></div></div></main><footer class="footer__StyledFooter-sc-273yn6-0 khBNzL"><div class="footer__StyledSocialLinks-sc-273yn6-1 eEbFpt"><ul><li><a href="https://github.com/zarif98sjs/" aria-label="GitHub"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><title>GitHub</title><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></li><li><a href="https://www.linkedin.com/in/zarif98sjs/" aria-label="Linkedin"><svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><title>LinkedIn</title><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li></ul></div><div class="footer__StyledCredit-sc-273yn6-2 dMrhlM"><a href="https://github.com/bchiang7/v4"><div>Originally designed by Brittany Chiang</div></a><a href=""><div>Redesigned by Md. Zarif Ul Alam</div></a></div></footer></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-7XHJLXGDRF"></script><script>
+      
+      function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='G-7XHJLXGDRF',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+      if(!(navigator.doNotTrack == "1" || window.doNotTrack == "1")) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){window.dataLayer && window.dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-7XHJLXGDRF', {"anonymize_ip":true,"cookie_expires":0,"send_page_view":false});
+      }
+      </script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/pensieve/heroku";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-af5e589f006e2d80128c.js"],"app":["/app-1aab392e0f46a84972c6.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-8da5522aadd3708a366c.js"],"component---src-pages-404-js":["/component---src-pages-404-js-aa3efee303ea3651c369.js"],"component---src-pages-archive-js":["/component---src-pages-archive-js-b670d32567684de2a09b.js"],"component---src-pages-index-js":["/component---src-pages-index-js-4bdac05fc2c168dfc5b9.js"],"component---src-pages-pensieve-index-js":["/component---src-pages-pensieve-index-js-0d2945e06b9df75d2a06.js"],"component---src-pages-pensieve-tags-js":["/component---src-pages-pensieve-tags-js-dd787b2c37fc84e7595b.js"],"component---src-templates-post-js":["/component---src-templates-post-js-4de1c5e30f3acfc8061b.js"],"component---src-templates-tag-js":["/component---src-templates-tag-js-6f8e35ef348a06f47999.js"]};/*]]>*/</script><script src="/polyfill-af5e589f006e2d80128c.js" nomodule=""></script><script src="/component---src-templates-post-js-4de1c5e30f3acfc8061b.js" async=""></script><script src="/546641dfde76ed00139ea2c3eae09499c5f2164a-905cb37e935d13b6e8ff.js" async=""></script><script src="/app-1aab392e0f46a84972c6.js" async=""></script><script src="/framework-f9ac7edc69e8d45cd40e.js" async=""></script><script src="/webpack-runtime-f71ea0bb735b6a2c06c9.js" async=""></script></body></html>

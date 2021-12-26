@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/pensieve/tags/discord-api/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"MooBot","description":null,"date":"8","slug":null,"tags":["PYTHON","DISCORD API","GRAPH API"]}}}]}},"pageContext":{"tag":"DISCORD API"}},
+    "staticQueryHashes": ["1364744041","1374383533","2543263646","3149095931","3469851102","3539500889","3563071106"]}
