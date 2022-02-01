@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-tag-js",
-    "path": "/pensieve/tags/dr-anindya-iqbal-buet/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Artificially Intelligent and Interactive MOOCs","description":null,"date":"2","slug":null,"tags":["DR. ANINDYA IQBAL (BUET)","DR. SHUBHRA KANTI KARMAKER (AUBURN UNIVERSITY)"]}}}]}},"pageContext":{"tag":"DR. ANINDYA IQBAL (BUET)"}},
-    "staticQueryHashes": ["1364744041","1374383533","2543263646","3149095931","3469851102","3539500889","3563071106"]}
