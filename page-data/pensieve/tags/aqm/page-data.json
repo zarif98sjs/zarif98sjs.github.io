@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/pensieve/tags/aqm/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"SRED & ESRED : Active Queue Management","description":null,"date":"2022-04-15","slug":null,"tags":["Netowrk Simulator","AQM","RED","Paper Implementation"]}}}]}},"pageContext":{"tag":"AQM"}},
+    "staticQueryHashes": ["1364744041","1374383533","2167488315","2543263646","3149095931","3469851102","3539500889"]}

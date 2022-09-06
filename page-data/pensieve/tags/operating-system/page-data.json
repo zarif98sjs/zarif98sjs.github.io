@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/pensieve/tags/operating-system/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Xv6 Memory Management","description":null,"date":"2022-03-21","slug":null,"tags":["Operating System","Xv6"]}}}]}},"pageContext":{"tag":"Operating System"}},
+    "staticQueryHashes": ["1364744041","1374383533","2167488315","2543263646","3149095931","3469851102","3539500889"]}
