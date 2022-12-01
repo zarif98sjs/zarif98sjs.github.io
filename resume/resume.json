@@ -122,8 +122,9 @@
     },
     {
       "company": "Unilever",
+      "about": "<img src='unilever.svg' height='75px'/>Unilever Bangladesh Limited is a consumer goods company based in Dhaka, Bangladesh and founded in 1964, engaged in the manufacture and distribution of home care products, personal care products, and foods. It is a joint venture of the Government of Bangladesh and Unilever.",
       "location": "Dhaka, Bangladesh",
-      "mapUrl": "",
+      "mapUrl": "https://goo.gl/maps/Px6vYmmGmyZroC5E7",
       "roles": [
         {
           "title": "BizLearner (Machine Learning), Unilever Forecast Engine",
@@ -148,9 +149,9 @@
   "education": [
     {
       "institution": "Bangladesh University of Engineering & Technology",
-      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program.",
+      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program. The Department of Computer Science and Engineering (CSE) of Bangladesh University of Engineering and Technology (BUET) is the first department of its kind in Bangladesh. The best students from all over Bangladesh join this prestigious department.",
       "location": "Bangladesh",
-      "mapUrl": "https://goo.gl/maps/drU7qZLbirj",
+      "mapUrl": "https://goo.gl/maps/woHKf5vJN4Yafaxv9",
       "degree": [
         {
           "title": "B.Sc. (Engineering) - Computer Science",
@@ -174,7 +175,7 @@
         {
           "type": "project",
           "description": [
-            "Created a subset C compiler using Flex and Bison. Also implemented compiler optimizations like dead code elimination."
+            "Created a subset C compiler from scratch! Implemented a Ray Tracing pipeline, Wrote an Active Queue Management algorithm for Network Simulator 3, Created a paging framework for Xv6 Operating System and many <a href='https://github.com/zarif98sjs/cse-buet-academics' target='_blank'>more</a>!  <a href='https://github.com/zarif98sjs/cse-buet-academics' target='_blank'><i class='fab fa-github'></i></a>"
           ]
         }
       ]
@@ -183,7 +184,6 @@
   "projects": [
     {
       "projectName": "IntDesk",
-      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program.",
       "location": "",
       "githubUrl": "https://github.com/zarif98sjs/IntDesk-frontend",
       "degree":
@@ -210,7 +210,6 @@
     },
     {
       "projectName": "DealFinder",
-      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program.",
       "location": "",
       "githubUrl": "https://github.com/zarif98sjs/dealfinder",
       "degree":
@@ -233,12 +232,62 @@
           ]
         }
       ]
+    },
+    {
+      "projectName": "Yet Another C Compiler",
+      "location": "",
+      "githubUrl": "https://github.com/zarif98sjs/Yet-Another-C-Compiler",
+      "degree":
+        {
+          "title": "",
+          "time": {
+            "period": "Mar. '21"
+          }
+        },
+      "info": [
+        {
+          "type": "",
+          "description": [
+           "Created a subset C compiler using Flex and Bison. Also implemented compiler optimizations like dead code elimination.</br>"
+          ],
+          "tech": [
+            "Flex",
+            "Bison",
+            "Compiler Design"
+          ]
+        }
+      ]
+    },
+    {
+      "projectName": "MooBot",
+      "location": "",
+      "githubUrl": "https://github.com/zarif98sjs/Yet-Another-C-Compiler",
+      "degree":
+        {
+          "title": "",
+          "time": {
+            "period": "Feb. '21"
+          }
+        },
+      "info": [
+        {
+          "type": "",
+          "description": [
+           "Created a notification bot for Moodle, the default LMS for our department. It doesn't come with a built-in notification system. So I built one as a pet project! ",
+           "The bot was able to solve this problem by notifying about forum posts and different activities to my fellow classmates. It was later adopted by junior classes!</br>"
+          ],
+          "tech": [
+            "Python",
+            "Discord API",
+            "Graph API"
+          ]
+        }
+      ]
     }
   ],
   "research" : [
     {
       "projectName": "Automated Analysis of Parkinson's Disease with Remote Tasks",
-      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program.",
       "location": "",
       "githubUrl": "https://github.com/zarif98sjs/IntDesk-frontend",
       "status": "Ongoing",
@@ -269,7 +318,6 @@
     },
     {
       "projectName": "Occam's Razor Strikes Again: Revisiting Short-Text Stream Clustering with Latest Sentence Embeddings",
-      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program.",
       "location": "",
       "githubUrl": "https://github.com/zarif98sjs/IntDesk-frontend",
       "status": "Under Revision",
@@ -309,12 +357,14 @@
     {
       "head": "Awarded ",
       "fa":"fas fa-trophy",
-      "body": "5000$ for “Community Competition Creator Prize” by <em class='text-muted'>Kaggle</em>"
+      "body": "5000$ for “Community Competition Creator Prize” by <em class='text-muted'>Kaggle</em>",
+      "link": "https://www.kaggle.com/discussions/general/343079"
     },
     {
       "head": "Silver Medal ",
       "fa":"fas fa-medal",
-      "body": "in “G2Net Gravitational Wave Detection Competition” by <em class='text-muted'>Kaggle</em>"
+      "body": "in “G2Net Gravitational Wave Detection Competition” by <em class='text-muted'>Kaggle</em>",
+      "link": "https://www.kaggle.com/competitions/g2net-gravitational-wave-detection/leaderboard"
     },
     {
       "head": "First Runners Up ",
@@ -339,7 +389,7 @@
       "info": [
         {
           "description": [
-            "<em class='text-muted'>BUET CSE Fest, 2022</em><br/>",
+            "<br/><em class='text-muted'>BUET CSE Fest, 2022</em><br/>",
             "Lead Organizer, <small> (2022)</small> <br/>",
             "<small>Actively organized and set problems for AI Contest, Inter-University Hackathon and Deep Learning Competition 'DL Sprint', which won the best community competition prize from Kaggle</small>"
           ]
@@ -354,18 +404,6 @@
           "description": [
             "<em class='text-muted'>BUET Math Club (Onuronon/অনুরণন)</em><br/>",
             "Executive Committee Member, <small> (2021-2022)</small>"
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Personal Projects",
-      "fa": "fas fa-code-branch",
-      "info": [
-        {
-          "description": [
-            "MooBot, Fourier Art, T-Rex on Mars and more...<br/>",
-            "<a href='https://zarif98sjs.github.io/'>https://zarif98sjs.github.io/</a>"
           ]
         }
       ]

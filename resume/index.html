@@ -241,7 +241,7 @@
 				</div>
 				<div class="panel">
 					<div class="panel-heading">
-						<h2 class="section-heading"><span>Projects</span></h2>
+						<h2 class="section-heading"><span>Projects </span></h2>
 					</div>
 					<div class="panel-body">
 						<ul class="list-group educations">
@@ -297,6 +297,10 @@
 							</li>
 						</ul>
 					</div>
+					<div class="panel-body" style="margin-bottom: 15px;">
+						<i>Find all projects <a href='https://zarif98sjs.github.io/#projects'
+								target='_blank'>here</a>!</i>
+					</div>
 				</div>
 
 				<div class="panel">
@@ -328,7 +332,7 @@
 												Supervisor(s) :
 												<a ng-repeat="key in ed.supervisors" data-toggle='tooltip'
 													title='{{key.designation}}' href={{key.google_scholar}}><span
-														style='color: darkgoldenrod;background: beige; padding-left: 2px;padding-right: 2px;margin-right: 7px;'
+														style='color: #286090;background: #f5f5f5; padding-left: 2px;padding-right: 2px;margin-right: 7px;'
 														title=''>{{ key.name }} </span></a>
 												<span class="text-right time-period"
 													ng-if="ed.degree.time.since!=undefined">
@@ -339,7 +343,7 @@
 													{{ ed.degree.time.period }}
 												</span>
 											</div>
-										
+
 										</div>
 									</div>
 									<!-- anchor tag with link to google scholar -->
@@ -419,17 +423,23 @@
 				</div>
 				<div class="side-note row" ng-repeat="note in _.sideNotes">
 					<div class="col-md-12">
-						<i ng-if="note.fa!=undefined" class="{{ note.fa }} charcoal-grey"></i>
-						<strong class="text-primary">{{ note.head }}</strong>
-						<span ng-bind-html-compile="note.body"></span>
+						
+							<i ng-if="note.fa!=undefined" class="{{ note.fa }} charcoal-grey"></i>
+							<strong class="text-primary">{{ note.head }}</strong>
+							
+							<span ng-bind-html-compile="note.body"></span>
+							<a ng-if="note.link!=undefined" href='{{ note.link }}' target='_blank'><i class='fas fa-external-link-alt'></i></a>
+							
+
 					</div>
 				</div>
 				<div class="side-section row" ng-repeat="section in _.sections">
 					<div class="col-md-12">
 						<div class="panel">
 							<div class="panel-heading">
-								
-								<h3 class="section-head text-primary"> <i ng-if="section.fa!=undefined" class="{{ section.fa }} charcoal-grey"></i> {{section.title}}</h3>
+
+								<h3 class="section-head text-primary"> <i ng-if="section.fa!=undefined"
+										class="{{ section.fa }} charcoal-grey"></i> {{section.title}}</h3>
 							</div>
 							<div class="panel-body">
 								<ul class="list-group" ng-repeat="info in section.info">
