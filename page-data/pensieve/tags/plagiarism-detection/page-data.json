@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/pensieve/tags/plagiarism-detection/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Bangla Plagiarism Detection","description":null,"date":"2","slug":null,"tags":["Natural Language Processing","Plagiarism Detection"]}}}]}},"pageContext":{"tag":"Plagiarism Detection"}},
+    "staticQueryHashes": ["1151383948","1364744041","1374383533","2543263646","2604261230","3149095931","3469851102","3539500889"]}

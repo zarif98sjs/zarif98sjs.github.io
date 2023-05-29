@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-templates-tag-js",
     "path": "/pensieve/tags/production/",
     "result": {"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"frontmatter":{"title":"Go to production with Heroku","description":"Deploy your first app with Heroku in one click.","date":"2021-09-28T00:00:00.000Z","slug":"/pensieve/heroku","tags":["Heroku","Production","Deploy","App","Nodejs","Github","Integration"]}}},{"node":{"frontmatter":{"title":"Go to production with Netlify","description":"Deploy your first website with netlify in one click.","date":"2021-08-11T00:00:00.000Z","slug":"/pensieve/netlify","tags":["Netlify","Production","Deploy","Website","Github","Integration"]}}}]}},"pageContext":{"tag":"Production"}},
-    "staticQueryHashes": ["1364744041","1374383533","2167488315","2543263646","3149095931","3469851102","3539500889"]}
+    "staticQueryHashes": ["1151383948","1364744041","1374383533","2543263646","2604261230","3149095931","3469851102","3539500889"]}

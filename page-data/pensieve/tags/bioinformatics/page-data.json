@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-tag-js",
+    "path": "/pensieve/tags/bioinformatics/",
+    "result": {"data":{"allMarkdownRemark":{"totalCount":2,"edges":[{"node":{"frontmatter":{"title":"April 22, 2023","description":null,"date":"6","slug":null,"tags":["Publication","Research","Bioinformatics"]}}},{"node":{"frontmatter":{"title":"Quartet Fiduccia-Mattheyses Revisited for Larger Phylogenetic Studies","description":null,"date":"3","slug":null,"tags":["Bioinformatics","Computational Biology"]}}}]}},"pageContext":{"tag":"Bioinformatics"}},
+    "staticQueryHashes": ["1151383948","1364744041","1374383533","2543263646","2604261230","3149095931","3469851102","3539500889"]}

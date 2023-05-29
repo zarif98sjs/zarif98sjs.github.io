@@ -2,4 +2,4 @@
     "componentChunkName": "component---src-templates-tag-js",
     "path": "/pensieve/tags/nodejs/",
     "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Go to production with Heroku","description":"Deploy your first app with Heroku in one click.","date":"2021-09-28T00:00:00.000Z","slug":"/pensieve/heroku","tags":["Heroku","Production","Deploy","App","Nodejs","Github","Integration"]}}}]}},"pageContext":{"tag":"Nodejs"}},
-    "staticQueryHashes": ["1364744041","1374383533","2167488315","2543263646","3149095931","3469851102","3539500889"]}
+    "staticQueryHashes": ["1151383948","1364744041","1374383533","2543263646","2604261230","3149095931","3469851102","3539500889"]}
