@@ -1,0 +1,136 @@
+.ns7r.container  {
+    padding-top: 2.5em;
+}
+
+@media screen {
+    .ns7r span[uib-tooltip],
+    .ns7r abbr[title] {
+        border-bottom: 1px dotted #ccc;
+    }
+}
+/* previously was 66BB6A  */
+@media all {
+    .ns7r code {
+        color: #333 !important;
+        margin-right: .3em;
+        padding: 1px 3px;
+    }
+
+    .ns7r code:last-child {
+        margin-right: 0;
+    }
+}
+
+.comma-sep-list::after {
+    content: ', ';
+}
+
+.comma-sep-list:last-child::after {
+    content: '';
+}
+
+.ns7r .popover-title {
+    font-weight: 700;
+}
+
+.ns7r {
+    line-height: 1.4em;
+}
+
+.ns7r .panel,
+.ns7r .list-group {
+    box-shadow: unset;
+}
+
+.ns7r .panel-heading,
+.ns7r .panel-body {
+    padding: 0;
+}
+
+.ns7r .panel,
+.ns7r .list-group-item {
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background: transparent;
+    margin: 0;
+}
+
+.ns7r .sidebar .list-group {
+    margin: 0;
+}
+
+.ns7r .list-group.strips {
+    margin-bottom: 15px;
+    padding-bottom: 1px;
+}
+
+.list-group-item.strip {
+    border-top: 1px solid white;
+}
+
+.list-group-item:last-child.strip {
+    border-bottom: 1px solid white;
+}
+
+.list-group-item.strip {
+    background-color: transparent;
+    padding-bottom: 3px;
+    margin-top: 3px;
+}
+
+.dim {
+    color: #bbc;
+}
+
+.info-address {
+    padding-left: 8px;
+}
+
+.charcoal-dim { color: #666; }
+.charcoal { color: #555; }
+.charcoal-grey { color: #3a3a3a; }
+
+.skills div,
+.side-note div {
+    margin: 8px 0;
+}
+
+.main-skills code {
+    font-size: 110%;
+}
+
+
+
+.sidebar .panel .list-group-item {
+    margin-bottom: 8px;
+}
+
+.popover img {
+    float: left;
+    margin-right: 8px;
+}
+
+.popover {
+    width: 600px;
+}
+
+.ns7r .link a {
+    font-size: 95%;
+}
+
+.ns7r .link .url::after {
+    content: ' & '
+}
+
+.ns7r .link .url:last-child::after {
+    content: none;
+}
+
+.ns7r .profile-pic{
+    display: none;
+}
+
+.card-heading .fa-li {
+    margin-top: 0em;
+}

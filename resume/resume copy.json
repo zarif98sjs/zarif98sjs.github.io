@@ -1,0 +1,400 @@
+{
+  "name": "Md. Zarif Ul Alam",
+  "avatar": "https://www.gravatar.com/avatar/d6967dce6ae3cc6d17d1fb92b92905ed?s=1600",
+  "highlights": [
+    "Software Developer at ICT Cell, BUET",
+    "BSc. in <abbr data-toggle='tooltip' title='Computer Science and Engineering'>CSE</abbr> from <abbr data-toggle='tooltip' title = 'Bangladesh University of Engineering and Technology'>BUET</abbr>",
+    ""
+  ],
+  "address": {
+    "city": "Dhaka",
+    "state": "Bangladesh",
+    "stateFull": ""
+  },
+  "phone": "+8801915616046",
+  "telUrl": "tel:+8801915616046",
+  "email": "zarif98sjs@gmail.com",
+  "website": "https://zarif98sjs.github.io/",
+  "skills": {
+    "programming": [
+      "C++",
+      "Python",
+      "Java"
+    ],
+    "other": [
+      "C#",
+      "Go"
+    ],
+    "framework": [
+      "Tensorflow",
+      "Keras",
+      "PyTorch",
+      "Django",
+      "JavaFx"
+    ]
+  },
+  "experience": [
+    {
+      "company": "ICT Cell, BUET",
+      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg' width='64px'/>  ICT Cell BUET is responsible for making softwares for BUET's custom use cases",
+      "location": "Dhaka, Bangladesh",
+      "mapUrl": "https://goo.gl/maps/iUpVKZMDtfmTwUMB7",
+      "roles": [
+        {
+          "title": "Software Developer",
+          "time": {
+            "since": "Dec. 2021",
+            "until": "Present",
+            "current": true
+          }
+        }
+      ],
+      "info": [
+        {
+          "type": "responsibility",
+          "description": [
+            "Creating a custom software from scratch to make advance payment for the office of Directorate of Advisory, Extension and Research Services (DAERS)"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Google LLC",
+      "about": "<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/375px-Google_2015_logo.svg.png' width='64px'/>Google it!<br/> I am now working with some really smart people to make your home smarter.",
+      "location": "Mountain View, California",
+      "mapUrl": "https://goo.gl/maps/kc4Er71VRBA2",
+      "roles": [
+        {
+          "title": "Software Engineer",
+          "time": {
+            "since": "Mar 2019",
+            "until": "present",
+            "current": true
+          }
+        }
+      ],
+      "info": [
+        {
+          "type": "responsibility",
+          "description": [
+            "Making your home smarter"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Teledata Communications, Inc.",
+      "about": "<img src='http://nafsadh.com/img/tci.png' width='32px'/>TCI builds and provides SaaS for financial institutions. It's flagship product is <em>Decision Lender</em> - a &ldquo;Loan Origination Solution&rdquo; for banks and credit unions.",
+      "location": "Islandia, NY",
+      "mapUrl": "https://goo.gl/maps/H4UB52cWqMp",
+      "roles": [
+        {
+          "title": "Software Engineer",
+          "time": {
+            "since": "Feb 2015",
+            "until": "Mar 2019"
+          }
+        }
+      ],
+      "info": [
+        {
+          "type": "responsibility",
+          "description": [
+            "Built new version of TCI’s Loan Origination SaaS- ",
+            "<em><a href='http://tcicredit.com/what-is-decisionlender/'>Decision&nbsp;Lender&nbsp;4x</a></em><br/>",
+            "- Designed, coded and implemented business logic, data models and user interfaces based on ",
+            "generic and client specific requirements for developing a RESTful SaaS, catering to various lenders. ",
+            "This included building core platform, vehicle valuation services, configurable report generation framework, ",
+            "various 3<sup>rd</sup> party integration etc. "
+          ],
+          "tech": [
+            "Java 8",
+            "Angular JS",
+            "REST",
+            "MS SQL"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Research Foundation for SUNY",
+      "location": "CEWIT, Stony Brook, NY",
+      "mapUrl": "https://goo.gl/maps/WEzDrQr8WWB2",
+      "roles": [
+        {
+          "title": "Sr. Research Aide",
+          "time": {
+            "period": "Summer & Fall of 2014"
+          }
+        }
+      ],
+      "info": [
+        {
+          "type": "responsibility",
+          "description": "Worked for CA Technologies at <abbr data-toggle='tooltip' title='Center of Excellence in Wireless and Information Technology'>CEWIT</abbr> as on campus internship during MS",
+          "tech": [
+            "Java"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Samsung R&D Institute – Bangladesh",
+      "about": "<img src='http://nafsadh.com/img/srbd.png' width='32px'/>SRBD is one of the 33 global Research & Development centers and 6 Design centers of Samsung Electronics. It is considered as first R&D settlement of a multinational corporation in Bangladesh. Its operation started in June, 2010. At that time, Sadh joined the inaugural team of ten.",
+      "location": "Dhaka, Bangladesh",
+      "mapUrl": "https://goo.gl/maps/RQqmKHCbZry",
+      "roles": [
+        {
+          "title": "Sr. Software Engineer",
+          "time": {
+            "since": "Feb",
+            "until": "Aug 2013"
+          }
+        },
+        {
+          "title": "Software Engineer",
+          "time": {
+            "since": "Jun 2010",
+            "until": "Feb 2013"
+          }
+        }
+      ],
+      "info": [
+        {
+          "type": "responsibility",
+          "description": "Designed a host – target interaction protocol and developed control module with GUI for <abbr data-toggle='tooltip' title='Field-programmable gate array'>FPGA</abbr> and post-silicon SoC (System on Chip) verification platform",
+          "tech": [
+            "C#",
+            "WPF",
+            "C",
+            "Linux"
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": "Developed modules of a camera SoC verification tool based on μC/OS-II",
+          "tech": [
+            "C"
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": "As part of DSP project ported μC/OS-II for custom BSP, ported Web-P for Samsung’s Reconfigurable Processor, developed image codec",
+          "tech": [
+            "C",
+            "C++"
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": "Developed localized feature phone system software for target markets",
+          "tech": [
+            "C"
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": "Developed smart phone apps for Samsung’s <span uib-tooltip='bada was Samsung’s in-house Smart-phone platform; it is the predecessor to Tizen project'>bada</span> platform",
+          "tech": [
+            "C++"
+          ]
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Stony Brook University",
+      "about": "<img src='http://nafsadh.com/img/sbu.png' width='32px'/> The State University of New York at Stony Brook (also referred to as Stony Brook University, SUNY Stony Brook, SBU) is a public sea-grant and space-grant research university located in Stony Brook, New York in the United States. It is part of the State University of New York (SUNY) system.",
+      "location": "Stony Brook, NY",
+      "mapUrl": "https://goo.gl/maps/FB1RMmfqZMT2",
+      "degree": [
+        {
+          "title": "MS - Computer Science",
+          "cgpa": "3.72/4",
+          "time": {
+            "since": "Aug 2013",
+            "until": "Dec 2014"
+          }
+        }
+      ],
+      "info": [
+        {
+          "type": "key-courses",
+          "courses": [
+            "Database",
+            "Data Mining",
+            "Computer Graphics",
+            "Analysis of Algorithms",
+            "Operating Systems",
+            "Brain and Memory Modeling",
+            "Artificial Intelligence",
+            "Logic in CS"
+          ]
+        },
+        {
+          "type": "course-project",
+          "description": "Designed tool for opinion mining which leverages entity-keyword bi-graph built from analyzing social network feed",
+          "tech": [
+            "C#"
+          ]
+        },
+        {
+          "type": "course-project",
+          "description": "Implemented a procedural watercolor engine to recreate real-time watercolor effects",
+          "tech": [
+            "C++",
+            "OpenGL"
+          ]
+        },
+        {
+          "type": "course-project",
+          "description": "Added XML parser for BOSS (brain model simulation tool) INIT module to feed brain model parameters as XML input",
+          "tech": [
+            "C++"
+          ]
+        }
+      ]
+    },
+    {
+      "institution": "Khulna University of Engineering & Technology",
+      "about": "<img src='http://nafsadh.com/img/kuet.png ' width='32px' /> KUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program.",
+      "location": "Bangladesh",
+      "mapUrl": "https://goo.gl/maps/drU7qZLbirj",
+      "degree": [
+        {
+          "title": "B.Sc. (Engineering) - Computer Science",
+          "time": {
+            "since": "Jan 2006",
+            "until": "Jun 2010"
+          }
+        }
+      ],
+      "info": [
+        {
+          "type": "thesis",
+          "description": [
+            "&ldquo;RDF by Structured Reference to Semantics",
+            " – An approach to emerge Semantic Web&rdquo;: ",
+            "Developed a framework (RS2-fx) to convert current html web documents into ",
+            "Semantic Web RDF documents ",
+            "by extracting underlying semantics backed by support of an existing ontology ",
+            "<a href='http://slidesha.re/RS2fx1'class='print-link'> ",
+            "<i class='fa fa-external-link'></i></a> "
+          ]
+        },
+        {
+          "type": "project",
+          "description": "Developed an automated traffic jam recognition and alert tool, Traffic Window, aided with image processing",
+          "tech": [
+            "C#"
+          ]
+        },
+        {
+          "type": "project",
+          "description": [
+            "Developed a Smart home technology, which includes a centrally controlled local system of devices and sensors that actuates smartly upon perceptions. The control unit interfaces with local GUI as well as internet and cellular networks ",
+            "<a data-toggle='tooltip' title='Showcased on BASIS SoftExpo 2008'><span class='glyphicon glyphicon glyphicon-certificate' style='color: darkgoldenrod;' title=''></span></a><br/>"
+          ],
+          "tech": [
+            "Java",
+            "ASM",
+            "Microcontroller"
+          ]
+        }
+      ]
+    }
+  ],
+  "sideNotes": [
+    {
+      "head": "Talked ",
+      "body": "on “Research in the Computing Industry” <em class='text-muted'>at CSE Festival, KUET (Jun 2012)</em>"
+    },
+    {
+      "head": "Awarded ",
+      "body": "“Icon of the Month” <em class='text-muted'>by Samsung R&D Institute – Bangladesh</em>"
+    },
+    {
+      "head": "11th place",
+      "body": "on ACM ICPC <em class='text-muted'>Dhaka Regional programming contest 2007</em>"
+    },
+    {
+      "head": "Showcased project",
+      "body": "“Smart Home Technology” <em class='text-muted'>at BASIS SoftExpo, Dhaka 2008</em>"
+    }
+  ],
+  "sections": [
+    {
+      "title": "Leadership",
+      "info": [
+        {
+          "description": [
+            "<em>IEEE Student Branch KUET</em><br/>",
+            "General Secretary, <small> (2008-2009)</small>"
+          ]
+        },
+        {
+          "description": [
+            "<em>Fazlul Haque Hall Committee, KUET</em> - General Secretary",
+            "<small> (2008-2009) & Asst. Gen. Secretary (2007-2008)</small>"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Involvement",
+      "info": [
+        {
+          "description": [
+            "Publisher, ",
+            "<em data-toggle='popover' data-content='<img src=\"http://nafsadh.com/img/lekhalikhi.png\" width=\"32px\"> Online Bengali literary community' title='lekhalikhi.com' trigger='click'>lekhalikhi.com</em>",
+            " - Bengali Literary Community"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Keyboard Layout",
+      "info": [
+        {
+          "description": [
+            "Developed <a href='http://nafsadh.com/sonnivo/'>'Sonnivo'</a> for Bengali"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Personal Projects",
+      "info": [
+        {
+          "description": [
+            "Liby.cat, TuneTour.me, WaqtScope, LikhonPad, NLParse and more<br/>",
+            "<a href='https://nafSadh.dev/'>nafSadh.dev</a>"
+          ]
+        }
+      ]
+    }
+  ],
+  "links": [
+    {
+      "fa": "fab fa-github",
+      "url": [
+        "https://github.com/nafSadh"
+      ]
+    },
+    {
+      "fa": "fab fa-linkedin",
+      "url": [
+        "https://linkedin.com/in/nafsadh"
+      ]
+    },
+    {
+      "fa": "fas fa-pen-nib",
+      "url": [
+        "https://ins.nafSadh.com"
+      ]
+    }
+  ],
+  "dateUpdated": "Mar 25, 2019",
+  "hosted": "http://re.sadh.me"
+}
