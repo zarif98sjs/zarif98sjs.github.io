@@ -125,13 +125,15 @@
 						<span ng-repeat="highlight in _.highlights" ng-bind-html-compile="highlight"></span>
 					</div>
 				</header>
+
+				
 				<div class="panel">
 					<div class="panel-heading">
-						<h2 class="section-heading"><span>Experience</span></h2>
+						<h2 class="section-heading"><span>Research Experience</span></h2>
 					</div>
 					<div class="panel-body">
 						<ul class="list-group experiences">
-							<li class="list-group-item experience" ng-repeat="job in _.experience">
+							<li class="list-group-item experience" ng-repeat="job in _.other_experience">
 								<div class="card">
 									<div class="card-heading">
 										<i class="fas fa-li fa-x fa-briefcase silver" aria-hidden="true"></i>
@@ -145,7 +147,7 @@
 											{{job.company}}
 										</h4>
 										&nbsp;
-										<span class="">
+										<span class="" ng-if="job.mapUrl!=undefined">
 											<a href="{{ job.mapUrl }}" target="_blank"><i
 													class="fas fa-map-marker-alt fa-sm dim"></i></a>&nbsp;<span
 												class="place-name">{{job.location }}</span>
@@ -176,7 +178,122 @@
 							</li>
 						</ul>
 					</div>
+					<div class="panel-body" style="margin-bottom: 15px;">
+						<i>Find more about my research at <a href='https://zarif98sjs.github.io/research'
+								target='_blank'>zarif98sjs.github.io/research</a></i>
+					</div>
 				</div>
+
+				<div class="panel">
+					<div class="panel-heading">
+						<h2 class="section-heading"><span>Professional Experience</span></h2>
+					</div>
+					<div class="panel-body">
+						<ul class="list-group experiences">
+							<li class="list-group-item experience" ng-repeat="job in _.experience">
+								<div class="card">
+									<div class="card-heading">
+										<i class="fas fa-li fa-x fa-briefcase silver" aria-hidden="true"></i>
+										<script type="text/ng-template" id="jobTitlePopover.html">
+                        <span ng-bind-html="job.about"></span>
+                      </script>
+										<h4 class="card-title" popover-enable="job.about!=undefined"
+											popover-popup-close-delay="500" popover-placement="top-left"
+											popover-trigger="click mouseenter" popover-title="{{ job.company }}"
+											uib-popover-template="'jobTitlePopover.html'">
+											{{job.company}}
+										</h4>
+										&nbsp;
+										<span class="">
+											<a href="{{ job.mapUrl }}" target="_blank"><i
+													class="fas fa-map-marker-alt fa-sm dim"></i></a>&nbsp;<span
+												class="place-name">{{job.location }}</span>
+										</span>
+										<div class="row" ng-repeat="role in job.roles">
+											<div class="col-md-8">
+												<span class="text-primary job-role">{{ role.title }}</span>
+											</div>
+											<div class="col-md-4 text-right time-period">
+												<span class="job-period" ng-if="role.time.since!=undefined">
+													{{ role.time.since }} ~ {{ role.time.until}}
+												</span>
+												<span class="job-period" ng-if="role.time.period!=undefined">
+													{{ role.time.period }}
+												</span>
+											</div>
+										</div>
+									</div>
+									<ul class="list-group strips">
+										<li class="list-group-item strip" ng-repeat="info in job.info">
+											<i class="fa-li fa fa-angle-right silver" aria-hidden="true"></i>
+											<span class="description"
+												ng-bind-html-compile="mlt(info.description)"></span>
+											<code ng-repeat="key in info.tech">{{ key }}</code>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="panel">
+					<div class="panel-heading">
+						<h2 class="section-heading"><span>Publication</span></h2>
+					</div>
+					<div class="panel-body">
+						<ul class="list-group experiences">
+							<li class="list-group-item experience" ng-repeat="job in _.publications">
+								<div class="card">
+									<div class="card-heading">
+										<i class="fas fa-li fa-x fa-book silver" aria-hidden="true"></i>
+										<script type="text/ng-template" id="jobTitlePopover.html">
+                        <span ng-bind-html="job.about"></span>
+                      </script>
+										<h4 class="card-title" popover-enable="job.about!=undefined"
+											popover-popup-close-delay="500" popover-placement="top-left"
+											popover-trigger="click mouseenter" popover-title="{{ job.company }}"
+											uib-popover-template="'jobTitlePopover.html'">
+											{{job.title}}
+										</h4>
+										&nbsp;
+										<div class="row" ng-repeat="role in job.roles">
+											<div class="col-md-9">
+												<span class="text-primary job-role">{{ role.title }}</span>
+												<span class="">
+													<a href="{{ role.doi }}" target="_blank"><i
+															class="fas fa-link"></i></a>
+												</span>
+											</div>
+											<div class="col-md-3 text-right time-period">
+												<span class="job-period">
+													{{ role.time }}
+												</span>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<span class="description">{{ job.authors }}</span>
+											</div>
+										</div>
+									</div>
+									<ul class="list-group strips">
+										<li class="list-group-item strip" ng-repeat="info in job.info">
+											<i class="fa-li fa fa-angle-right silver" aria-hidden="true"></i>
+											<span class="description"
+												ng-bind-html-compile="mlt(info.description)"></span>
+											<code ng-repeat="key in info.tech">{{ key }}</code>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+
+
 				<div class="panel">
 					<div class="panel-heading">
 						<h2 class="section-heading"><span>Education</span></h2>
@@ -239,6 +356,7 @@
 						</ul>
 					</div>
 				</div>
+
 				<div class="panel">
 					<div class="panel-heading">
 						<h2 class="section-heading"><span>Projects </span></h2>
@@ -298,79 +416,13 @@
 						</ul>
 					</div>
 					<div class="panel-body" style="margin-bottom: 15px;">
-						<i>Find all projects <a href='https://zarif98sjs.github.io/#projects'
-								target='_blank'>here</a>!</i>
+						<i>Find all of my projects at <a href='https://zarif98sjs.github.io/#projects'
+								target='_blank'>zarif98sjs.github.io/#projects</a></i>
 					</div>
 				</div>
 
-				<div class="panel">
-					<div class="panel-heading">
-						<h2 class="section-heading"><span>Research</span></h2>
-					</div>
-					<div class="panel-body">
-						<ul class="list-group educations">
-							<li class="list-group-item education" ng-repeat="ed in _.research">
-								<div class="card">
-									<div class="card-heading">
-										<i class="fas fa-li fa-x fa-book silver" aria-hidden="true"></i>
-										<script type="text/ng-template" id="edTitlePopover.html">
-                        <span ng-bind-html="ed.about"></span>
-                      </script>
-										<div>
-											<h4 class="card-title" popover-enable="ed.about!=undefined"
-												popover-popup-close-delay="500" popover-placement="top-left"
-												popover-trigger="click mouseenter" popover-title="{{ ed.projectName }}"
-												uib-popover-template="'edTitlePopover.html'">
-												{{ed.projectName}}
-											</h4>
-											<span>
+				
 
-												<i>[{{ed.status}}]</i>
-											</span>
-											<!-- <div class="text-right time-period"> -->
-											<div class="list-group-item strips">
-												Supervisor(s) :
-												<a ng-repeat="key in ed.supervisors" data-toggle='tooltip'
-													title='{{key.designation}}' href={{key.google_scholar}}><span
-														style='color: #286090;background: #f5f5f5; padding-left: 2px;padding-right: 2px;margin-right: 7px;'
-														title=''>{{ key.name }} </span></a>
-												<span class="text-right time-period"
-													ng-if="ed.degree.time.since!=undefined">
-													<small>{{ ed.degree.time.since }} ~ {{
-														ed.degree.time.until}}</small>
-												</span>
-												<span class="time-period" ng-if="ed.degree.time.period!=undefined">
-													{{ ed.degree.time.period }}
-												</span>
-											</div>
-
-										</div>
-									</div>
-									<!-- anchor tag with link to google scholar -->
-
-
-
-									<ul class="list-group strips">
-										<li class="list-group-item strip" ng-repeat="info in ed.info">
-											<i class="fa-li fa fa-angle-right silver" aria-hidden="true"></i>
-											<span ng-if="info.type=='key-courses'">
-												<em>Key Courses</em>:
-												<span ng-repeat="course in info.courses" ng-bind-html-compile="course"
-													class="comma-sep-list"></span>
-											</span>
-											<span ng-if="info.type=='thesis'">
-												<em>Thesis</em>: <i class="fa fa-lightbulb-o"></i>
-											</span>
-											<span class="description"
-												ng-bind-html-compile="mlt(info.description)"></span>
-											<code ng-repeat="key in info.tech">{{ key }}</code>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
 
 			</div>
 			<!--  content ends -->
@@ -423,13 +475,14 @@
 				</div>
 				<div class="side-note row" ng-repeat="note in _.sideNotes">
 					<div class="col-md-12">
-						
-							<i ng-if="note.fa!=undefined" class="{{ note.fa }} charcoal-grey"></i>
-							<strong class="text-primary">{{ note.head }}</strong>
-							
-							<span ng-bind-html-compile="note.body"></span>
-							<a ng-if="note.link!=undefined" href='{{ note.link }}' target='_blank'><i class='fas fa-external-link-alt'></i></a>
-							
+
+						<i ng-if="note.fa!=undefined" class="{{ note.fa }} charcoal-grey"></i>
+						<strong class="text-primary">{{ note.head }}</strong>
+
+						<span ng-bind-html-compile="note.body"></span>
+						<a ng-if="note.link!=undefined" href='{{ note.link }}' target='_blank'><i
+								class='fas fa-external-link-alt'></i></a>
+
 
 					</div>
 				</div>
@@ -457,10 +510,8 @@
 						<span class="url" ng-repeat="url in link.url"><a href="{{ url }}">{{ link.text }}</a></span>
 					</div>
 					<div class="stamp">
-						Updated on {{ _.dateUpdated }}<br />available online:
+						Updated on {{ _.dateUpdated }}<br />Available online:
 						<a href="{{ _.hosted }}">{{ _.hosted }}</a>
-						<br />
-						Contact for further information
 					</div>
 				</footer>
 			</div>
