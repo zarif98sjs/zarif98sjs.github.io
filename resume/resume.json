@@ -117,7 +117,7 @@
   "other_experience": [
     {
       "company": "Bangladesh University of Engineering & Technology",
-      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program. The Department of Computer Science and Engineering (CSE) of Bangladesh University of Engineering and Technology (BUET) is the first department of its kind in Bangladesh. The best students from all over Bangladesh join this prestigious department.",
+      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program. The Department of Computer Science and Engineering (CSE) of BUET is the first department of its kind in Bangladesh and leading the way in research and innovation.",
       "location": "Dhaka",
       "mapUrl": "",
       "roles": [
@@ -215,7 +215,7 @@
           ],
           "tech": [
             "Natural Language Processing",
-            "Machine Learning"
+            "Clustering"
           ]
         }
       ]
@@ -224,7 +224,7 @@
   "education": [
     {
       "institution": "Bangladesh University of Engineering & Technology",
-      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program. The Department of Computer Science and Engineering (CSE) of Bangladesh University of Engineering and Technology (BUET) is the first department of its kind in Bangladesh. The best students from all over Bangladesh join this prestigious department.",
+      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program. The Department of Computer Science and Engineering (CSE) of BUET is the first department of its kind in Bangladesh and leading the way in research and innovation.",
       "location": "Bangladesh",
       "mapUrl": "https://goo.gl/maps/woHKf5vJN4Yafaxv9",
       "degree": [
