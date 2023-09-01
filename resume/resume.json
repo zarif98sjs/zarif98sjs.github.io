@@ -2,9 +2,7 @@
   "name": "Md. Zarif Ul Alam",
   "avatar": "https://www.gravatar.com/avatar/d6967dce6ae3cc6d17d1fb92b92905ed?s=1600",
   "highlights": [
-    "Software Engineer (ML & Backend Specialization) <br>Computer Vision Research Enthusiast",
-    "BSc. in <abbr data-toggle='tooltip' title='Computer Science and Engineering'>CSE</abbr> from <abbr data-toggle='tooltip' title = 'Bangladesh University of Engineering and Technology'>BUET</abbr>",
-    ""
+    "Software Engineer (1.5+ Years of Experience) <br>I love to solve engineering & research problems that make a difference!"
   ],
   "address": {
     "city": "Dhaka",
@@ -61,7 +59,7 @@
         {
           "type": "responsibility",
           "description": [
-            "Created an AB testing framework for the recommender system, which is used to evaluate the performance of different models. </br>"
+            "Created an AB testing framework for the recommender system that is able to handle quick experiment iterations with no downtime! It is used to evaluate the performance of different recommendation models in production. Currently used to test on 200K+ customers. </br>"
           ],
           "tech": [
             "Recommender Systems",
@@ -70,6 +68,47 @@
             "C#",
             "F#",
             "Microsoft SQL Server"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "ICT Cell, BUET",
+      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg' width='64px'/>  ICT Cell BUET is responsible for making softwares for Bangladesh University of Engineering and Technology's custom use cases",
+      "location": "Dhaka, Bangladesh",
+      "mapUrl": "",
+      "roles": [
+        {
+          "title": "Backend Engineer",
+          "time": {
+            "since": "Dec. '21",
+            "until": "Feb. '22"
+          }
+        }
+      ],
+      "info": [
+        {
+          "type": "responsibility",
+          "description": [
+            "Successfully developed a comprehensive online portal for advance payment application and tracking for the office of DAERS.</br>"
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": [
+            "Co-led the backend development efforts. Designed and implemented the backend from scratch to production, using Django Rest Framework, PostgreSQL, and Docker, according to the client's custom need and workflow.</br>"
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": [
+            "The portal has improved efficiency and transparency of the legacy application process.</br>"
+          ],
+          "tech": [
+            "Rest API",
+            "Backend Development",
+            "Django REST Framework",
+            "PostgreSQL"
           ]
         }
       ]
@@ -91,7 +130,7 @@
       "info": [
         {
           "type": "responsibility",
-          "description": "Worked with a team that developed a new sales forecasting model for Unilever Bangladesh. Applied data engineering techniques on raw sales data. </br>",
+          "description": "Collaborated closely with a dynamic team which developed a new forecasting model for Unilever Bangladesh. Applied data engineering techniques to refine and process raw sales data, contributing to a more accurate and insightful forecasting system. </br>",
           "tech": [
             "Data Engineering",
             "Forecasting"
