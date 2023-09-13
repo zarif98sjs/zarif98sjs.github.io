@@ -2,7 +2,7 @@
   "name": "Md. Zarif Ul Alam",
   "avatar": "https://www.gravatar.com/avatar/d6967dce6ae3cc6d17d1fb92b92905ed?s=1600",
   "highlights": [
-    "Software Engineer (1.5+ Years of Experience) <br>I love to solve engineering & research problems that make a difference!"
+    "Software Engineer (ML) & Researcher <br>I love to solve engineering & research problems that make a difference!"
   ],
   "address": {
     "city": "Dhaka",
@@ -445,6 +445,28 @@
           "description": [
             "<em class='text-muted'>BUET Math Club (Onuronon/অনুরণন)</em><br/>",
             "Executive Committee Member, <small> (2021-2022)</small>"
+          ]
+        }
+      ]
+    }
+  ],
+  "reference": [
+    {
+      "title": "References",
+      "fa": "fas fa-user-check",
+      "info": [
+        {
+          "description": [
+            "<br/><em class='text-muted'>Dr. Mohammad Saifur Rahman</em><br/>",
+            "Professor, CSE, BUET<br/>",
+            "<small>Email: mrahman@cse.buet.ac.bd</small>"
+          ]
+        },
+        {
+          "description": [
+            "<br/><em class='text-muted'>Dr. Anindya Iqbal</em><br/>",
+            "Professor, CSE, BUET<br/>",
+            "<small>Email: anindya@cse.buet.ac.bd</small>"
           ]
         }
       ]
