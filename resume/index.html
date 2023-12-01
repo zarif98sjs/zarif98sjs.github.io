@@ -1,7 +1,6 @@
 <html ng-app="ns7rApp">
 
 <head>
-	<link rel="shortcut icon" href="favicon.ico">
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Resume - Md. Zarif Ul Alam</title>
@@ -19,8 +18,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.js"></script>
 	<script src="./ui-bootstrap-tpls-1.3.2.min.js"></script>
 	<!-- font awesome -->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+		crossorigin="anonymous" />
 	<link rel="stylesheet" href="bootstrap-print-alike.css" />
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="ns7r.css" />
@@ -127,120 +127,6 @@
 					</div>
 				</header>
 
-			
-				
-				<div class="panel">
-					<div class="panel-heading">
-						<h2 class="section-heading"><span>Research Experience</span></h2>
-					</div>
-					<div class="panel-body">
-						<ul class="list-group experiences">
-							<li class="list-group-item experience" ng-repeat="job in _.other_experience">
-								<div class="card">
-									<div class="card-heading">
-										<i class="fas fa-li fa-x fa-briefcase silver" aria-hidden="true"></i>
-										<script type="text/ng-template" id="jobTitlePopover.html">
-                        <span ng-bind-html="job.about"></span>
-                      </script>
-										<h4 class="card-title" popover-enable="job.about!=undefined"
-											popover-popup-close-delay="500" popover-placement="top-left"
-											popover-trigger="click mouseenter" popover-title="{{ job.company }}"
-											uib-popover-template="'jobTitlePopover.html'">
-											{{job.company}}
-										</h4>
-										&nbsp;
-										<span class="" ng-if="job.mapUrl!=undefined">
-											<a href="{{ job.mapUrl }}" target="_blank"><i
-													class="fas fa-map-marker-alt fa-sm dim"></i></a>&nbsp;<span
-												class="place-name">{{job.location }}</span>
-										</span>
-										<div class="row" ng-repeat="role in job.roles">
-											<div class="col-md-6">
-												<span class="text-primary job-role">{{ role.title }}</span>
-											</div>
-											<div class="col-md-6 text-right time-period">
-												<span class="job-period" ng-if="role.time.since!=undefined">
-													{{ role.time.since }} ~ {{ role.time.until}}
-												</span>
-												<span class="job-period" ng-if="role.time.period!=undefined">
-													{{ role.time.period }}
-												</span>
-											</div>
-										</div>
-									</div>
-									<ul class="list-group strips">
-										<li class="list-group-item strip" ng-repeat="info in job.info">
-											<i class="fa-li fa fa-angle-right silver" aria-hidden="true"></i>
-											<span class="description"
-												ng-bind-html-compile="mlt(info.description)"></span>
-											<code ng-repeat="key in info.tech">{{ key }}</code>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<div class="panel-body" style="margin-bottom: 15px;">
-						<i>Find more about my research at <a href='https://zarif98sjs.github.io/research'
-								target='_blank'>zarif98sjs.github.io/research</a></i>
-					</div>
-				</div>
-
-
-				<div class="panel">
-					<div class="panel-heading">
-						<h2 class="section-heading"><span>Publication</span></h2>
-					</div>
-					<div class="panel-body">
-						<ul class="list-group experiences">
-							<li class="list-group-item experience" ng-repeat="job in _.publications">
-								<div class="card">
-									<div class="card-heading">
-										<i class="fas fa-li fa-x fa-book silver" aria-hidden="true"></i>
-										<script type="text/ng-template" id="jobTitlePopover.html">
-                        <span ng-bind-html="job.about"></span>
-                      </script>
-										<h4 class="card-title" popover-enable="job.about!=undefined"
-											popover-popup-close-delay="500" popover-placement="top-left"
-											popover-trigger="click mouseenter" popover-title="{{ job.company }}"
-											uib-popover-template="'jobTitlePopover.html'">
-											{{job.title}}
-										</h4>
-										&nbsp;
-										<div class="row" ng-repeat="role in job.roles">
-											<div class="col-md-9">
-												<span class="text-primary job-role">{{ role.title }}</span>
-												<span class="">
-													<a href="{{ role.doi }}" target="_blank"><i
-															class="fas fa-link"></i></a>
-												</span>
-											</div>
-											<div class="col-md-3 text-right time-period">
-												<span class="job-period">
-													{{ role.time }}
-												</span>
-											</div>
-										</div>
-										<div class="row">
-											<div class="col-md-12">
-												<span class="description">{{ job.authors }}</span>
-											</div>
-										</div>
-									</div>
-									<ul class="list-group strips">
-										<li class="list-group-item strip" ng-repeat="info in job.info">
-											<i class="fa-li fa fa-angle-right silver" aria-hidden="true"></i>
-											<span class="description"
-												ng-bind-html-compile="mlt(info.description)"></span>
-											<code ng-repeat="key in info.tech">{{ key }}</code>
-										</li>
-									</ul>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-
 				<div class="panel">
 					<div class="panel-heading">
 						<h2 class="section-heading"><span>Professional Experience</span></h2>
@@ -250,7 +136,7 @@
 							<li class="list-group-item experience" ng-repeat="job in _.experience">
 								<div class="card">
 									<div class="card-heading">
-										<i class="fas fa-li fa-x fa-briefcase silver" aria-hidden="true"></i>
+										<i class="fa-solid fa-li fa-briefcase silver" aria-hidden="true"></i>
 										<script type="text/ng-template" id="jobTitlePopover.html">
                         <span ng-bind-html="job.about"></span>
                       </script>
@@ -293,6 +179,127 @@
 						</ul>
 					</div>
 				</div>
+				
+				<div class="panel">
+					<div class="panel-heading">
+						<h2 class="section-heading"><span>Research Experience</span></h2>
+					</div>
+					<div class="panel-body">
+						<ul class="list-group experiences">
+							<li class="list-group-item experience" ng-repeat="job in _.other_experience">
+								<div class="card">
+									<div class="card-heading">
+										<i class="fas fa-li fa-briefcase silver" aria-hidden="true"></i>
+										<script type="text/ng-template" id="jobTitlePopover.html">
+                        <span ng-bind-html="job.about"></span>
+                      </script>
+										<h4 class="card-title" popover-enable="job.about!=undefined"
+											popover-popup-close-delay="500" popover-placement="top-left"
+											popover-trigger="click mouseenter" popover-title="{{ job.company }}"
+											uib-popover-template="'jobTitlePopover.html'">
+											{{job.company}}
+										</h4>
+										&nbsp;
+										<span class="" ng-if="job.mapUrl!=undefined">
+											<a href="{{ job.mapUrl }}" target="_blank"><i
+													class="fas fa-map-marker-alt fa-sm dim"></i></a>&nbsp;<span
+												class="place-name">{{job.location }}</span>
+										</span>
+										<div class="row" ng-repeat="role in job.roles">
+											<div class="col-md-6">
+												<span class="text-primary job-role">{{ role.title }}</span>
+											</div>
+											<div class="col-md-6 text-right time-period">
+												<span class="job-period" ng-if="role.time.since!=undefined">
+													{{ role.time.since }} ~ {{ role.time.until}}
+												</span>
+												<span class="job-period" ng-if="role.time.period!=undefined">
+													{{ role.time.period }}
+												</span>
+											</div>
+										</div>
+									</div>
+									<ul class="list-group strips">
+										<li class="list-group-item strip" ng-repeat="info in job.info">
+											<i class="fa-li fa fa-angle-right silver" aria-hidden="true"></i>
+											<span class="description"
+												ng-bind-html-compile="mlt(info.description)"></span>
+											<code ng-repeat="key in info.tech">{{ key }}</code>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!-- <div class="panel-body" style="margin-bottom: 15px;">
+						<i>Find more about my research at <a href='https://zarif98sjs.github.io/research'
+								target='_blank'>zarif98sjs.github.io/research</a></i>
+					</div> -->
+				</div>
+
+
+
+
+				<div class="panel">
+					<div class="panel-heading">
+						<h2 class="section-heading"><span>Publication & Research Highlights</span></h2>
+					</div>
+					<div class="panel-body">
+						<ul class="list-group experiences">
+							<li class="list-group-item experience" ng-repeat="job in _.publications">
+								<div class="card">
+									<div class="card-heading">
+										<i class="fas fa-li fa-book silver" ng-if="job.title!=undefined" aria-hidden="true"></i>
+										<script type="text/ng-template" id="jobTitlePopover.html">
+                        <span ng-bind-html="job.about"></span>
+                      </script>
+					  					<div>
+											<h4 class="card-title" popover-enable="job.about!=undefined"
+											popover-popup-close-delay="500" popover-placement="top-left"
+											popover-trigger="click mouseenter" popover-title="{{ job.company }}"
+											uib-popover-template="'jobTitlePopover.html'">
+											{{job.title}}
+										</h4>
+										<span class="" ng-if="job.doi!=undefined">
+											<a href="{{ job.doi }}" target="_blank"><i
+													class="fas fa-external-link-alt"></i></a>
+										</span>
+										</div>
+										<div class="row" ng-repeat="role in job.roles">
+											<div class="col-md-9">
+												<span class="text-primary job-role">{{ role.title }}</span>
+											</div>
+											<div class="col-md-3 text-right time-period">
+												<span class="job-period">
+													{{ role.time }}
+												</span>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-md-12">
+												<span class="description" style="font-size:smaller"
+												ng-bind-html-compile="mlt(job.authors)"></span>
+											</div>
+										</div>
+									</div>
+									<ul class="list-group strips">
+										<li class="list-group-item strip" ng-repeat="info in job.info">
+											<i class="fa-li fa fa-angle-right silver" aria-hidden="true"></i>
+											<span class="description"
+												ng-bind-html-compile="mlt(info.description)"></span>
+											<code ng-repeat="key in info.tech">{{ key }}</code>
+										</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="panel-body" style="margin-bottom: 15px;margin-top: -15px;">
+						<i>† denotes equal contribution</i>
+					</div>
+				</div>
+
+
 
 				<div class="panel">
 					<div class="panel-heading">
@@ -303,7 +310,7 @@
 							<li class="list-group-item education" ng-repeat="ed in _.education">
 								<div class="card">
 									<div class="card-heading">
-										<i class="fas fa-li fa-x fa-graduation-cap silver" aria-hidden="true"></i>
+										<i class="fas fa-li fa-graduation-cap silver" aria-hidden="true"></i>
 										<script type="text/ng-template" id="edTitlePopover.html">
                         <span ng-bind-html="ed.about"></span>
                       </script>
@@ -366,7 +373,7 @@
 							<li class="list-group-item education" ng-repeat="ed in _.projects">
 								<div class="card">
 									<div class="card-heading">
-										<i class="fas fa-li fa-x fa-stream silver" aria-hidden="true"></i>
+										<i class="fas fa-li fa-stream silver" aria-hidden="true"></i>
 										<script type="text/ng-template" id="edTitlePopover.html">
                         <span ng-bind-html="ed.about"></span>
                       </script>
@@ -415,10 +422,10 @@
 							</li>
 						</ul>
 					</div>
-					<div class="panel-body" style="margin-bottom: 15px;">
+					<!-- <div class="panel-body" style="margin-bottom: 15px;">
 						<i>Find all of my projects at <a href='https://zarif98sjs.github.io/#projects'
 								target='_blank'>zarif98sjs.github.io/#projects</a></i>
-					</div>
+					</div> -->
 				</div>
 
 				
@@ -483,31 +490,12 @@
 						<a ng-if="note.link!=undefined" href='{{ note.link }}' target='_blank'><i
 								class='fas fa-external-link-alt'></i></a>
 
-
 					</div>
 				</div>
 				<div class="side-section row" ng-repeat="section in _.sections">
 					<div class="col-md-12">
 						<div class="panel">
 							<div class="panel-heading">
-
-								<h3 class="section-head text-primary"> <i ng-if="section.fa!=undefined"
-										class="{{ section.fa }} charcoal-grey"></i> {{section.title}}</h3>
-							</div>
-							<div class="panel-body">
-								<ul class="list-group" ng-repeat="info in section.info">
-									<li class="list-group-item" ng-bind-html-compile="info.description"></li>
-									<li class="list-group-item"></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="side-section row" ng-repeat="section in _.reference">
-					<div class="col-md-12">
-						<div class="panel">
-							<div class="panel-heading">
-
 								<h3 class="section-head text-primary"> <i ng-if="section.fa!=undefined"
 										class="{{ section.fa }} charcoal-grey"></i> {{section.title}}</h3>
 							</div>

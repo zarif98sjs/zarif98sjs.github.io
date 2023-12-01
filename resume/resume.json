@@ -2,7 +2,9 @@
   "name": "Md. Zarif Ul Alam",
   "avatar": "https://www.gravatar.com/avatar/d6967dce6ae3cc6d17d1fb92b92905ed?s=1600",
   "highlights": [
-    "Machine Learning Engineer & Researcher <br>I love to solve engineering & research problems that make a difference!"
+    "Machine Learning Engineer & Researcher",
+    "I love to solve engineering & research problems that make a difference!",
+    ""
   ],
   "address": {
     "city": "Dhaka",
@@ -17,8 +19,8 @@
     "programming": [
       "C++",
       "Python",
-      "C#",
-      "F#"
+      "F#",
+      "C#"
     ],
     "other": [
       "Javascript",
@@ -28,6 +30,7 @@
       "Tensorflow",
       "Keras",
       "PyTorch",
+      "Snowflake",
       "Django REST Framework",
       ".NET",
       "React",
@@ -42,7 +45,7 @@
       "mapUrl": "https://goo.gl/maps/2qZCLQ6DqxH3jReA9",
       "roles": [
         {
-          "title": "Software Engineer (ML) - Level 2",
+          "title": "Machine Learning Engineer - Level 2",
           "time": {
             "since": "June '23",
             "until": "Present"
@@ -53,7 +56,13 @@
         {
           "type": "responsibility",
           "description": [
-            "Developing an in-house personalized recommender system from the ground up for the leading online platform for grocery and delivery in Dhaka, scaling it to serve more than one million users. </br>"
+            "Improved the existing Lucene based address search using fine-tuned LLM, retrieval augmented generation (RAG), and re-ranking. Improved the accuracy to over 70% from just 10% after taking over the project. Currently working on developing a novel Geospatial LM to handle complex address queries with incorrect or incomplete information. </br>"
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": [
+            "Developed a reinforcement learning based in-house recommender system from the ground up for category based product recommendation. </br>"
           ]
         },
         {
@@ -62,53 +71,11 @@
             "Created an AB testing framework for the recommender system that is able to handle quick experiment iterations with no downtime! It is used to evaluate the performance of different recommendation models in production. Currently used to test on 200K+ customers. </br>"
           ],
           "tech": [
+            "Natural Language Processing",
+            "Retrieval Augmented Generation (RAG)",
+            "Large Language Models (LLM)",
             "Recommender Systems",
-            "Snowflake",
-            ".NET",
-            "C#",
-            "F#",
-            "Microsoft SQL Server"
-          ]
-        }
-      ]
-    },
-    {
-      "company": "ICT Cell, BUET",
-      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg' width='64px'/>  ICT Cell BUET is responsible for making softwares for Bangladesh University of Engineering and Technology's custom use cases",
-      "location": "Dhaka, Bangladesh",
-      "mapUrl": "",
-      "roles": [
-        {
-          "title": "Backend Engineer",
-          "time": {
-            "since": "Dec. '21",
-            "until": "Feb. '23"
-          }
-        }
-      ],
-      "info": [
-        {
-          "type": "responsibility",
-          "description": [
-            "Successfully developed a comprehensive online portal for advance payment application and tracking for the office of DAERS.</br>"
-          ]
-        },
-        {
-          "type": "responsibility",
-          "description": [
-            "Co-led the backend development efforts. Designed and implemented the backend from scratch to production, using Django Rest Framework, PostgreSQL, and Docker, according to the client's custom need and workflow.</br>"
-          ]
-        },
-        {
-          "type": "responsibility",
-          "description": [
-            "The portal has improved efficiency and transparency of the legacy application process.</br>"
-          ],
-          "tech": [
-            "Rest API",
-            "Backend Development",
-            "Django REST Framework",
-            "PostgreSQL"
+            "Snowflake"
           ]
         }
       ]
@@ -130,7 +97,7 @@
       "info": [
         {
           "type": "responsibility",
-          "description": "Collaborated closely with a dynamic team which developed a new forecasting model for Unilever Bangladesh. Applied data engineering techniques to refine and process raw sales data, contributing to a more accurate and insightful forecasting system. </br>",
+          "description": "Worked with a team that developed a new sales forecasting model for Unilever Bangladesh. Applied data engineering techniques on raw sales data. </br>",
           "tech": [
             "Data Engineering",
             "Forecasting"
@@ -141,65 +108,49 @@
   ],
   "publications":[
     {
+      "title": "Geospatial LM: A Language Model for Address Search and Navigation",
+      "roles": [
+        {
+          "title": "Work in progress for EMNLP '24",
+          "time": ""
+        }
+      ],
+      "authors": "<b>Md. Zarif Ul Alam</b>, Asif Imtial, Tejas Viswanath"
+    },
+    {
+      "title": "TomoPicker: An Automated 3D Particle Picking Pipeline for Cryo-electron Tomograms with Low False-positives",
+      "roles": [
+        {
+          "title": "Manuscript in preparation",
+          "time": ""
+        }
+      ],
+      "authors": "<b>Md. Zarif Ul Alam<sup>†</sup></b>, Ajmain Yasar Ahmed<sup>†</sup></b>, Mostofa Rafid Uddin, Min Xu"
+    },
+    {
+      "title": "PULSAR: Graph based Positive Unlabeled Learning with Multi Stream Adaptive Convolutions for Parkinson’s Disease Recognition",
+      "doi": "https://zarif98sjs.github.io/PULSAR/",
+      "roles": [
+        {
+          "title": "Under review in Phase 2 of AAAI '24",
+          "time": ""
+        }
+      ],
+      "authors": "<b>Md. Zarif Ul Alam</b>, Md Saiful Islam, Ehsan Hoque, M Saifur Rahman"
+    },
+    {
       "title": "Quartet Fiduccia–Mattheyses revisited for larger phylogenetic studies",
-      
+      "doi": "https://doi.org/10.1093/bioinformatics/btad332",
       "roles": [
         {
           "title": "Bioinformatics (Oxford University Press)",
-          "doi": "https://doi.org/10.1093/bioinformatics/btad332",
-          "time": "22 April 2023"
+          "time": ""
         }
       ],
-      "authors": "Sharmin Akter Mim, Md. Zarif Ul Alam, Rezwana Reaz, Md Shamsuzzoha Bayzid, M Saifur Rahman"
+      "authors": "Sharmin Akter Mim, <b>Md. Zarif Ul Alam</b>, Rezwana Reaz, Md Shamsuzzoha Bayzid, M Saifur Rahman"
     }
   ],
   "other_experience": [
-    {
-      "company": "Bangladesh University of Engineering & Technology",
-      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program. The Department of Computer Science and Engineering (CSE) of BUET is the first department of its kind in Bangladesh and leading the way in research and innovation.",
-      "location": "Dhaka",
-      "mapUrl": "",
-      "roles": [
-        {
-          "title": "Undergraduate Research Assistant",
-          "time": {
-            "since": "May. '22",
-            "until": "June '23",
-            "current": true
-          }
-        }
-      ],
-      "info": [
-        {
-          "type": "responsibility",
-          "description": [
-            "<b>Automated Analysis of Parkinson’s Disease with Remote Tasks</b>: ",
-            "Developed PULSAR, an innovative automated PD screening tool using Positive Unlabeled Learning that uses webcam-recorded videos, addressing noisy data in healthcare and improving accessibility to diagnosis.",
-            " <b><i>[Lead Investigator]</i></b>",
-            " <b><i>[Under Review in <a href='https://aaai.org/aaai-conference/'> AAAI '24</a>]</i></b>",
-             "<br>"
-          ],
-          "tech": [
-            "Computer Vision",
-            "Health Informatics"
-          ]
-        },
-        {
-          "type": "responsibility",
-          "description": [
-            "<b>Quartet Fiduccia–Mattheyses revisited for larger phylogenetic studies</b>: ",
-            "Our proposed method QFM-FI, a faster and improved version of the QFM algorithm, can amalgamate millions of quartets over thousands of taxa into a species tree with a great level of accuracy. This also achieves a speedup of 20,000x compared to its predecessor.",
-            " Worked on providing a theoretical analysis of the running time and memory requirements of QFM-FI.",
-            " <b><i>[Accepted in <a href='https://doi.org/10.1093/bioinformatics/btad332'> Bioinformatics (Oxford University Press)</a>]</i></b>",
-             "<br>"
-          ],
-          "tech": [
-            "Bioinformatics",
-            "Computational Biology"
-          ]
-        }
-      ]
-    },
     {
       "company": "Xu Lab, Carnegie Mellon University",
       "about": "<img src='cmu.png' width='65px'/>Xu Lab aims to use cutting-edge computation techniques, particularly those related to computer vision and machine learning, to build structural organization models that would be useful for getting new insights into the machinery of cellular systems",
@@ -219,15 +170,64 @@
         {
           "type": "responsibility",
           "description": [
-            "Worked on developing a semi-supervised framework for 3D particle picking from macromolecular samples, which is able to detect particles directly from subtomogram.",
+            "Worked on developing a semi-supervised framework for 3D object detection from macromolecular samples. The goal was to detect and classify particles from cryo-electron tomogramss having signal-to-noise ratio as low as 0.1, making it a very challenging problem.",
             "<b><i> [Co-lead Investigator] </i></b>",
-            "<b><i> [Manuscript in preparation for <a href='https://recomb.org/recomb2024/'> RECOMB '24</a>] </i></b>",
+            "<b><i> [Manuscript in preparation] </i></b>",
             "<br>"
           ],
           "tech": [
+            "Computer Vision",
             "Image Processing",
             "Object Detection",
             "Deep Learning"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "Bangladesh University of Engineering & Technology",
+      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg ' width='64px' /> BUET, a public university in Bangladesh, emphasizes on engineering and technology. It has a comprehensive Computer Science and Engineering program. The Department of Computer Science and Engineering (CSE) of BUET is the first department of its kind in Bangladesh and leading the way in research and innovation.",
+      "location": "Dhaka",
+      "mapUrl": "",
+      "roles": [
+        {
+          "title": "Undergraduate Research Assistant",
+          "time": {
+            "since": "May. '22",
+            "until": "June '23",
+            "current": true
+          }
+        }
+      ],
+      "info": [
+        {
+          "type": "responsibility",
+          "description": [
+            "<b>Automated Analysis of Parkinson’s Disease with Remote Video Tasks</b>: ",
+            "Developed PULSAR, an automated PD screening tool. It uses spatio-temporal graph neural network to detect PD from videos. ",
+            "We were also the first to explore <b><i>positive unlabeled learning</i></b> in this setting, addressing the lack of positive labels, which is generally the case in medical data.",
+            " <b><i>[Lead Investigator]</i></b>",
+            " <b><i>[Under review in Phase 2 of <a href='https://aaai.org/aaai-conference/'> AAAI '24</a>]</i></b>",
+             "<br>"
+          ],
+          "tech": [
+            "Computer Vision",
+            "Machine Learning",
+            "Health Informatics"
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": [
+            "<b>Quartet Fiduccia–Mattheyses revisited for larger phylogenetic studies</b>: ",
+            "Our proposed method QFM-FI, a faster and improved version of the QFM algorithm, can amalgamate millions of quartets over thousands of taxa into a species tree with a great level of accuracy. This also achieves a speedup of 20,000x compared to its predecessor.",
+            " Worked on providing a theoretical analysis of the running time and memory requirements of QFM-FI.",
+            " <b><i>[Accepted in <a href='https://doi.org/10.1093/bioinformatics/btad332'> Bioinformatics (Oxford University Press)</a>]</i></b>",
+             "<br>"
+          ],
+          "tech": [
+            "Bioinformatics",
+            "Computational Biology"
           ]
         }
       ]
@@ -250,7 +250,9 @@
         {
           "type": "responsibility",
           "description": [
-            "Co-developed a software tool called <b><i>One Pass Sentence Embedding Clustering</i></b>. This tool efficiently clusters short text streams using a unique one-pass algorithm that calculates similarity scores based on sentence embeddings. It was used as an internal tool to cluster questions in online classes at Auburn.<br>"
+            "During the height of COVID-19, online classes were the new normal. The rise of MOOCs led to a very interesting research question - Given a large number of questions already posed by the students, how can we detect repetitive questions in real time and unify them as a single question for the instructor? ",
+            "Under the supervision of <b>Prof. Subhra Kanti Karmakar</b>, I worked on this problem of online short-text clustering. ",
+            "We developed a software tool called <b><i>One Pass Sentence Embedding Clustering</i></b>. This tool efficiently clusters short text streams using a unique one-pass algorithm that calculates similarity scores based on sentence embeddings. It was used as an internal tool to cluster questions in online classes at Auburn.<br>"
           ],
           "tech": [
             "Natural Language Processing",
@@ -277,9 +279,9 @@
       ],
       "info": [
         {
-          "type": "thesis",
+          "type": "courses",
           "description": [
-            "&ldquo;Automated Analysis of Parkinson's Disease with Remote Tasks&rdquo;"
+            "<b>Notable Courses</b>: Machine Learning, Artificial Intelligence, High Performance Database Systems, Computer Graphics, Microcontrollers & Embedded Systems"
           ]
         },
         {
@@ -293,27 +295,124 @@
   ],
   "projects": [
     {
-      "projectName": "IntDesk",
+      "projectName": "Bangla plagiarism dataset and detection",
       "location": "",
-      "githubUrl": "https://github.com/zarif98sjs/IntDesk-frontend",
+      "githubUrl": "https://github.com/zarif98sjs/bangla-plag",
       "degree":
         {
           "title": "",
           "time": {
-            "since": "June '22",
-            "until": "Aug. '22"
+            "since": "Jan '23",
+            "until": "March '23"
           }
         },
       "info": [
         {
           "type": "",
           "description": [
-            "A tech interview preparation platform. Here the users can not only solve problems that are asked in interviews of different software companies, ",
-            "but can also take assesments and earn different badges to showcase their skills. They can also discuss about interview problems and many more topics!  ",
-            "<a data-toggle='tooltip' title='Was among the Top 2 out of 40 projects in the Software Engineering Sessional Course (CSE 408)'><span class='glyphicon glyphicon glyphicon-certificate' style='color: darkgoldenrod;' title=''></span></a><br/>"  
+            "Created a synthetic dataset that encompasses a variety of plagiarism types. This dataset serves as a valuable benchmark for evaluating plagiarism detection systems in the Bangla language."
+          ]
+        },
+        {
+          "type": "",
+          "description": [
+            "Developed two distinct approaches for detecting plagiarism in Bangla documents: First, we fine-tune the pre-trained Bangla BERT model for plagiarism detection. Secondly, we utilize sentence embeddings to detect plagiarism across multiple documents. This approach is particularly effective in identifying paraphrased plagiarism, where the meaning of the text remains largely unchanged despite alterations in word choice. <br/>"
           ],
           "tech": [
-            "Full Stack Software Development","React", "Django REST Framework", "PostgreSQL", "Docker" 
+            "Natural Language Processing"
+          ]
+        }
+      ]
+    },
+    {
+      "projectName": "Bangla complex named entity recognition challenge",
+      "location": "",
+      "githubUrl": "https://github.com/ramisa2108/Bangla-Complex-Named-Entity-Recognition-Challenge",
+      "degree":
+        {
+          "title": "",
+          "time": {
+            "period": "Jan '23"
+          }
+        },
+      "info": [
+        {
+          "type": "",
+          "description": [
+            "As part of <b>Bangladesh's first NLP hackathon</b>, we tackled the problem of complex named entity recognition for Bangla language. Our work based on <b>Conditional Random Field (CRF)</b> and <b>Bangla-BERT</b> won the competition where I led my team of 3.<br/>"
+          ],
+          "tech": [
+            "Natural Language Processing"
+          ]
+        }
+      ]
+    },
+    {
+      "projectName": "Vectorized convolutional neural network from scratch",
+      "location": "",
+      "githubUrl": "https://github.com/zarif98sjs/vectorized-cnn-from-scratch",
+      "degree":
+        {
+          "title": "",
+          "time": {
+            "period": "March '23"
+          }
+        },
+      "info": [
+        {
+          "type": "",
+          "description": [
+            "Created a convolutional neural network from scratch using only NumPy. On top of that, vectorization is used in both forward and backward passes of Convoltion and Pooling layers to speed up the training process. <br/>"
+          ],
+          "tech": [
+            "Machine Learning"
+          ]
+        }
+      ]
+    },
+    {
+      "projectName": "Ray Tracing",
+      "location": "",
+      "githubUrl": "https://github.com/zarif98sjs/CSE-409-410-Computer-Graphics#ray-tracing",
+      "degree":
+        {
+          "title": "",
+          "time": {
+            "period": "Aug '22"
+          }
+        },
+      "info": [
+        {
+          "type": "",
+          "description": [
+            "Implemented a ray tracing pipeline from scratch. Used <b>Phong Lighting Model</b> and <b>Recursive Relfection</b> for proper lighting and ray tracting. <br/>"
+          ],
+          "tech": [
+            "Computer Graphics"
+          ]
+        }
+      ]
+    },
+    {
+      "projectName": "One Pass Sentence Embedding Clustering",
+      "location": "",
+      "githubUrl": "https://github.com/zarif98sjs/OPSEC",
+      "degree":
+        {
+          "title": "",
+          "time": {
+            "since": "May '21",
+            "until": "March '22"
+          }
+        },
+      "info": [
+        {
+          "type": "",
+          "description": [
+            "Worked on a new method called One Pass Sentence Embedding Clustering (OPSEC) - an online one-pass algorithm that leverages similarity scores based on sentence embeddings to cluster short texts. Experiments with popular benchmark data-sets demonstrate that sentence-embeddings can outperform existing state-of-the-art short text stream clustering methods in terms of clustering accuracy and quality. This specific checkpoint of the project got rejected at <b>SIGIR '22</b><br/>"
+          ],
+          "tech": [
+            "Natural Language Processing", "Clustering"
           ]
         }
       ]
@@ -405,12 +504,17 @@
     {
       "head": "University Merit Scholarship",
       "fa":"fas fa-graduation-cap",
-      "body": ""
+      "body": "for overall academic excellence in <em class='text-muted'>BUET</em>"
     },
     {
       "head": "Dean's List Award",
       "fa": "fas fa-award",
-      "body": ""
+      "body": "3 times for academic excellence in semesters"
+    },
+    {
+      "head": "Admission Test Scholarship",
+      "fa": "fas fa-award",
+      "body": "for standing 17th in the university admission test out of 12,000+ students"
     },
     {
       "head": "Finalist ",
@@ -425,6 +529,40 @@
   ],
   "sections": [
     {
+      "title": "",
+      "fa": "",
+      "info": [
+        {
+          "description": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Open Source Contributions",
+      "fa": "fa-solid fa-code-pull-request",
+      "info": [
+        {
+          "description": [
+            "<a href='https://github.com/sagorbrur/bnlp'><br/><u><b><em class='text-muted'>sagorbrur/bnlp</em></b></u><br/></a>",
+            "Contributed to the most popular NLP library for Bangla language. <br/>"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "",
+      "fa": "",
+      "info": [
+        {
+          "description": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
       "title": "Leadership",
       "fa": "fas fa-users",
       "info": [
@@ -432,13 +570,14 @@
           "description": [
             "<br/><em class='text-muted'>BUET CSE Fest, 2022</em><br/>",
             "Lead Organizer, <small> (2022)</small> <br/>",
-            "<small>Actively organized and set problems for AI Contest, Inter-University Hackathon and Deep Learning Competition 'DL Sprint', which won the best community competition prize from Kaggle</small>"
+            "<small>Actively organized and set problems for AI Contest, Inter-University Hackathon and Deep Learning Competition 'DL Sprint', which won the best community competition prize from Kaggle.</small>"
           ]
         },
         {
           "description": [
             "<em class='text-muted'>IEEE Computer Society, Student Branch Chapter BUET</em><br/>",
-            "Publicity Committee Chairperson, <small> (2022-2023)</small>"
+            "Publicity Committee Chairperson, <small> (2022-2023)</small> <br/>",
+            "<small>Coordinated several inter-university workshops related to software engineering, job seminars, deep learning workshops and competitions such as GameJAM. We got awarded the Best CS Student Branch Chapter certificate for our activities.</small>"
           ]
         },
         {
@@ -448,25 +587,27 @@
           ]
         }
       ]
-    }
-  ],
-  "reference": [
+    },
     {
-      "title": "References",
-      "fa": "fas fa-user-check",
+      "title": "Certifications",
+      "fa": "fas fa-certificate",
       "info": [
         {
           "description": [
-            "<br/><em class='text-muted'>Dr. Mohammad Saifur Rahman</em><br/>",
-            "Professor, CSE, BUET<br/>",
-            "<small>Email: mrahman@cse.buet.ac.bd</small>"
+            "<br/><em class='text-muted'>Natural Language Processing in Tensorflow</em><br/>",
+            "DeepLearning.AI, <small> (2020)</small> <br/>"
           ]
         },
         {
           "description": [
-            "<br/><em class='text-muted'>Dr. Anindya Iqbal</em><br/>",
-            "Professor, CSE, BUET<br/>",
-            "<small>Email: anindya@cse.buet.ac.bd</small>"
+            "<br/><em class='text-muted'>Nueral Networks and Deep Learning</em><br/>",
+            "DeepLearning.AI, <small> (2020)</small> <br/>"
+          ]
+        },
+        {
+          "description": [
+            "<br/><em class='text-muted'>AWS Fundamentals: Going Cloud-Native</em><br/>",
+            "Amazon Web Services, <small> (2020)</small> <br/>"
           ]
         }
       ]
