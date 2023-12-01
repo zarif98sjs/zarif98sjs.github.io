@@ -81,6 +81,41 @@
       ]
     },
     {
+      "company": "ICT Cell, BUET",
+      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg' width='64px'/>  ICT Cell BUET is responsible for making softwares for BUET's custom use cases",
+      "location": "Dhaka, Bangladesh",
+      "mapUrl": "https://goo.gl/maps/2qZCLQ6DqxH3jReA9",
+      "roles": [
+        {
+          "title": "Backend Engineer",
+          "time": {
+            "since": "Dec. '21",
+            "until": "Feb. '23"
+          }
+        }
+      ],
+      "info": [
+        {
+          "type": "responsibility",
+          "description": [
+            "Developed a comprehensive online portal for advance payment application and tracking for the Directorate of Advisory, Extension and Research Services (DAERS), BUET."
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": [
+            "Designed and implemented the backend from scratch to production, using Django Rest Framework, PostgreSQL, and Docker, according to the client's custom need and workflow.</br>"
+          ],
+          "tech": [
+            "REST API",
+            "Backend Development",
+            "Django REST Framework",
+            "PostgreSQL"
+          ]
+        }
+      ]
+    },
+    {
       "company": "Unilever",
       "about": "<img src='unilever.svg' height='75px'/>Unilever Bangladesh Limited is a consumer goods company based in Dhaka, Bangladesh and founded in 1964, engaged in the manufacture and distribution of home care products, personal care products, and foods. It is a joint venture of the Government of Bangladesh and Unilever.",
       "location": "Dhaka, Bangladesh",
