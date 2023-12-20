@@ -1,4 +1,3 @@
 User-agent: *
-Allow: /
-Sitemap: https://zarif98sjs.github.io/sitemap-index.xml
-Host: https://zarif98sjs.github.io
+Disallow:
+Sitemap: https://zarif98sjs.github.io/sitemap.xml

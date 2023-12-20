@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-tag-js",
-    "path": "/pensieve/tags/flex/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Yet Another C Compiler","description":null,"date":"2021-03-01","slug":null,"tags":["FLEX","BISON","COMPILER DESIGN"]}}}]}},"pageContext":{"tag":"FLEX"}},
-    "staticQueryHashes": ["1151383948","1364744041","1374383533","2543263646","2604261230","3149095931","3469851102","3539500889"]}

@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-tag-js",
-    "path": "/pensieve/tags/i-grap-hi-cs/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Game Of Pawns","description":null,"date":"2018-08-01","slug":null,"tags":["OPENGL","iGRAPHiCS","C++"]}}}]}},"pageContext":{"tag":"iGRAPHiCS"}},
-    "staticQueryHashes": ["1151383948","1364744041","1374383533","2543263646","2604261230","3149095931","3469851102","3539500889"]}

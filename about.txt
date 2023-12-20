@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Rubik Doodle Triangles
+- Font Author: Copyright 2020 The Rubik Filtered Project Authors (https://github.com/NaN-xyz/Rubik-Filtered)
+- Font Source: http://fonts.gstatic.com/s/rubikdoodletriangles/v1/esDA301BLOmMKxKspb3g-domRuLPeaSn2bTzdLi_slZxgWE.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

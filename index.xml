@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Md Zarif Ul Alam</title>
+    <link>https://zarif98sjs.github.io/</link>
+    <description>Recent content on Md Zarif Ul Alam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://zarif98sjs.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://zarif98sjs.github.io/impossible_list/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/impossible_list/</guid>
+      <description>The Impossible List The Impossible List is NOT a Bucket List 🪣. A bucket list is made up of someday dreams, the impossible list requires action today. A bucket list is focused on the event, the impossible list is focused on the journey (that&amp;rsquo;s why you will find me writing about the current state of the list items below).
+Professional / Academic ✔️ Contribute to an open source software project</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://zarif98sjs.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/projects/</guid>
+      <description>Projects Highlights of some of my projects, mostly done during my undergrad. For a complete list of my projects, please visit my GitHub Ray Tracing August 2022 Deep Dive into the 3D world with RTX-ON Implemented a ray tracing pipeline from scratch. Phong Lighting Model and Recursive Relfection is used for proper lighting and ray tracing.
+🏷️ Computer Graphics
+IntDesk August 2022 A tech interview preparation platform
+IntDesk is an all-in-one tech interview preperation platform.</description>
+    </item>
+    
+    <item>
+      <title>Awards and Achievements 🏅</title>
+      <link>https://zarif98sjs.github.io/awards/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/awards/</guid>
+      <description>AI for Bangla 2.0 June 2023 🏅 Our team &amp;ldquo;Silent Sentinels&amp;rdquo; got honourable mention at the AI for Bangla 2.0 research competition!
+🏷️ Competition Research Machine Learning 🔗 News Bangla Complex Named Entity Recognition Challenge January 2023 🏆 Champion of the Bangla Complex Named Entity Recognition Challenge. It was organized as part of Bangladesh&amp;rsquo;s first NLP Hackathon by Bengali Language Enrichment in Information Technology through Research and Development Project (EBLICT) and Bangladesh Open Source Network (BDOSN), and supported by ICT Division Bangladesh, Bangladesh Computer Council (BCC) and Amazon Web Services (AWS).</description>
+    </item>
+    
+    <item>
+      <title>Experience 👨🏻‍💻</title>
+      <link>https://zarif98sjs.github.io/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/experience/</guid>
+      <description>Chaldal Ltd. Machine Learning Engineer - L2 Working on creating a geospatial LLM (think of Google Maps, but on steroids!) to help optimize delivery agents to deliver orders faster and more efficiently. Developed an in-house recommender system from the ground up for the leading online platform (Chaldal.com) for grocery and delivery in Bangladesh, scaling it to serve more than one million users. Created an AB testing framework for the recommender system that is able to handle quick experiment iterations with no downtime!</description>
+    </item>
+    
+    <item>
+      <title>Location</title>
+      <link>https://zarif98sjs.github.io/location/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/location/</guid>
+      <description>Dhaka, Bangladesh </description>
+    </item>
+    
+    <item>
+      <title>News 🗞️</title>
+      <link>https://zarif98sjs.github.io/news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/news/</guid>
+      <description>🗓️ June 12, 2023
+🏅 Our team &amp;ldquo;Silent Sentinels&amp;rdquo; got honourable mention at the AI for Bangla 2.0 research competition!
+🏷️ Competition Research Machine Learning
+🗓️ April 22, 2023
+📃✅ Our paper &amp;ldquo;Quartet Fiduccia-Mattheyses Revisited for Larger Phylogenetic Studies&amp;rdquo; got accepted at the presigious Bioinformatics Journal! Impact Factor: 6.931
+🏷️ Publication Research Bioinformatics
+🗓️ January, 2023
+🏆 Champion of the Bangla Complex Named Entity Recognition Challenge, Bangladesh&amp;rsquo;s first NLP Hackathon organized by BDOSN and Amazon Web Service (AWS).</description>
+    </item>
+    
+    <item>
+      <title>Research 🔍</title>
+      <link>https://zarif98sjs.github.io/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/research/</guid>
+      <description>My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning. Recently I&amp;rsquo;ve also been exploring large scale machine learning systems in general, as part of my work at Chaldal!
+Geospatial Language Model Sept. 2023 ‑ Present 🟡 Working on creating a Geospatial LLM (think of Google Maps, but on steroids!) that enhances the understanding of geo-entities in natural language, which in turn is able to help us create an address matching platform specially tuned for house addresses, at which platforms like Google Maps fails.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-tag-js",
-    "path": "/pensieve/tags/ai-for-healthcare/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Automated Analysis of Parkinson’s Disease with Remote Tasks","description":null,"date":"4","slug":null,"tags":["Computer Vision","AI for Healthcare"]}}}]}},"pageContext":{"tag":"AI for Healthcare"}},
-    "staticQueryHashes": ["1151383948","1364744041","1374383533","2543263646","2604261230","3149095931","3469851102","3539500889"]}

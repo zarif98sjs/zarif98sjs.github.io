@@ -1,5 +1,0 @@
-{
-    "componentChunkName": "component---src-templates-tag-js",
-    "path": "/pensieve/tags/cloud-computing/",
-    "result": {"data":{"allMarkdownRemark":{"totalCount":1,"edges":[{"node":{"frontmatter":{"title":"Cloud Computing Hackathon","description":null,"date":"2019-01-01","slug":null,"tags":["Hackathon","Cloud Computing"]}}}]}},"pageContext":{"tag":"Cloud Computing"}},
-    "staticQueryHashes": ["1151383948","1364744041","1374383533","2543263646","2604261230","3149095931","3469851102","3539500889"]}
