@@ -56,7 +56,7 @@
         {
           "type": "responsibility",
           "description": [
-            "Improved the existing Lucene based address search using fine-tuned LLM, retrieval augmented generation (RAG), and re-ranking. Improved the accuracy to over 70% from just 10% after taking over the project. Currently working on developing a novel Geospatial LM to handle complex address queries with incorrect or incomplete information. </br>"
+            "Improved the existing Lucene based address search using fine-tuned LLM, retrieval augmented generation (RAG), and re-ranking. Improved the accuracy to over 60% from just 10% after taking over the project. Currently working on developing a novel Geospatial LM to handle complex address queries with incorrect or incomplete information. </br>"
           ]
         },
         {
