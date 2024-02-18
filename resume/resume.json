@@ -45,10 +45,17 @@
       "mapUrl": "https://goo.gl/maps/2qZCLQ6DqxH3jReA9",
       "roles": [
         {
+          "title": "Machine Learning Engineer - Level 3",
+          "time": {
+            "since": "Feb '24",
+            "until": "Present"
+          }
+        },
+        {
           "title": "Machine Learning Engineer - Level 2",
           "time": {
             "since": "June '23",
-            "until": "Present"
+            "until": "Jan. '24"
           }
         }
       ],
@@ -56,7 +63,7 @@
         {
           "type": "responsibility",
           "description": [
-            "Improved the existing Lucene based address search using fine-tuned LLM, retrieval augmented generation (RAG), and re-ranking. Improved the accuracy to over 60% from just 10% after taking over the project. Currently working on developing a novel Geospatial LM to handle complex address queries with incorrect or incomplete information. </br>"
+            "Led the research and development of a new address search feature. Improved the existing Lucene based search using fi ne-tuned LLM, retrieval augmented generation (RAG), and re-ranking. Improved the accuracy to over 60% from just 10% after taking over the project. The project greatly reduced the need for humans in the loop for this essential process and has optimized delivery logistics. We will be submitting our work in ACL 2024 - Industry Track. </br>"
           ]
         },
         {
@@ -146,7 +153,7 @@
       "title": "Geospatial LM: A Language Model for Address Search and Navigation",
       "roles": [
         {
-          "title": "Work in progress for EMNLP '24",
+          "title": "Work in progress for ACL '24 Industry Track",
           "time": ""
         }
       ],
@@ -167,7 +174,7 @@
       "doi": "https://zarif98sjs.github.io/PULSAR/",
       "roles": [
         {
-          "title": "Under review in Phase 2 of AAAI '24",
+          "title": "Under review in MICCAI '24",
           "time": ""
         }
       ],
@@ -242,7 +249,7 @@
             "Developed PULSAR, an automated PD screening tool. It uses spatio-temporal graph neural network to detect PD from videos. ",
             "We were also the first to explore <b><i>positive unlabeled learning</i></b> in this setting, addressing the lack of positive labels, which is generally the case in medical data.",
             " <b><i>[Lead Investigator]</i></b>",
-            " <b><i>[Under review in Phase 2 of <a href='https://aaai.org/aaai-conference/'> AAAI '24</a>]</i></b>",
+            " <b><i>[Under review in <a href='https://conferences.miccai.org/2024/en/'> MICCAI '24</a>]</i></b>",
              "<br>"
           ],
           "tech": [
@@ -664,6 +671,6 @@
       ]
     }
   ],
-  "dateUpdated": "August 20, 2023",
+  "dateUpdated": "Feb 8, 2023",
   "hosted": "https://zarif98sjs.github.io/resume/"
 }
