@@ -249,7 +249,7 @@
             "Developed PULSAR, an automated PD screening tool. It uses spatio-temporal graph neural network to detect PD from videos. ",
             "We were also the first to explore <b><i>positive unlabeled learning</i></b> in this setting, addressing the lack of positive labels, which is generally the case in medical data.",
             " <b><i>[Lead Investigator]</i></b>",
-            " <b><i>[Under review in <a href='https://conferences.miccai.org/2024/en/'> MICCAI '24</a>] after revision from Phase 2 of AAAI '24 </i></b>",
+            " <b><i>[Under review in <a href='https://conferences.miccai.org/2024/en/'> MICCAI '24</a> after revision from Phase 2 of AAAI '24] </i></b>",
              "<br>"
           ],
           "tech": [
