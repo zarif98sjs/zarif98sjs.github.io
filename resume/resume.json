@@ -1,11 +1,6 @@
 {
   "name": "Md. Zarif Ul Alam",
   "avatar": "https://www.gravatar.com/avatar/d6967dce6ae3cc6d17d1fb92b92905ed?s=1600",
-  "highlights": [
-    "Machine Learning Engineer & Researcher",
-    "I love to solve engineering & research problems that make a difference!",
-    ""
-  ],
   "address": {
     "city": "Dhaka",
     "state": "Bangladesh",
@@ -47,7 +42,7 @@
         {
           "title": "Machine Learning Engineer - Level 3",
           "time": {
-            "since": "Feb '24",
+            "since": "Feb. '24",
             "until": "Present"
           }
         },
@@ -63,7 +58,13 @@
         {
           "type": "responsibility",
           "description": [
-            "Led the research and development of a new address search feature. Improved the existing Lucene based search using fi ne-tuned LLM, retrieval augmented generation (RAG), and re-ranking. Improved the accuracy to over 60% from just 10% after taking over the project. The project greatly reduced the need for humans in the loop for this essential process and has optimized delivery logistics. We will be submitting our work in ACL 2024 - Industry Track. </br>"
+            "Got promoted to Level 3 in record time of company's history! </br>"
+          ]
+        },
+        {
+          "type": "responsibility",
+          "description": [
+            "Led the research and development of a new address search feature. Improved the existing Lucene based search using fine-tuned LLM, retrieval augmented generation (RAG), and re-ranking. Improved the accuracy to over 60% from just 10% after taking over the project. The project greatly reduced the need for humans in the loop for this essential process and has optimized delivery logistics. We will be submitting our work in ACL 2024 - Industry Track.</br>"
           ]
         },
         {
@@ -83,41 +84,6 @@
             "Large Language Models (LLM)",
             "Recommender Systems",
             "Snowflake"
-          ]
-        }
-      ]
-    },
-    {
-      "company": "ICT Cell, BUET",
-      "about": "<img src='https://upload.wikimedia.org/wikipedia/en/d/da/BUET_LOGO.svg' width='64px'/>  ICT Cell BUET is responsible for making softwares for BUET's custom use cases",
-      "location": "Dhaka, Bangladesh",
-      "mapUrl": "https://goo.gl/maps/2qZCLQ6DqxH3jReA9",
-      "roles": [
-        {
-          "title": "Backend Engineer",
-          "time": {
-            "since": "Dec. '21",
-            "until": "Feb. '23"
-          }
-        }
-      ],
-      "info": [
-        {
-          "type": "responsibility",
-          "description": [
-            "Developed a comprehensive online portal for advance payment application and tracking for the Directorate of Advisory, Extension and Research Services (DAERS), BUET."
-          ]
-        },
-        {
-          "type": "responsibility",
-          "description": [
-            "Designed and implemented the backend from scratch to production, using Django Rest Framework, PostgreSQL, and Docker, according to the client's custom need and workflow.</br>"
-          ],
-          "tech": [
-            "REST API",
-            "Backend Development",
-            "Django REST Framework",
-            "PostgreSQL"
           ]
         }
       ]
@@ -150,10 +116,21 @@
   ],
   "publications":[
     {
-      "title": "Geospatial LM: A Language Model for Address Search and Navigation",
+      "title": "PULSAR: Graph based Positive Unlabeled Learning with Multi Stream Adaptive Convolutions for Parkinson’s Disease Recognition",
+      "doi": "https://zarif98sjs.github.io/PULSAR/",
       "roles": [
         {
-          "title": "Work in progress for ACL '24 Industry Track",
+          "title": "Under review in MICCAI '24",
+          "time": ""
+        }
+      ],
+      "authors": "<b>Md. Zarif Ul Alam</b>, Md Saiful Islam, Ehsan Hoque, M Saifur Rahman"
+    },
+    {
+      "title": "Enhancing In-House Geocoding for E-Commerce & Logistics Deliveries Using Large Language Models",
+      "roles": [
+        {
+          "title": "Work in progress for ACL '24 - Industry Track",
           "time": ""
         }
       ],
@@ -167,18 +144,7 @@
           "time": ""
         }
       ],
-      "authors": "<b>Md. Zarif Ul Alam<sup>†</sup></b>, Ajmain Yasar Ahmed<sup>†</sup></b>, Mostofa Rafid Uddin, Min Xu"
-    },
-    {
-      "title": "PULSAR: Graph based Positive Unlabeled Learning with Multi Stream Adaptive Convolutions for Parkinson’s Disease Recognition",
-      "doi": "https://zarif98sjs.github.io/PULSAR/",
-      "roles": [
-        {
-          "title": "Under review in MICCAI '24",
-          "time": ""
-        }
-      ],
-      "authors": "<b>Md. Zarif Ul Alam</b>, Md Saiful Islam, Ehsan Hoque, M Saifur Rahman"
+      "authors": "Mostofa Rafid Uddin, Ajmain Yasar Ahmed, <b>Md. Zarif Ul Alam</b>, Min Xu"
     },
     {
       "title": "Quartet Fiduccia–Mattheyses revisited for larger phylogenetic studies",
@@ -213,7 +179,6 @@
           "type": "responsibility",
           "description": [
             "Worked on developing a semi-supervised framework for 3D object detection from macromolecular samples. The goal was to detect and classify particles from cryo-electron tomogramss having signal-to-noise ratio as low as 0.1, making it a very challenging problem.",
-            "<b><i> [Co-lead Investigator] </i></b>",
             "<b><i> [Manuscript in preparation] </i></b>",
             "<br>"
           ],
@@ -247,9 +212,9 @@
           "description": [
             "<b>Automated Analysis of Parkinson’s Disease with Remote Video Tasks</b>: ",
             "Developed PULSAR, an automated PD screening tool. It uses spatio-temporal graph neural network to detect PD from videos. ",
-            "We were also the first to explore <b><i>positive unlabeled learning</i></b> in this setting, addressing the lack of positive labels, which is generally the case in medical data.",
+            "We were also the first to explore <b><i>positive unlabeled learning</i></b> in this setting, addressing the lack of reliable labeled data, which is generally the case in medical data.",
             " <b><i>[Lead Investigator]</i></b>",
-            " <b><i>[Under review in <a href='https://conferences.miccai.org/2024/en/'> MICCAI '24</a> after revision from Phase 2 of AAAI '24] </i></b>",
+            " <b><i>[Under review in <a href='https://conferences.miccai.org/2024/en/'> MICCAI '24</a>]</i></b>",
              "<br>"
           ],
           "tech": [
@@ -404,7 +369,7 @@
         {
           "type": "",
           "description": [
-            "Created a convolutional neural network from scratch using only NumPy. On top of that, vectorization is used in both forward and backward passes of Convoltion and Pooling layers to speed up the training process. <br/>"
+            "Created a convolutional neural network from scratch using only NumPy. On top of that, vectorization is used in both forward and backward passes of convolution and pooling layers to speed up the training process. <br/>"
           ],
           "tech": [
             "Machine Learning"
@@ -427,7 +392,7 @@
         {
           "type": "",
           "description": [
-            "Implemented a ray tracing pipeline from scratch. Used <b>Phong Lighting Model</b> and <b>Recursive Relfection</b> for proper lighting and ray tracting. <br/>"
+            "Implemented a ray tracing pipeline from scratch. Used <b>Phong Lighting Model</b> and <b>Recursive Reflection</b> for proper lighting and ray tracing. <br/>"
           ],
           "tech": [
             "Computer Graphics"
@@ -518,7 +483,7 @@
     {
       "head": "Champion ",
       "fa":"fas fa-trophy",
-      "body": "NLP Hackathon '23 by <em class='text-muted'>BDOSN & Bangla.gov.bd</em>",
+      "body": "NLP Hackathon '23 by <em class='text-muted'>BDOSN, EBLICT, National ICT Division & Amazon Web Services (AWS)</em>",
       "link": "https://cse.buet.ac.bd/home/news_detail/157"
     },
     {
@@ -610,22 +575,33 @@
       "info": [
         {
           "description": [
-            "<br/><em class='text-muted'>BUET CSE Fest, 2022</em><br/>",
+            "<br/><u><em class='text-muted'>BUET CSE Fest, 2022</em></u><br/>",
             "Lead Organizer, <small> (2022)</small> <br/>",
             "<small>Actively organized and set problems for AI Contest, Inter-University Hackathon and Deep Learning Competition 'DL Sprint', which won the best community competition prize from Kaggle.</small>"
           ]
         },
         {
           "description": [
-            "<em class='text-muted'>IEEE Computer Society, Student Branch Chapter BUET</em><br/>",
+            "<u><em class='text-muted'>IEEE Computer Society, Student Branch Chapter BUET</em></u><br/>",
             "Publicity Committee Chairperson, <small> (2022-2023)</small> <br/>",
             "<small>Coordinated several inter-university workshops related to software engineering, job seminars, deep learning workshops and competitions such as GameJAM. We got awarded the Best CS Student Branch Chapter certificate for our activities.</small>"
           ]
         },
         {
           "description": [
-            "<em class='text-muted'>BUET Math Club (Onuronon/অনুরণন)</em><br/>",
+            "<u><em class='text-muted'>BUET Math Club (Onuronon/অনুরণন)</em></u><br/>",
             "Executive Committee Member, <small> (2021-2022)</small>"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "",
+      "fa": "",
+      "info": [
+        {
+          "description": [
+            ""
           ]
         }
       ]
@@ -653,6 +629,31 @@
           ]
         }
       ]
+    },
+    {
+      "title": "",
+      "fa": "",
+      "info": [
+        {
+          "description": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reference",
+      "fa": "fa-solid fa-user",
+      "info": [
+        {
+          "description": [
+            "<br/><b>M. Saifur Rahman</b><br/>",
+            "<em>Professor, CSE, BUET</em><br/>",
+            "mrahman@cse.buet.ac.bd<br/>",
+            "Relation: Thesis Supervisor"
+          ]
+        }
+      ]
     }
   ],
   "links": [
@@ -671,6 +672,6 @@
       ]
     }
   ],
-  "dateUpdated": "Feb 8, 2023",
+  "dateUpdated": "March 18, 2024",
   "hosted": "https://zarif98sjs.github.io/resume/"
 }
