@@ -44,7 +44,7 @@ IntDesk is an all-in-one tech interview preperation platform.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/experience/</guid>
-      <description>Chaldal Ltd. Machine Learning Engineer - L2June &#39;23 ~ PresentWorking on creating a geospatial LLM (think of Google Maps, but on steroids!) to help optimize delivery agents to deliver orders faster and more efficiently. Developed an in-house recommender system from the ground up for the leading online platform (Chaldal.com) for grocery and delivery in Bangladesh, scaling it to serve more than one million users. Created an AB testing framework for the recommender system that is able to handle quick experiment iterations with no downtime!</description>
+      <description>Chaldal Ltd. Machine Learning Engineer - L3Feb. &#39;24 ~ PresentGot promoted to Level 3 in record time of company&amp;rsquo;s history! Working on creating a geospatial language model to help optimize delivery agents to deliver orders faster and more efficiently. Machine Learning Engineer - L2June &#39;23 ~ Jan. &#39;24Led the research and development of a new address search feature. Improved the existing Lucene based search using fine-tuned LLM, retrieval augmented generation (RAG), and re-ranking.</description>
     </item>
     
     <item>
@@ -90,7 +90,7 @@ Large language models are zero-shot rankers for recommender systems Julian McAul
       
       <guid>https://zarif98sjs.github.io/research/</guid>
       <description>My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning. Recently I&amp;rsquo;ve also been exploring large scale machine learning systems in general, as part of my work at Chaldal!
-Geospatial Language Model Sept. 2023 ‑ Present 🟡 Working on creating a Geospatial LLM (think of Google Maps, but on steroids!) that enhances the understanding of geo-entities in natural language, which in turn is able to help us create an address matching platform specially tuned for house addresses, at which platforms like Google Maps fails.</description>
+Geospatial Language Model Sept. 2023 ‑ Present 🟡 Working on creating a geospatial language mode that enhances the understanding of geo-entities in natural language, which in turn is able to help us create an address matching platform specially tuned for house addresses, at which platforms like Google Maps fails.</description>
     </item>
     
   </channel>
