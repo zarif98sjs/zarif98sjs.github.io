@@ -12,7 +12,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/impossible_list/</guid>
-      <description>The Impossible List The Impossible Listis NOT a Bucket List 🪣. A bucket list is made up of someday dreams, the impossible list requires action today. A bucket list is focused on the event, the impossible list is focused on the journey (that&amp;rsquo;s why you will find me writing about the current state of the list items below).
+      <description>The Impossible List The Impossible List is NOT a Bucket List 🪣. A bucket list is made up of someday dreams, the impossible list requires action today. A bucket list is focused on the event, the impossible list is focused on the journey (that&amp;rsquo;s why you will find me writing about the current state of the list items below).
 Professional / Academic ✔️ Contribute to an open source software project</description>
     </item>
     
@@ -22,19 +22,10 @@ Professional / Academic ✔️ Contribute to an open source software project</de
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/projects/</guid>
-      <description>Projects Highlights of some of my projects, mostly done during my undergrad. For a complete list of my projects, please visit my GitHubRay TracingAugust 2022 Deep Dive into the 3D world with RTX-ONImplemented a ray tracing pipeline from scratch. Phong Lighting Model and Recursive Relfection is used for proper lighting and ray tracing.
+      <description>Projects Highlights of some of my projects, mostly done during my undergrad. For a complete list of my projects, please visit my GitHub Ray Tracing August 2022 Deep Dive into the 3D world with RTX-ON Implemented a ray tracing pipeline from scratch. Phong Lighting Model and Recursive Relfection is used for proper lighting and ray tracing.
 🏷️ Computer Graphics
-IntDeskAugust 2022 A tech interview preparation platform
+IntDesk August 2022 A tech interview preparation platform
 IntDesk is an all-in-one tech interview preperation platform.</description>
-    </item>
-    
-    <item>
-      <title>Around the World w/ Zarif</title>
-      <link>https://zarif98sjs.github.io/aroundtheworld/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zarif98sjs.github.io/aroundtheworld/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -43,8 +34,8 @@ IntDesk is an all-in-one tech interview preperation platform.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/awards/</guid>
-      <description>AI for Bangla 2.0June 2023 🏅 Our team &amp;ldquo;Silent Sentinels&amp;rdquo; got honourable mention at the AI for Bangla 2.0 research competition!
-🏷️ Competition Research Machine Learning 🔗 NewsBangla Complex Named Entity Recognition ChallengeJanuary 2023 🏆 Champion of the Bangla Complex Named Entity Recognition Challenge. It was organized as part of Bangladesh&amp;rsquo;s first NLP Hackathon by Bengali Language Enrichment in Information Technology through Research and Development Project (EBLICT) and Bangladesh Open Source Network (BDOSN), and supported by ICT Division Bangladesh, Bangladesh Computer Council (BCC) and Amazon Web Services (AWS).</description>
+      <description>AI for Bangla 2.0 June 2023 🏅 Our team &amp;ldquo;Silent Sentinels&amp;rdquo; got honourable mention at the AI for Bangla 2.0 research competition!
+🏷️ Competition Research Machine Learning 🔗 News Bangla Complex Named Entity Recognition Challenge January 2023 🏆 Champion of the Bangla Complex Named Entity Recognition Challenge. It was organized as part of Bangladesh&amp;rsquo;s first NLP Hackathon by Bengali Language Enrichment in Information Technology through Research and Development Project (EBLICT) and Bangladesh Open Source Network (BDOSN), and supported by ICT Division Bangladesh, Bangladesh Computer Council (BCC) and Amazon Web Services (AWS).</description>
     </item>
     
     <item>
@@ -53,7 +44,7 @@ IntDesk is an all-in-one tech interview preperation platform.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/experience/</guid>
-      <description>Center for Intelligent Information Retrieval, UMass AmherstResearch AssistantSept. &#39;24 ~ PresentBroadly working on multimodal information retrieval Currently focusing on knowledge-intensive video question answering Chaldal Ltd.Machine Learning Engineer - L3 (Specialist)July &#39;24 ~ Aug. &#39;24Worked on further improving the perishable prediction algorithm by incorporating probability distributions and uncertainty estimation. Laid the groundwork for personalized recommendations and marketing for the Chaldal platform. Created Superset dashboards to monitor real-time performance of the ML models deployed in production, enabling quick identification and resolution of issues.</description>
+      <description>Chaldal Ltd. Machine Learning Engineer - L3 (Specialist)July &#39;24 ~ Aug. &#39;24Worked on further improving the perishable prediction algorithm by incorporating probability distributions and uncertainty estimation. Laid the groundwork for personalized recommendations and marketing for the Chaldal platform. The project is expected to increase the average order value by 20%. Onboarded and mentored new team members and helped them get up to speed with the projects. 🏷️ Time Series Forecasting Recommender System</description>
     </item>
     
     <item>
@@ -62,7 +53,7 @@ IntDesk is an all-in-one tech interview preperation platform.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/location/</guid>
-      <description>Amherst, Massachusetts, USA </description>
+      <description>Dhaka, Bangladesh </description>
     </item>
     
     <item>
@@ -71,17 +62,15 @@ IntDesk is an all-in-one tech interview preperation platform.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/news/</guid>
-      <description>🗓️ July, 2024
-📈 Got promoted again to Machine Learning Engineer (Level 3 Specialist) at Chaldal!
-🏷️ Career
-🗓️ June, 2024
-🧳 Awarded travel grant to attend MICCAI 2024at Marrakesh, Morocco!
-🏷️ Academic
-🗓️ March, 2024
+      <description>🗓️ March, 2024
 🎩 End of admission season! Will be starting my PhD in CS at UMass Amherst from Fall &amp;lsquo;24!
 🏷️ Academic PhD Career
 🗓️ Feb, 2024
-📈 Got promoted to Machine Learning Engineer (Level 3) at Chaldal, in record time of company&amp;rsquo;s history!</description>
+📈 Got promoted to Machine Learning Engineer (Level 3) at Chaldal, in record time of company&amp;rsquo;s history!
+🏷️ Career
+🗓️ June 12, 2023
+🏅 Our team &amp;ldquo;Silent Sentinels&amp;rdquo; got honourable mention at the AI for Bangla 2.0 research competition!
+🏷️ Competition Research Machine Learning</description>
     </item>
     
     <item>
@@ -92,7 +81,7 @@ IntDesk is an all-in-one tech interview preperation platform.</description>
       <guid>https://zarif98sjs.github.io/paper_towns/</guid>
       <description>A paper a day keeps the mind awake!
 A collection of interesting papers I read, and my summary/thoughts on them. The author name mentioned is generally the author by whom I was introduced to the paper. Otherwise, the first author is mentioned.
-Large language models are zero-shot rankers for recommender systemsJulian McAuley (UCSD) et al. European Conference on Information Retrieval (ECIR) 2024 Implicit Chain of Thought Reasoning via Knowledge DistillationYuntian Deng (UWaterloo) et al.</description>
+Large language models are zero-shot rankers for recommender systems Julian McAuley (UCSD) et al. European Conference on Information Retrieval (ECIR) 2024 Implicit Chain of Thought Reasoning via Knowledge Distillation Yuntian Deng (UWaterloo) et al.</description>
     </item>
     
     <item>
@@ -102,7 +91,7 @@ Large language models are zero-shot rankers for recommender systemsJulian McAul
       
       <guid>https://zarif98sjs.github.io/research/</guid>
       <description>My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning. Recently I&amp;rsquo;ve also been exploring large scale machine learning systems in general, as part of my work at Chaldal!
-Geospatial Language ModelSept. 2023 ‑ Present 🟡 Working on creating a geospatial language mode that enhances the understanding of geo-entities in natural language, which in turn is able to help us create an address matching platform specially tuned for house addresses, at which platforms like Google Maps fails.</description>
+Geospatial Language Model Sept. 2023 ‑ Present 🟡 Working on creating a geospatial language mode that enhances the understanding of geo-entities in natural language, which in turn is able to help us create an address matching platform specially tuned for house addresses, at which platforms like Google Maps fails.</description>
     </item>
     
   </channel>
