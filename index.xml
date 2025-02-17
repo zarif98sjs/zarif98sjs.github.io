@@ -71,17 +71,17 @@ IntDesk is an all-in-one tech interview preperation platform.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/news/</guid>
-      <description>🗓️ July, 2024
+      <description>🗓️ Jan, 2025
+🎩 Received the Edward Riseman and Allen Hanson Scholarship from UMass CICS!
+🏷️ Academic
+🗓️ July, 2024
 📈 Got promoted again to Machine Learning Engineer (Level 3 Specialist) at Chaldal!
 🏷️ Career
 🗓️ June, 2024
 🧳 Awarded travel grant to attend MICCAI 2024 at Marrakesh, Morocco!
 🏷️ Academic
 🗓️ March, 2024
-🎩 End of admission season! Will be starting my PhD in CS at UMass Amherst from Fall &amp;lsquo;24!
-🏷️ Academic PhD Career
-🗓️ Feb, 2024
-📈 Got promoted to Machine Learning Engineer (Level 3) at Chaldal, in record time of company&amp;rsquo;s history!</description>
+🎩 End of admission season! Will be starting my PhD in CS at UMass Amherst from Fall &amp;lsquo;24!</description>
     </item>
     
     <item>
@@ -101,8 +101,10 @@ Large language models are zero-shot rankers for recommender systems Julian McAul
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/research/</guid>
-      <description>My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning. Recently I&amp;rsquo;ve also been exploring large scale machine learning systems in general, as part of my work at Chaldal!
-Geospatial Language Model Sept. 2023 ‑ Present 🟡 Working on creating a geospatial language mode that enhances the understanding of geo-entities in natural language, which in turn is able to help us create an address matching platform specially tuned for house addresses, at which platforms like Google Maps fails.</description>
+      <description>My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning.
+Multi-Modal Retrieval Augmentation for Open-Ended and Knowledge-Intensive Video Question Answering Sept. 2024 ‑ Present 🟡 Working on improving Knowledge-Intensive Video Question Answering using Multi-Modal Retrieval Augmentation
+Collaborators:
+Hamed Zamani (Associate Professor, CICS, UMass Amherst) 🏷️ Vision Language Models Retrieval Augmented Generation Video Question Answering</description>
     </item>
     
   </channel>
