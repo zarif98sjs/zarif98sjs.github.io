@@ -17,24 +17,13 @@ Professional / Academic ✔️ Contribute to an open source software project</de
     </item>
     
     <item>
-      <title></title>
-      <link>https://zarif98sjs.github.io/projects/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://zarif98sjs.github.io/projects/</guid>
-      <description>Projects Highlights of some of my projects, mostly done during my undergrad. For a complete list of my projects, please visit my GitHub Ray Tracing August 2022 Deep Dive into the 3D world with RTX-ON Implemented a ray tracing pipeline from scratch. Phong Lighting Model and Recursive Relfection is used for proper lighting and ray tracing.
-🏷️ Computer Graphics
-IntDesk August 2022 A tech interview preparation platform
-IntDesk is an all-in-one tech interview preperation platform.</description>
-    </item>
-    
-    <item>
-      <title>Around the World w/ Zarif</title>
+      <title>Around the World w/ Zarif 🌍</title>
       <link>https://zarif98sjs.github.io/aroundtheworld/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/aroundtheworld/</guid>
-      <description></description>
+      <description>Places I&#39;ve been lucky enough to visit so far — across 4 continents.
+&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;&lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt;Simple World MapAuthor: Al MacDonaldEditor: Fritz LekschasLicense: CC BY-SA 3.0ID: ISO 3166-1 or &#34;_[a-zA-Z]&#34; if an ISO code is not availableBangladesh India Nepal Saudi Arabia Turkey Morocco United States </description>
     </item>
     
     <item>
@@ -43,8 +32,7 @@ IntDesk is an all-in-one tech interview preperation platform.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/awards/</guid>
-      <description>AI for Bangla 2.0 June 2023 🏅 Our team &amp;ldquo;Silent Sentinels&amp;rdquo; got honourable mention at the AI for Bangla 2.0 research competition!
-🏷️ Competition Research Machine Learning 🔗 News Bangla Complex Named Entity Recognition Challenge January 2023 🏆 Champion of the Bangla Complex Named Entity Recognition Challenge. It was organized as part of Bangladesh&amp;rsquo;s first NLP Hackathon by Bengali Language Enrichment in Information Technology through Research and Development Project (EBLICT) and Bangladesh Open Source Network (BDOSN), and supported by ICT Division Bangladesh, Bangladesh Computer Council (BCC) and Amazon Web Services (AWS).</description>
+      <description>🏅 AI for Bangla 2.0Jun 2023 Our team &amp;ldquo;Silent Sentinels&amp;rdquo; got an honourable mention at the AI for Bangla 2.0 research competition! CompetitionResearchMachine Learning News↗ 🏆 Bangla Complex Named Entity Recognition ChallengeJan 2023 Champion of the Bangla Complex Named Entity Recognition Challenge — organized as part of Bangladesh&amp;rsquo;s first NLP Hackathon by EBLICT and the Bangladesh Open Source Network (BDOSN), supported by the ICT Division Bangladesh, Bangladesh Computer Council (BCC), and Amazon Web Services (AWS).</description>
     </item>
     
     <item>
@@ -53,16 +41,25 @@ IntDesk is an all-in-one tech interview preperation platform.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/experience/</guid>
-      <description>NVIDIA Research Intern, NVIDIA MetropolisJune &#39;26 ~ PresentCenter for Intelligent Information Retrieval, UMass Amherst Research AssistantSept. &#39;24 ~ PresentChaldal Ltd. Machine Learning Research Engineer - L3 (Specialist)July &#39;24 ~ Aug. &#39;24Worked on further improving the perishable prediction algorithm by incorporating probability distributions and uncertainty estimation. Laid the groundwork for personalized recommendations and marketing for the Chaldal platform. Created Superset dashboards to monitor real-time performance of the ML models deployed in production, enabling quick identification and resolution of issues.</description>
+      <description>Overview NVIDIA Research Intern, NVIDIA Metropolis Jun &amp;#39;26 — Present Center for Intelligent Information Retrieval, UMass Amherst Research Assistant Sept &amp;#39;24 — Present Chaldal Ltd. ML Research Engineer — L3 (Specialist) Jul &amp;#39;24 — Aug &amp;#39;24 Worked on further improving the perishable prediction algorithm by incorporating probability distributions and uncertainty estimation. Laid the groundwork for personalized recommendations and marketing for the Chaldal platform. Created Superset dashboards to monitor real-time performance of the ML models deployed in production, enabling quick identification and resolution of issues.</description>
     </item>
     
     <item>
-      <title>Location</title>
+      <title>Location 📍</title>
       <link>https://zarif98sjs.github.io/location/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/location/</guid>
-      <description>Amherst, Massachusetts, USA </description>
+      <description> 📍 Amherst, Massachusetts, USA Based at UMass Amherst — Center for Intelligent Information Retrieval (CICS) Get in touch zarif98sjs@gmail.com </description>
+    </item>
+    
+    <item>
+      <title>Mosques 🕌</title>
+      <link>https://zarif98sjs.github.io/mosques/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/mosques/</guid>
+      <description>Mosques I&amp;#39;ve visited around the world.</description>
     </item>
     
     <item>
@@ -71,17 +68,7 @@ IntDesk is an all-in-one tech interview preperation platform.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/news/</guid>
-      <description>🗓️ Jan, 2025
-🎩 Received the Edward Riseman and Allen Hanson Scholarship from UMass CICS!
-🏷️ Academic
-🗓️ July, 2024
-📈 Got promoted again to Machine Learning Engineer (Level 3 Specialist) at Chaldal!
-🏷️ Career
-🗓️ June, 2024
-🧳 Awarded travel grant to attend MICCAI 2024 at Marrakesh, Morocco!
-🏷️ Academic
-🗓️ March, 2024
-🎩 End of admission season! Will be starting my PhD in CS at UMass Amherst from Fall &amp;lsquo;24!</description>
+      <description>🎩 Jan 2025 Received the Edward Riseman and Allen Hanson Scholarship from UMass CICS! Academic 📈 Jul 2024 Got promoted again to Machine Learning Engineer (Level 3 — Specialist) at Chaldal! Career 🧳 Jun 2024 Awarded a travel grant to attend MICCAI 2024 in Marrakesh, Morocco! Academic 🎩 Mar 2024 End of admission season! Will be starting my PhD in CS at UMass Amherst from Fall &amp;lsquo;24! AcademicPhDCareer 📈 Feb 2024 Got promoted to Machine Learning Engineer (Level 3) at Chaldal — in record time in the company&amp;rsquo;s history!</description>
     </item>
     
     <item>
@@ -96,15 +83,27 @@ Large language models are zero-shot rankers for recommender systems Julian McAul
     </item>
     
     <item>
+      <title>Projects ⌨️</title>
+      <link>https://zarif98sjs.github.io/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/projects/</guid>
+      <description>Highlights of some of my projects, mostly done during my undergrad. For a complete list, visit my GitHub.
+Ray TracingAug 2022 Deep dive into the 3D world with RTX-ON .
+Implemented a ray tracing pipeline from scratch. The Phong Lighting Model and recursive reflection are used for proper lighting and ray tracing.
+Computer Graphics Code IntDeskAug 2022 A tech interview preparation platform.
+An all-in-one tech interview prep platform where users solve interview problems, take assessments, earn badges, and discuss problems and other topics.</description>
+    </item>
+    
+    <item>
       <title>Research 🔍</title>
       <link>https://zarif98sjs.github.io/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/research/</guid>
       <description>My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning.
-Multi-Modal Retrieval Augmentation for Open-Ended and Knowledge-Intensive Video Question Answering Sept. 2024 ‑ Present 🟡 Working on improving Knowledge-Intensive Video Question Answering using Multi-Modal Retrieval Augmentation
-Collaborators:
-Hamed Zamani (Associate Professor, CICS, UMass Amherst) 🏷️ Vision Language Models Retrieval Augmented Generation Video Question Answering</description>
+Multi-Modal Retrieval Augmentation for Open-Ended and Knowledge-Intensive Video Question Answering OngoingSept 2024 — Present Working on improving Knowledge-Intensive Video Question Answering using Multi-Modal Retrieval Augmentation. Collaborators
+Hamed Zamani — Associate Professor, CICS, UMass Amherst Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering Geospatial Language Model CompletedSept 2023 — Jun 2024 Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language, which in turn helps create an address matching platform specially tuned for house addresses — where platforms like Google Maps fail.</description>
     </item>
     
   </channel>
