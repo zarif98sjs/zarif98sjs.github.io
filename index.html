@@ -343,6 +343,11 @@ Fun fact : My Erdős number is <span class='tip' data-tip='Paul Erdős → Lász
         else if (!z && inZone) { inZone = false; pause(); }
         update();
     });
+    
+    
+    window.addEventListener('pointerdown', function (e) {
+        if (inCorner(e.clientX, e.clientY)) { inZone = true; play(); }
+    });
     window.addEventListener('mouseout', function (e) {
         if (!e.relatedTarget) { mx = -9999; my = -9999; if (inZone) { inZone = false; pause(); } update(); }
     });
