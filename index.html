@@ -15,7 +15,7 @@
 <meta name="description" content="Research Intern @NVIDIA | CS PhD student @UMass Amherst ">
 <meta name="author" content="Md Zarif Ul Alam">
 <link rel="canonical" href="https://zarif98sjs.github.io/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.a55baebd58b58e5e4658128264dfe6678b33a91404fc2ae68945940025ab8712.css" integrity="sha256-pVuuvVi1jl5GWBKCZN/mZ4szqRQE/CrmiUWUACWrhxI=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.2e742f9f3346d160969a3bb0d47749b99cb5b30c158bb3d61d1d6fc6cc3e9cd0.css" integrity="sha256-LnQvnzNG0WCWmjuw1HdJuZy1swwVi7PWHR1vxsw&#43;nNA=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zarif98sjs.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zarif98sjs.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zarif98sjs.github.io/favicon-32x32.png">
@@ -88,7 +88,51 @@
 </head>
 
 <body class="list dark home" id="top">
-    <main class="main"><div class="profile">
+    <main class="main"><div class="profile"><div class="bird-corner" aria-hidden="true" data-yt="o48HNWlg_5Y">
+        <div class="bird-song" id="bird-yt-holder"></div>
+        <span class="bird bird-1">
+            <span class="bird-inner">
+                <svg viewBox="0 0 44 18" width="26" height="11" fill="currentColor">
+                    <path d="M22 10 C 16 5 9 3 2 3 C 10 7 16 11 22 16 C 28 11 34 7 42 3 C 35 3 28 5 22 10 Z"></path>
+                </svg>
+            </span>
+        </span>
+        <span class="bird bird-2">
+            <span class="bird-inner">
+                <svg viewBox="0 0 44 18" width="26" height="11" fill="currentColor">
+                    <path d="M22 10 C 16 5 9 3 2 3 C 10 7 16 11 22 16 C 28 11 34 7 42 3 C 35 3 28 5 22 10 Z"></path>
+                </svg>
+            </span>
+        </span>
+        <span class="bird bird-3">
+            <span class="bird-inner">
+                <svg viewBox="0 0 44 18" width="26" height="11" fill="currentColor">
+                    <path d="M22 10 C 16 5 9 3 2 3 C 10 7 16 11 22 16 C 28 11 34 7 42 3 C 35 3 28 5 22 10 Z"></path>
+                </svg>
+            </span>
+        </span>
+        <span class="bird bird-4">
+            <span class="bird-inner">
+                <svg viewBox="0 0 44 18" width="26" height="11" fill="currentColor">
+                    <path d="M22 10 C 16 5 9 3 2 3 C 10 7 16 11 22 16 C 28 11 34 7 42 3 C 35 3 28 5 22 10 Z"></path>
+                </svg>
+            </span>
+        </span>
+        <span class="bird bird-5">
+            <span class="bird-inner">
+                <svg viewBox="0 0 44 18" width="26" height="11" fill="currentColor">
+                    <path d="M22 10 C 16 5 9 3 2 3 C 10 7 16 11 22 16 C 28 11 34 7 42 3 C 35 3 28 5 22 10 Z"></path>
+                </svg>
+            </span>
+        </span>
+        <span class="bird bird-6">
+            <span class="bird-inner">
+                <svg viewBox="0 0 44 18" width="26" height="11" fill="currentColor">
+                    <path d="M22 10 C 16 5 9 3 2 3 C 10 7 16 11 22 16 C 28 11 34 7 42 3 C 35 3 28 5 22 10 Z"></path>
+                </svg>
+            </span>
+        </span>
+    </div>
     <div class="profile_inner">
         <div class="bio-hero">
         <div class="bio-photo"><span class="bio-photo-pic">
@@ -232,6 +276,78 @@ Fun fact : My Erdős number is <span class='tip' data-tip='Paul Erdős → Lász
         </div>
     </div>
 </div>
+<script>
+(function () {
+    var corner = document.querySelector('.bird-corner');
+    if (!corner) return;
+    var videoId = corner.getAttribute('data-yt');
+    var player, ready = false, wantPlay = false;
+
+    function init() {
+        player = new YT.Player('bird-yt-holder', {
+            videoId: videoId,
+            playerVars: { playsinline: 1, controls: 0, disablekb: 1, rel: 0, fs: 0, loop: 1, playlist: videoId },
+            events: {
+                onReady: function () { ready = true; if (wantPlay) { player.playVideo(); } }
+            }
+        });
+    }
+
+    
+    if (window.YT && window.YT.Player) {
+        init();
+    } else {
+        var prev = window.onYouTubeIframeAPIReady;
+        window.onYouTubeIframeAPIReady = function () { if (prev) { prev(); } init(); };
+        if (!document.getElementById('yt-iframe-api')) {
+            var tag = document.createElement('script');
+            tag.id = 'yt-iframe-api';
+            tag.src = 'https://www.youtube.com/iframe_api';
+            document.head.appendChild(tag);
+        }
+    }
+
+    
+    var birds = [].slice.call(corner.querySelectorAll('.bird'));
+    var mx = -9999, my = -9999, inZone = false, raf = null;
+
+    function inCorner(x, y) {
+        var r = corner.getBoundingClientRect();
+        return x >= r.left && x <= r.right && y >= r.top && y <= r.bottom;
+    }
+    function play() { wantPlay = true; if (ready && player) { player.playVideo(); } }
+    function pause() { wantPlay = false; if (ready && player) { player.pauseVideo(); } }
+
+    function update() {
+        var R = 120, strength = 48;
+        for (var i = 0; i < birds.length; i++) {
+            var inner = birds[i].querySelector('.bird-inner');
+            var svg = birds[i].querySelector('svg');
+            if (!inner || !svg) continue;
+            var r = svg.getBoundingClientRect();
+            var dx = (r.left + r.width / 2) - mx, dy = (r.top + r.height / 2) - my;
+            var d = Math.sqrt(dx * dx + dy * dy);
+            if (d < R && d > 0.01) {
+                var s = ((R - d) / R) * strength;
+                inner.style.transform = 'translate(' + (dx / d * s).toFixed(1) + 'px,' + (dy / d * s).toFixed(1) + 'px)';
+            } else {
+                inner.style.transform = '';
+            }
+        }
+    }
+
+    window.addEventListener('mousemove', function (e) {
+        mx = e.clientX; my = e.clientY;
+        var z = inCorner(mx, my);
+        if (z && !inZone) { inZone = true; play(); }
+        else if (!z && inZone) { inZone = false; pause(); }
+        update();
+    });
+    window.addEventListener('mouseout', function (e) {
+        if (!e.relatedTarget) { mx = -9999; my = -9999; if (inZone) { inZone = false; pause(); } update(); }
+    });
+})();
+</script>
 
     </main>
     
