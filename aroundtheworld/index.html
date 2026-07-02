@@ -15,7 +15,7 @@
 &lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;&lt;!DOCTYPE svg PUBLIC &#34;-//W3C//DTD SVG 1.1//EN&#34; &#34;http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd&#34;&gt;Simple World MapAuthor: Al MacDonaldEditor: Fritz LekschasLicense: CC BY-SA 3.0ID: ISO 3166-1 or &#34;_[a-zA-Z]&#34; if an ISO code is not availableBangladesh India Nepal Saudi Arabia Turkey Morocco United States ">
 <meta name="author" content="Md Zarif Ul Alam">
 <link rel="canonical" href="https://zarif98sjs.github.io/aroundtheworld/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.2e742f9f3346d160969a3bb0d47749b99cb5b30c158bb3d61d1d6fc6cc3e9cd0.css" integrity="sha256-LnQvnzNG0WCWmjuw1HdJuZy1swwVi7PWHR1vxsw&#43;nNA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ff03d881c77a1d6d2e207f1d299b3382f07c7f696adde1a5485270f39ff4c6c7.css" integrity="sha256-/wPYgcd6HW0uIH8dKZszgvB8f2lq3eGlSFJw85/0xsc=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zarif98sjs.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zarif98sjs.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zarif98sjs.github.io/favicon-32x32.png">
@@ -192,7 +192,7 @@
     </h1>
   </header> 
   <div class="post-content"><p class="atw-intro">Places I've been lucky enough to visit so far — across <strong>4 continents</strong>.</p>
-<div class="worldmap-block">
+<div class="worldmap-block" data-yt="HvH-DXHvnrM">
   <style>
     #world-map #bd,
     #world-map #bd path,
@@ -211,6 +211,7 @@
       fill: var(--darkpurple);
     }
   </style>
+  <div class="worldmap-song" id="world-song-holder"></div>
   <div class="worldmap"><?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1"
@@ -623,28 +624,43 @@
 </div>
   <div class="worldmap-tip" aria-hidden="true"></div>
   <ul class="worldmap-legend">
-    <li class="worldmap-legend-item"><span class="worldmap-swatch"></span>Bangladesh</li>
-    <li class="worldmap-legend-item"><span class="worldmap-swatch"></span>India</li>
-    <li class="worldmap-legend-item"><span class="worldmap-swatch"></span>Nepal</li>
-    <li class="worldmap-legend-item"><span class="worldmap-swatch"></span>Saudi Arabia</li>
-    <li class="worldmap-legend-item"><span class="worldmap-swatch"></span>Turkey</li>
-    <li class="worldmap-legend-item"><span class="worldmap-swatch"></span>Morocco</li>
-    <li class="worldmap-legend-item"><span class="worldmap-swatch"></span>United States</li>
+    <li class="worldmap-legend-item" data-code="bd"><span class="worldmap-flag" aria-hidden="true"></span>Bangladesh</li>
+    <li class="worldmap-legend-item" data-code="in"><span class="worldmap-flag" aria-hidden="true"></span>India</li>
+    <li class="worldmap-legend-item" data-code="np"><span class="worldmap-flag" aria-hidden="true"></span>Nepal</li>
+    <li class="worldmap-legend-item" data-code="sa"><span class="worldmap-flag" aria-hidden="true"></span>Saudi Arabia</li>
+    <li class="worldmap-legend-item" data-code="tr"><span class="worldmap-flag" aria-hidden="true"></span>Turkey</li>
+    <li class="worldmap-legend-item" data-code="ma"><span class="worldmap-flag" aria-hidden="true"></span>Morocco</li>
+    <li class="worldmap-legend-item" data-code="us"><span class="worldmap-flag" aria-hidden="true"></span>United States</li>
   </ul>
 </div>
 <script>
 (function () {
   var names = {"bd":"Bangladesh","in":"India","ma":"Morocco","np":"Nepal","sa":"Saudi Arabia","tr":"Turkey","us":"United States"};
+
+  
+  function flagEmoji(code) {
+    return code.toUpperCase().replace(/./g, function (ch) {
+      return String.fromCodePoint(127397 + ch.charCodeAt(0));
+    });
+  }
+
   function init() {
     var block = document.querySelector('.worldmap-block');
     if (!block) return;
     var tip = block.querySelector('.worldmap-tip');
+
+    
+    block.querySelectorAll('.worldmap-legend-item').forEach(function (li) {
+      var f = li.querySelector('.worldmap-flag');
+      if (f) { f.textContent = flagEmoji(li.getAttribute('data-code')); }
+    });
+
     Object.keys(names).forEach(function (code) {
       var el = block.querySelector('#' + code);
       if (!el) return;
       el.classList.add('worldmap-visited');
       el.addEventListener('mouseenter', function () {
-        tip.textContent = names[code];
+        tip.textContent = flagEmoji(code) + ' ' + names[code];
         tip.classList.add('show');
       });
       el.addEventListener('mousemove', function (e) {
@@ -656,12 +672,245 @@
         tip.classList.remove('show');
       });
     });
+
+    
+    var svg = block.querySelector('svg');
+    if (!svg) return;
+    var videoId = block.getAttribute('data-yt');
+    var player, ready = false, wantPlay = false;
+
+    function initPlayer() {
+      player = new YT.Player('world-song-holder', {
+        videoId: videoId,
+        playerVars: { playsinline: 1, controls: 0, disablekb: 1, rel: 0, fs: 0, loop: 1, playlist: videoId },
+        events: { onReady: function () { ready = true; if (wantPlay) { player.playVideo(); } } }
+      });
+    }
+    if (window.YT && window.YT.Player) {
+      initPlayer();
+    } else {
+      var prev = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = function () { if (prev) { prev(); } initPlayer(); };
+      if (!document.getElementById('yt-iframe-api')) {
+        var tag = document.createElement('script');
+        tag.id = 'yt-iframe-api';
+        tag.src = 'https://www.youtube.com/iframe_api';
+        document.head.appendChild(tag);
+      }
+    }
+
+    function play() { wantPlay = true; if (ready && player) { player.playVideo(); } }
+    function pause() { wantPlay = false; if (ready && player) { player.pauseVideo(); } }
+
+    
+    function isUnvisitedCountry(el) {
+      if (!el || !el.closest) { return false; }
+      var path = el.closest('path');
+      return !!path && svg.contains(path) && !path.closest('.worldmap-visited');
+    }
+
+    svg.addEventListener('mouseover', function (e) {
+      if (isUnvisitedCountry(e.target)) { play(); } else { pause(); }
+    });
+    svg.addEventListener('mouseleave', pause);
+    
+    
+    svg.addEventListener('pointerdown', function (e) {
+      if (isUnvisitedCountry(e.target)) { play(); }
+    });
   }
+
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {
     init();
   }
+})();
+</script>
+
+<canvas id="sky-plane" class="sky-plane" aria-hidden="true"></canvas>
+<script>
+(function () {
+    var canvas = document.getElementById('sky-plane');
+    if (!canvas) return;
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        canvas.style.display = 'none';
+        return;
+    }
+    
+    if (canvas.parentNode !== document.body) { document.body.appendChild(canvas); }
+
+    var ctx = canvas.getContext('2d');
+    var dpr = Math.max(1, window.devicePixelRatio || 1);
+    var W = 0, H = 0;
+
+    function resize() {
+        var doc = document.documentElement;
+        
+        canvas.style.height = '0px';
+        W = doc.clientWidth;
+        H = Math.max(doc.scrollHeight, window.innerHeight);
+        canvas.width = Math.round(W * dpr);
+        canvas.height = Math.round(H * dpr);
+        canvas.style.width = W + 'px';
+        canvas.style.height = H + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        if (trail) { draw(); } 
+    }
+    resize();
+    window.addEventListener('resize', resize);
+    window.addEventListener('load', resize);
+    
+    setTimeout(resize, 400);
+
+    
+    var probe = document.createElement('span');
+    probe.style.color = 'var(--darkpurple)';
+    document.body.appendChild(probe);
+    var rgb = (getComputedStyle(probe).color.match(/\d+/g) || [43, 188, 138]);
+    document.body.removeChild(probe);
+    var R = +rgb[0], G = +rgb[1], B = +rgb[2];
+
+    var x = W * 0.5, y = H * 0.4, angle = 0, speed = 1.7;
+    var tx, ty, trail = [], MAX = 42;
+
+    
+    
+    var px = null, py = null, lastMove = -1e9;
+    window.addEventListener('mousemove', function (e) {
+        px = e.pageX; py = e.pageY; lastMove = Date.now();
+    });
+
+    function newTarget() {
+        var m = 90;
+        tx = m + Math.random() * (Math.max(1, W - 2 * m));
+        ty = m + Math.random() * (Math.max(1, H - 2 * m));
+    }
+    newTarget();
+
+    function drawPlane() {
+        
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(angle);
+        ctx.shadowColor = 'rgba(' + R + ',' + G + ',' + B + ',0.55)';
+        ctx.shadowBlur = 9;
+
+        var body = 'rgba(233,238,242,0.97)';
+        var wing = 'rgba(196,206,214,0.97)';
+
+        
+        ctx.fillStyle = wing;
+        ctx.beginPath();
+        ctx.moveTo(4, 0);
+        ctx.lineTo(-9, -15);
+        ctx.lineTo(-12, -14.5);
+        ctx.lineTo(-3, 0);
+        ctx.lineTo(-12, 14.5);
+        ctx.lineTo(-9, 15);
+        ctx.closePath();
+        ctx.fill();
+
+        
+        ctx.beginPath();
+        ctx.moveTo(-8, 0);
+        ctx.lineTo(-13, -6.5);
+        ctx.lineTo(-14.5, -6);
+        ctx.lineTo(-11, 0);
+        ctx.lineTo(-14.5, 6);
+        ctx.lineTo(-13, 6.5);
+        ctx.closePath();
+        ctx.fill();
+
+        
+        ctx.fillStyle = body;
+        ctx.beginPath();
+        ctx.moveTo(15, 0);
+        ctx.bezierCurveTo(7, -2.9, -9, -2.7, -14, -1.2);
+        ctx.quadraticCurveTo(-15.5, 0, -14, 1.2);
+        ctx.bezierCurveTo(-9, 2.7, 7, 2.9, 15, 0);
+        ctx.closePath();
+        ctx.fill();
+
+        
+        ctx.shadowBlur = 0;
+        ctx.fillStyle = 'rgba(60,82,98,0.85)';
+        ctx.beginPath();
+        ctx.moveTo(12.5, 0);
+        ctx.lineTo(8.5, -1.7);
+        ctx.lineTo(8.5, 1.7);
+        ctx.closePath();
+        ctx.fill();
+
+        ctx.restore();
+    }
+
+    function draw() {
+        ctx.clearRect(0, 0, W, H);
+        ctx.lineCap = 'round';
+        for (var i = 1; i < trail.length; i++) {
+            var t = i / trail.length; 
+            ctx.beginPath();
+            ctx.moveTo(trail[i - 1].x, trail[i - 1].y);
+            ctx.lineTo(trail[i].x, trail[i].y);
+            ctx.strokeStyle = 'rgba(' + R + ',' + G + ',' + B + ',' + (t * t * 0.55).toFixed(3) + ')';
+            ctx.lineWidth = (t * 3.4).toFixed(2);
+            ctx.stroke();
+        }
+        drawPlane();
+    }
+
+    function step() {
+        var chasing = px !== null && (Date.now() - lastMove) < 1600;
+        if (chasing) { tx = px; ty = py; }
+
+        var dx = tx - x, dy = ty - y, dist = Math.sqrt(dx * dx + dy * dy);
+        var desired = Math.atan2(dy, dx);
+        var diff = Math.atan2(Math.sin(desired - angle), Math.cos(desired - angle));
+        angle += diff * (chasing ? 0.09 : 0.05); 
+        x += Math.cos(angle) * speed;
+        y += Math.sin(angle) * speed;
+        
+        
+        if (!chasing && (dist < 70 || x < -30 || x > W + 30 || y < -30 || y > H + 30)) { newTarget(); }
+        trail.push({ x: x, y: y });
+        if (trail.length > MAX) { trail.shift(); }
+        draw();
+        requestAnimationFrame(step);
+    }
+
+    step(); 
+})();
+</script>
+
+<script>
+(function () {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    document.addEventListener('pointerdown', function (e) {
+        var r = document.createElement('span');
+        r.className = 'click-ripple';
+        r.style.left = e.clientX + 'px';
+        r.style.top = e.clientY + 'px';
+        document.body.appendChild(r);
+        r.addEventListener('animationend', function () { r.remove(); });
+    }, { passive: true });
+})();
+</script>
+
+<div class="pointer-glow" id="pointer-glow" aria-hidden="true"></div>
+<script>
+(function () {
+    var g = document.getElementById('pointer-glow');
+    if (!g) return;
+    window.addEventListener('mousemove', function (e) {
+        g.style.transform = 'translate(-50%, -50%) translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+        g.classList.add('on');
+    }, { passive: true });
+    window.addEventListener('mouseout', function (e) {
+        if (!e.relatedTarget) { g.classList.remove('on'); }
+    });
+    
+    window.addEventListener('blur', function () { g.classList.remove('on'); });
 })();
 </script>
 

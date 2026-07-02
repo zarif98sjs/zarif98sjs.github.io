@@ -14,7 +14,7 @@
 <meta name="description" content="Mosques I&#39;ve visited around the world.">
 <meta name="author" content="Md Zarif Ul Alam">
 <link rel="canonical" href="https://zarif98sjs.github.io/mosques/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.2e742f9f3346d160969a3bb0d47749b99cb5b30c158bb3d61d1d6fc6cc3e9cd0.css" integrity="sha256-LnQvnzNG0WCWmjuw1HdJuZy1swwVi7PWHR1vxsw&#43;nNA=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.ff03d881c77a1d6d2e207f1d299b3382f07c7f696adde1a5485270f39ff4c6c7.css" integrity="sha256-/wPYgcd6HW0uIH8dKZszgvB8f2lq3eGlSFJw85/0xsc=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zarif98sjs.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zarif98sjs.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zarif98sjs.github.io/favicon-32x32.png">
@@ -197,6 +197,56 @@
     website="https://..."                (Website pill) >}}
 Any notes here (markdown supported).
 {{< /mosque >}} -->
+<div class="hijri-moon" id="hijri-moon" role="img" aria-label="Current moon phase and Hijri date">
+  <svg viewBox="0 0 44 44" width="30" height="30" aria-hidden="true">
+    <circle class="hijri-moon-disc" cx="22" cy="22" r="20"></circle>
+    <path class="hijri-moon-lit" d=""></path>
+  </svg>
+  <span class="hijri-moon-tip"></span>
+</div>
+<script>
+(function () {
+    var el = document.getElementById('hijri-moon');
+    if (!el) return;
+
+    
+    
+    var SYNODIC = 29.53058867;
+    var days = (Date.now() - Date.UTC(2000, 0, 6, 18, 14)) / 864e5;
+    var p = (days % SYNODIC) / SYNODIC;
+    if (p < 0) { p += 1; }
+
+    
+    var r = 20, c = 22;
+    var rx = Math.abs(r * Math.cos(2 * Math.PI * p));
+    var sweepOuter = p < 0.5 ? 1 : 0;
+    var sweepTerm = (p < 0.25 || (p >= 0.5 && p < 0.75)) ? 0 : 1;
+    var d = 'M ' + c + ' ' + (c - r) +
+            ' A ' + r + ' ' + r + ' 0 1 ' + sweepOuter + ' ' + c + ' ' + (c + r) +
+            ' A ' + rx.toFixed(2) + ' ' + r + ' 0 1 ' + sweepTerm + ' ' + c + ' ' + (c - r) + ' Z';
+    el.querySelector('.hijri-moon-lit').setAttribute('d', d);
+
+    var hijri = '';
+    try {
+        hijri = new Intl.DateTimeFormat('en-u-ca-islamic-umalqura', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date());
+    } catch (e) {
+        try { hijri = new Intl.DateTimeFormat('en-u-ca-islamic', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date()); } catch (e2) {}
+    }
+    var pct = Math.round((1 - Math.cos(2 * Math.PI * p)) / 2 * 100);
+    var name = (p < 0.03 || p > 0.97) ? 'New Moon'
+        : p < 0.22 ? 'Waxing Crescent'
+        : p < 0.28 ? 'First Quarter'
+        : p < 0.47 ? 'Waxing Gibbous'
+        : p < 0.53 ? 'Full Moon'
+        : p < 0.72 ? 'Waning Gibbous'
+        : p < 0.78 ? 'Last Quarter'
+        : 'Waning Crescent';
+    var tip = (hijri ? hijri + ' · ' : '') + name + ' (' + pct + '%)';
+    el.querySelector('.hijri-moon-tip').textContent = tip;
+    el.setAttribute('aria-label', tip);
+})();
+</script>
+
 <p class="mosque-intro">A growing collection of the mosques I've been blessed to pray in around the world. If I've been of any help to you anytime during my lifetime and you want to give صدقة جارية on my behalf, this is your place :) </p>
 <div class="mosque-countries">
 
@@ -1020,6 +1070,19 @@ Any notes here (markdown supported).
 
 
 </div>
+<script>
+(function () {
+    
+    
+    document.addEventListener('pointermove', function (e) {
+        var card = e.target.closest && e.target.closest('.mosque-card');
+        if (!card) return;
+        var r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100).toFixed(1) + '%');
+        card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100).toFixed(1) + '%');
+    }, { passive: true });
+})();
+</script>
 
 
   </div>
