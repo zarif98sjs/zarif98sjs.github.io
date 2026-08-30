@@ -11,12 +11,162 @@
 <meta name="robots" content="index, follow">
 <title>Research 🔍 | Md Zarif Ul Alam</title>
 <meta name="keywords" content="">
-<meta name="description" content="My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning.
-Multi-Modal Retrieval Augmentation for Open-Ended and Knowledge-Intensive Video Question Answering OngoingSept 2024 — Present Working on improving Knowledge-Intensive Video Question Answering using Multi-Modal Retrieval Augmentation. Collaborators
-Hamed Zamani — Associate Professor, CICS, UMass Amherst Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering Geospatial Language Model CompletedSept 2023 — Jun 2024 Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language, which in turn helps create an address matching platform specially tuned for house addresses — where platforms like Google Maps fail.">
+<meta name="description" content="My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in agentic search , multi-modal learning and information retrieval.
+
+  
+    Critic-R: Improving Agentic Search using Instruction-tuned Retrievers with Natural Language Introspective Feedback
+    Dec. 2025 - May 2026
+      📄 Preprint↗
+      
+    
+    🏛️ EMNLP 2026 (Findings)
+    
+  
+  
+  Agentic search systems iteratively interact with retrieval models to answer complex queries. Despite substantial progress, optimizing retrievers for agentic search remains challenging, often requiring heavy co-training or gold-standard annotations that limit real-world applicability. We propose Critic-R, a framework that explicitly closes the feedback loop between the reasoning agent and the retrieval model during both inference and training. Critic-R introduces a critic model that evaluates the agent&rsquo;s introspective reasoning trace after consuming retrieved evidence to determine whether the retrieved context sufficiently supports the next reasoning step. Critic-R has two complementary mechanisms: Critic-R-Zero, an inference-time query refinement loop that iteratively rewrites queries and retrieval instructions, and Critic-Embed, an optimization approach for retrieval models that leverages successful and failed refinement trajectories as automatic supervision without requiring manual relevance annotation.
+  
+    Agentic SearchRetrieval Augmented GenerationRetrieverDense Retrieval
+  
+
+
+  
+    Open-Ended and Knowledge-Intensive Video Question Answering
+    Sept. 2024 — Jan. 2025
+      📄 Preprint↗
+      
+    
+  
+  
+  Investigated knowledge-intensive video question answering (KI-VideoQA) through the lens of multi-modal retrieval-augmented generation. We particularly focused on handling open-ended questions rather than just multiple-choice formats. We highlight the critical role of query construction and retrieval depth optimization in effective knowledge integration. Through our proposed approach, we achieve a substantial 17.5% improvement in accuracy on multiple choice questions in the KnowIT VQA dataset, establishing new state-of-the-art performance levels.
+  
+    Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering
+  
+
+
+  
+    Geospatial Language Model
+    Sept 2023 — Jun 2024
+    
+  
+  
+  Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language (e.g. using landmarks and directions). This in turn helps create an address matching platform specially tuned for house addresses, where platforms like Google Maps fail (e.g. in places like Dhaka). This helps optimize delivery agents to deliver orders faster and more efficiently.
+  
+    Natural Language ProcessingLLMsRetrieval Augmented Generation
+  
+
+
+  
+    TomoPicker: Annotation-Efficient Particle Picking in cryo-electron Tomograms
+    Oct 2022 — Apr 2024
+      
+        Workshop↗
+        Paper↗
+      
+    
+    🏛️ NeurIPS 2024 Machine Learning in Structural Biology Workshop🏛️ Briefings in Bioinformatics (Oxford University Press)
+    
+  
+  Built an annotation-efficient semi-supervised particle-picking framework for 3D object detection from macromolecular samples. The goal was to detect and classify particles from cryo-electron tomogramss having signal-to-noise ratio as low as 0.1, making it a very challenging problem
+  
+    Computer VisionObject DetectionImage Processing
+  
+
+
+  
+    Graph based Positive Unlabeled Learning with Multi Stream Adaptive Convolutions
+    May 2022 — Aug 2023
+      
+        Project page↗
+        Paper↗
+      
+    
+    🏛️ ACM Transactions on Computing for Healthcare
+    
+  
+  
+  Developed PULSAR, an automated PD screening tool. It uses spatio-temporal graph neural network to detect PD from videos. We were also the first to explore positive unlabeled learning in this setting, addressing the lack of reliable labeled data, which is generally the case in medical data.
+  
+    Computer VisionAI for Healthcare
+  
+
+
+  
+    Quartet Fiduccia-Mattheyses Revisited for Larger Phylogenetic Studies
+    Nov 2022 — Apr 2023
+      
+        Paper↗
+      
+    
+    🏛️ Bioinformatics (Oxford University Press)
+    
+  
+  
+  Our proposed method QFM-FI, a faster and improved version of the QFM algorithm, can amalgamate millions of quartets over thousands of taxa into a species tree with a great level of accuracy. This also achieves a speedup of 20,000× compared to its predecessor. Worked on providing a theoretical analysis of the running time and memory requirements of QFM-FI.
+  
+    BioinformaticsComputational Biology
+  
+
+
+Other Research &amp; Independent Exploration
+
+  
+    Personalized Recommendation System
+    Jun 2023 — Jan. 2024
+    
+  
+  
+  Developing an in-house personalized recommender system from the ground up for the leading online platform for grocery and delivery in Bangladesh (Chaldal[dot]com), scaling it to serve more than one million users.
+  
+    Recommender SystemsReinforcement Learning
+  
+
+
+  
+    Bangla Plagiarism Detection
+    Jan 2023 — Mar 2023
+      
+        Project page↗
+        Dataset 🤗↗
+      
+    
+  
+  
+  We created the first Bangla Plagiarism Dataset (available on Hugging Face 🤗
+) using a semi-supervised approach as part of our Machine Learning project. We also proposed two distinct approaches for detecting plagiarism: the first fine-tunes Bangla BERT, while the second uses sentence embeddings for multi-document plagiarism detection.
+  
+    Natural Language ProcessingPlagiarism Detection
+  
+
+
+  
+    Occam&#39;s Razor Strikes Again: Revisiting Short-Text Stream Clustering with Latest Sentence Embeddings
+    May 2021 — May 2022
+      
+        Project page↗
+      
+    
+  
+  
+  During the height of COVID-19, online classes were the new normal. The rise of MOOCs led to an interesting research question: Given a large number of questions already posed by students, how can we detect repetitive questions in real time and unify them as a single question for the instructor? Under the supervision of Prof. Subhra Kanti Karmaker, I worked on this problem of online short-text clustering. We developed One Pass Sentence Embedding Clustering (OPSEC), which efficiently clusters short text streams using a unique one-pass algorithm based on sentence embeddings. It was used as an internal tool to cluster questions in online classes at Auburn.
+  
+    Natural Language ProcessingClustering
+  
+
+
+  
+    Bangla Sign Language Recognition
+    Oct 2022 — Feb 2023
+      
+        Dataset↗
+      
+    
+  
+  
+  Sign language, as a different form of communication, is important to large groups of people in society. Each sign is unique due to variations in hand form, motion profile, and positioning of the hand, face, and other body components, making visual sign language recognition a complex computer vision problem. In this work, we present a new word-level Bangla Sign Language (BdSL) dataset
+ of 611 videos over 40 BdSL words, along with two approaches: a 3D Convolutional Neural Network and a novel Graph Neural Network. To the best of our knowledge, this is the first study on word-level BdSL recognition. The proposed GNN model achieved an F1 score of 89%.">
 <meta name="author" content="Md Zarif Ul Alam">
 <link rel="canonical" href="https://zarif98sjs.github.io/research/">
-<link crossorigin="anonymous" href="/assets/css/stylesheet.4fd3a88a0454fceda05af69a86826fa47929f2941ba2058281145f250eb4b784.css" integrity="sha256-T9OoigRU/O2gWvaahoJvpHkp8pQbogWCgRRfJQ60t4Q=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.814f873ad69c972bdef526dc70c9495ac481c5bb15e153b88c691e234b31b34b.css" integrity="sha256-gU&#43;HOtaclyve9SbccMlJWsSBxbsV4VO4jGkeI0sxs0s=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://zarif98sjs.github.io/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://zarif98sjs.github.io/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://zarif98sjs.github.io/favicon-32x32.png">
@@ -34,9 +184,159 @@ Hamed Zamani — Associate Professor, CICS, UMass Amherst Vision Language Models
 
     </style>
 </noscript><meta property="og:title" content="Research 🔍" />
-<meta property="og:description" content="My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning.
-Multi-Modal Retrieval Augmentation for Open-Ended and Knowledge-Intensive Video Question Answering OngoingSept 2024 — Present Working on improving Knowledge-Intensive Video Question Answering using Multi-Modal Retrieval Augmentation. Collaborators
-Hamed Zamani — Associate Professor, CICS, UMass Amherst Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering Geospatial Language Model CompletedSept 2023 — Jun 2024 Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language, which in turn helps create an address matching platform specially tuned for house addresses — where platforms like Google Maps fail." />
+<meta property="og:description" content="My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in agentic search , multi-modal learning and information retrieval.
+
+  
+    Critic-R: Improving Agentic Search using Instruction-tuned Retrievers with Natural Language Introspective Feedback
+    Dec. 2025 - May 2026
+      📄 Preprint↗
+      
+    
+    🏛️ EMNLP 2026 (Findings)
+    
+  
+  
+  Agentic search systems iteratively interact with retrieval models to answer complex queries. Despite substantial progress, optimizing retrievers for agentic search remains challenging, often requiring heavy co-training or gold-standard annotations that limit real-world applicability. We propose Critic-R, a framework that explicitly closes the feedback loop between the reasoning agent and the retrieval model during both inference and training. Critic-R introduces a critic model that evaluates the agent&rsquo;s introspective reasoning trace after consuming retrieved evidence to determine whether the retrieved context sufficiently supports the next reasoning step. Critic-R has two complementary mechanisms: Critic-R-Zero, an inference-time query refinement loop that iteratively rewrites queries and retrieval instructions, and Critic-Embed, an optimization approach for retrieval models that leverages successful and failed refinement trajectories as automatic supervision without requiring manual relevance annotation.
+  
+    Agentic SearchRetrieval Augmented GenerationRetrieverDense Retrieval
+  
+
+
+  
+    Open-Ended and Knowledge-Intensive Video Question Answering
+    Sept. 2024 — Jan. 2025
+      📄 Preprint↗
+      
+    
+  
+  
+  Investigated knowledge-intensive video question answering (KI-VideoQA) through the lens of multi-modal retrieval-augmented generation. We particularly focused on handling open-ended questions rather than just multiple-choice formats. We highlight the critical role of query construction and retrieval depth optimization in effective knowledge integration. Through our proposed approach, we achieve a substantial 17.5% improvement in accuracy on multiple choice questions in the KnowIT VQA dataset, establishing new state-of-the-art performance levels.
+  
+    Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering
+  
+
+
+  
+    Geospatial Language Model
+    Sept 2023 — Jun 2024
+    
+  
+  
+  Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language (e.g. using landmarks and directions). This in turn helps create an address matching platform specially tuned for house addresses, where platforms like Google Maps fail (e.g. in places like Dhaka). This helps optimize delivery agents to deliver orders faster and more efficiently.
+  
+    Natural Language ProcessingLLMsRetrieval Augmented Generation
+  
+
+
+  
+    TomoPicker: Annotation-Efficient Particle Picking in cryo-electron Tomograms
+    Oct 2022 — Apr 2024
+      
+        Workshop↗
+        Paper↗
+      
+    
+    🏛️ NeurIPS 2024 Machine Learning in Structural Biology Workshop🏛️ Briefings in Bioinformatics (Oxford University Press)
+    
+  
+  Built an annotation-efficient semi-supervised particle-picking framework for 3D object detection from macromolecular samples. The goal was to detect and classify particles from cryo-electron tomogramss having signal-to-noise ratio as low as 0.1, making it a very challenging problem
+  
+    Computer VisionObject DetectionImage Processing
+  
+
+
+  
+    Graph based Positive Unlabeled Learning with Multi Stream Adaptive Convolutions
+    May 2022 — Aug 2023
+      
+        Project page↗
+        Paper↗
+      
+    
+    🏛️ ACM Transactions on Computing for Healthcare
+    
+  
+  
+  Developed PULSAR, an automated PD screening tool. It uses spatio-temporal graph neural network to detect PD from videos. We were also the first to explore positive unlabeled learning in this setting, addressing the lack of reliable labeled data, which is generally the case in medical data.
+  
+    Computer VisionAI for Healthcare
+  
+
+
+  
+    Quartet Fiduccia-Mattheyses Revisited for Larger Phylogenetic Studies
+    Nov 2022 — Apr 2023
+      
+        Paper↗
+      
+    
+    🏛️ Bioinformatics (Oxford University Press)
+    
+  
+  
+  Our proposed method QFM-FI, a faster and improved version of the QFM algorithm, can amalgamate millions of quartets over thousands of taxa into a species tree with a great level of accuracy. This also achieves a speedup of 20,000× compared to its predecessor. Worked on providing a theoretical analysis of the running time and memory requirements of QFM-FI.
+  
+    BioinformaticsComputational Biology
+  
+
+
+Other Research &amp; Independent Exploration
+
+  
+    Personalized Recommendation System
+    Jun 2023 — Jan. 2024
+    
+  
+  
+  Developing an in-house personalized recommender system from the ground up for the leading online platform for grocery and delivery in Bangladesh (Chaldal[dot]com), scaling it to serve more than one million users.
+  
+    Recommender SystemsReinforcement Learning
+  
+
+
+  
+    Bangla Plagiarism Detection
+    Jan 2023 — Mar 2023
+      
+        Project page↗
+        Dataset 🤗↗
+      
+    
+  
+  
+  We created the first Bangla Plagiarism Dataset (available on Hugging Face 🤗
+) using a semi-supervised approach as part of our Machine Learning project. We also proposed two distinct approaches for detecting plagiarism: the first fine-tunes Bangla BERT, while the second uses sentence embeddings for multi-document plagiarism detection.
+  
+    Natural Language ProcessingPlagiarism Detection
+  
+
+
+  
+    Occam&#39;s Razor Strikes Again: Revisiting Short-Text Stream Clustering with Latest Sentence Embeddings
+    May 2021 — May 2022
+      
+        Project page↗
+      
+    
+  
+  
+  During the height of COVID-19, online classes were the new normal. The rise of MOOCs led to an interesting research question: Given a large number of questions already posed by students, how can we detect repetitive questions in real time and unify them as a single question for the instructor? Under the supervision of Prof. Subhra Kanti Karmaker, I worked on this problem of online short-text clustering. We developed One Pass Sentence Embedding Clustering (OPSEC), which efficiently clusters short text streams using a unique one-pass algorithm based on sentence embeddings. It was used as an internal tool to cluster questions in online classes at Auburn.
+  
+    Natural Language ProcessingClustering
+  
+
+
+  
+    Bangla Sign Language Recognition
+    Oct 2022 — Feb 2023
+      
+        Dataset↗
+      
+    
+  
+  
+  Sign language, as a different form of communication, is important to large groups of people in society. Each sign is unique due to variations in hand form, motion profile, and positioning of the hand, face, and other body components, making visual sign language recognition a complex computer vision problem. In this work, we present a new word-level Bangla Sign Language (BdSL) dataset
+ of 611 videos over 40 BdSL words, along with two approaches: a 3D Convolutional Neural Network and a novel Graph Neural Network. To the best of our knowledge, this is the first study on word-level BdSL recognition. The proposed GNN model achieved an F1 score of 89%." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://zarif98sjs.github.io/research/" /><meta property="article:section" content="" />
 
@@ -44,9 +344,159 @@ Hamed Zamani — Associate Professor, CICS, UMass Amherst Vision Language Models
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Research 🔍"/>
-<meta name="twitter:description" content="My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning.
-Multi-Modal Retrieval Augmentation for Open-Ended and Knowledge-Intensive Video Question Answering OngoingSept 2024 — Present Working on improving Knowledge-Intensive Video Question Answering using Multi-Modal Retrieval Augmentation. Collaborators
-Hamed Zamani — Associate Professor, CICS, UMass Amherst Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering Geospatial Language Model CompletedSept 2023 — Jun 2024 Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language, which in turn helps create an address matching platform specially tuned for house addresses — where platforms like Google Maps fail."/>
+<meta name="twitter:description" content="My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in agentic search , multi-modal learning and information retrieval.
+
+  
+    Critic-R: Improving Agentic Search using Instruction-tuned Retrievers with Natural Language Introspective Feedback
+    Dec. 2025 - May 2026
+      📄 Preprint↗
+      
+    
+    🏛️ EMNLP 2026 (Findings)
+    
+  
+  
+  Agentic search systems iteratively interact with retrieval models to answer complex queries. Despite substantial progress, optimizing retrievers for agentic search remains challenging, often requiring heavy co-training or gold-standard annotations that limit real-world applicability. We propose Critic-R, a framework that explicitly closes the feedback loop between the reasoning agent and the retrieval model during both inference and training. Critic-R introduces a critic model that evaluates the agent&rsquo;s introspective reasoning trace after consuming retrieved evidence to determine whether the retrieved context sufficiently supports the next reasoning step. Critic-R has two complementary mechanisms: Critic-R-Zero, an inference-time query refinement loop that iteratively rewrites queries and retrieval instructions, and Critic-Embed, an optimization approach for retrieval models that leverages successful and failed refinement trajectories as automatic supervision without requiring manual relevance annotation.
+  
+    Agentic SearchRetrieval Augmented GenerationRetrieverDense Retrieval
+  
+
+
+  
+    Open-Ended and Knowledge-Intensive Video Question Answering
+    Sept. 2024 — Jan. 2025
+      📄 Preprint↗
+      
+    
+  
+  
+  Investigated knowledge-intensive video question answering (KI-VideoQA) through the lens of multi-modal retrieval-augmented generation. We particularly focused on handling open-ended questions rather than just multiple-choice formats. We highlight the critical role of query construction and retrieval depth optimization in effective knowledge integration. Through our proposed approach, we achieve a substantial 17.5% improvement in accuracy on multiple choice questions in the KnowIT VQA dataset, establishing new state-of-the-art performance levels.
+  
+    Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering
+  
+
+
+  
+    Geospatial Language Model
+    Sept 2023 — Jun 2024
+    
+  
+  
+  Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language (e.g. using landmarks and directions). This in turn helps create an address matching platform specially tuned for house addresses, where platforms like Google Maps fail (e.g. in places like Dhaka). This helps optimize delivery agents to deliver orders faster and more efficiently.
+  
+    Natural Language ProcessingLLMsRetrieval Augmented Generation
+  
+
+
+  
+    TomoPicker: Annotation-Efficient Particle Picking in cryo-electron Tomograms
+    Oct 2022 — Apr 2024
+      
+        Workshop↗
+        Paper↗
+      
+    
+    🏛️ NeurIPS 2024 Machine Learning in Structural Biology Workshop🏛️ Briefings in Bioinformatics (Oxford University Press)
+    
+  
+  Built an annotation-efficient semi-supervised particle-picking framework for 3D object detection from macromolecular samples. The goal was to detect and classify particles from cryo-electron tomogramss having signal-to-noise ratio as low as 0.1, making it a very challenging problem
+  
+    Computer VisionObject DetectionImage Processing
+  
+
+
+  
+    Graph based Positive Unlabeled Learning with Multi Stream Adaptive Convolutions
+    May 2022 — Aug 2023
+      
+        Project page↗
+        Paper↗
+      
+    
+    🏛️ ACM Transactions on Computing for Healthcare
+    
+  
+  
+  Developed PULSAR, an automated PD screening tool. It uses spatio-temporal graph neural network to detect PD from videos. We were also the first to explore positive unlabeled learning in this setting, addressing the lack of reliable labeled data, which is generally the case in medical data.
+  
+    Computer VisionAI for Healthcare
+  
+
+
+  
+    Quartet Fiduccia-Mattheyses Revisited for Larger Phylogenetic Studies
+    Nov 2022 — Apr 2023
+      
+        Paper↗
+      
+    
+    🏛️ Bioinformatics (Oxford University Press)
+    
+  
+  
+  Our proposed method QFM-FI, a faster and improved version of the QFM algorithm, can amalgamate millions of quartets over thousands of taxa into a species tree with a great level of accuracy. This also achieves a speedup of 20,000× compared to its predecessor. Worked on providing a theoretical analysis of the running time and memory requirements of QFM-FI.
+  
+    BioinformaticsComputational Biology
+  
+
+
+Other Research &amp; Independent Exploration
+
+  
+    Personalized Recommendation System
+    Jun 2023 — Jan. 2024
+    
+  
+  
+  Developing an in-house personalized recommender system from the ground up for the leading online platform for grocery and delivery in Bangladesh (Chaldal[dot]com), scaling it to serve more than one million users.
+  
+    Recommender SystemsReinforcement Learning
+  
+
+
+  
+    Bangla Plagiarism Detection
+    Jan 2023 — Mar 2023
+      
+        Project page↗
+        Dataset 🤗↗
+      
+    
+  
+  
+  We created the first Bangla Plagiarism Dataset (available on Hugging Face 🤗
+) using a semi-supervised approach as part of our Machine Learning project. We also proposed two distinct approaches for detecting plagiarism: the first fine-tunes Bangla BERT, while the second uses sentence embeddings for multi-document plagiarism detection.
+  
+    Natural Language ProcessingPlagiarism Detection
+  
+
+
+  
+    Occam&#39;s Razor Strikes Again: Revisiting Short-Text Stream Clustering with Latest Sentence Embeddings
+    May 2021 — May 2022
+      
+        Project page↗
+      
+    
+  
+  
+  During the height of COVID-19, online classes were the new normal. The rise of MOOCs led to an interesting research question: Given a large number of questions already posed by students, how can we detect repetitive questions in real time and unify them as a single question for the instructor? Under the supervision of Prof. Subhra Kanti Karmaker, I worked on this problem of online short-text clustering. We developed One Pass Sentence Embedding Clustering (OPSEC), which efficiently clusters short text streams using a unique one-pass algorithm based on sentence embeddings. It was used as an internal tool to cluster questions in online classes at Auburn.
+  
+    Natural Language ProcessingClustering
+  
+
+
+  
+    Bangla Sign Language Recognition
+    Oct 2022 — Feb 2023
+      
+        Dataset↗
+      
+    
+  
+  
+  Sign language, as a different form of communication, is important to large groups of people in society. Each sign is unique due to variations in hand form, motion profile, and positioning of the hand, face, and other body components, making visual sign language recognition a complex computer vision problem. In this work, we present a new word-level Bangla Sign Language (BdSL) dataset
+ of 611 videos over 40 BdSL words, along with two approaches: a 3D Convolutional Neural Network and a novel Graph Neural Network. To the best of our knowledge, this is the first study on word-level BdSL recognition. The proposed GNN model achieved an F1 score of 89%."/>
 
 
 <script type="application/ld+json">
@@ -69,12 +519,12 @@ Hamed Zamani — Associate Professor, CICS, UMass Amherst Vision Language Models
   "@type": "BlogPosting",
   "headline": "Research 🔍",
   "name": "Research 🔍",
-  "description": "My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning.\nMulti-Modal Retrieval Augmentation for Open-Ended and Knowledge-Intensive Video Question Answering OngoingSept 2024 — Present Working on improving Knowledge-Intensive Video Question Answering using Multi-Modal Retrieval Augmentation. Collaborators\nHamed Zamani — Associate Professor, CICS, UMass Amherst Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering Geospatial Language Model CompletedSept 2023 — Jun 2024 Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language, which in turn helps create an address matching platform specially tuned for house addresses — where platforms like Google Maps fail.",
+  "description": "My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in agentic search , multi-modal learning and information retrieval.\nCritic-R: Improving Agentic Search using Instruction-tuned Retrievers with Natural Language Introspective Feedback Dec. 2025 - May 2026 📄 Preprint↗ 🏛️ EMNLP 2026 (Findings) Agentic search systems iteratively interact with retrieval models to answer complex queries. Despite substantial progress, optimizing retrievers for agentic search remains challenging, often requiring heavy co-training or gold-standard annotations that limit real-world applicability. We propose Critic-R, a framework that explicitly closes the feedback loop between the reasoning agent and the retrieval model during both inference and training. Critic-R introduces a critic model that evaluates the agent\u0026rsquo;s introspective reasoning trace after consuming retrieved evidence to determine whether the retrieved context sufficiently supports the next reasoning step. Critic-R has two complementary mechanisms: Critic-R-Zero, an inference-time query refinement loop that iteratively rewrites queries and retrieval instructions, and Critic-Embed, an optimization approach for retrieval models that leverages successful and failed refinement trajectories as automatic supervision without requiring manual relevance annotation. Agentic SearchRetrieval Augmented GenerationRetrieverDense Retrieval Open-Ended and Knowledge-Intensive Video Question Answering Sept. 2024 — Jan. 2025 📄 Preprint↗ Investigated knowledge-intensive video question answering (KI-VideoQA) through the lens of multi-modal retrieval-augmented generation. We particularly focused on handling open-ended questions rather than just multiple-choice formats. We highlight the critical role of query construction and retrieval depth optimization in effective knowledge integration. Through our proposed approach, we achieve a substantial 17.5% improvement in accuracy on multiple choice questions in the KnowIT VQA dataset, establishing new state-of-the-art performance levels. Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering Geospatial Language Model Sept 2023 — Jun 2024 Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language (e.g. using landmarks and directions). This in turn helps create an address matching platform specially tuned for house addresses, where platforms like Google Maps fail (e.g. in places like Dhaka). This helps optimize delivery agents to deliver orders faster and more efficiently. Natural Language ProcessingLLMsRetrieval Augmented Generation TomoPicker: Annotation-Efficient Particle Picking in cryo-electron Tomograms Oct 2022 — Apr 2024 Workshop↗ Paper↗ 🏛️ NeurIPS 2024 Machine Learning in Structural Biology Workshop🏛️ Briefings in Bioinformatics (Oxford University Press) Built an annotation-efficient semi-supervised particle-picking framework for 3D object detection from macromolecular samples. The goal was to detect and classify particles from cryo-electron tomogramss having signal-to-noise ratio as low as 0.1, making it a very challenging problem Computer VisionObject DetectionImage Processing Graph based Positive Unlabeled Learning with Multi Stream Adaptive Convolutions May 2022 — Aug 2023 Project page↗ Paper↗ 🏛️ ACM Transactions on Computing for Healthcare Developed PULSAR, an automated PD screening tool. It uses spatio-temporal graph neural network to detect PD from videos. We were also the first to explore positive unlabeled learning in this setting, addressing the lack of reliable labeled data, which is generally the case in medical data. Computer VisionAI for Healthcare Quartet Fiduccia-Mattheyses Revisited for Larger Phylogenetic Studies Nov 2022 — Apr 2023 Paper↗ 🏛️ Bioinformatics (Oxford University Press) Our proposed method QFM-FI, a faster and improved version of the QFM algorithm, can amalgamate millions of quartets over thousands of taxa into a species tree with a great level of accuracy. This also achieves a speedup of 20,000× compared to its predecessor. Worked on providing a theoretical analysis of the running time and memory requirements of QFM-FI. BioinformaticsComputational Biology Other Research \u0026amp; Independent Exploration Personalized Recommendation System Jun 2023 — Jan. 2024 Developing an in-house personalized recommender system from the ground up for the leading online platform for grocery and delivery in Bangladesh (Chaldal[dot]com), scaling it to serve more than one million users. Recommender SystemsReinforcement Learning Bangla Plagiarism Detection Jan 2023 — Mar 2023 Project page↗ Dataset 🤗↗ We created the first Bangla Plagiarism Dataset (available on Hugging Face 🤗 ) using a semi-supervised approach as part of our Machine Learning project. We also proposed two distinct approaches for detecting plagiarism: the first fine-tunes Bangla BERT, while the second uses sentence embeddings for multi-document plagiarism detection. Natural Language ProcessingPlagiarism Detection Occam\u0026#39;s Razor Strikes Again: Revisiting Short-Text Stream Clustering with Latest Sentence Embeddings May 2021 — May 2022 Project page↗ During the height of COVID-19, online classes were the new normal. The rise of MOOCs led to an interesting research question: Given a large number of questions already posed by students, how can we detect repetitive questions in real time and unify them as a single question for the instructor? Under the supervision of Prof. Subhra Kanti Karmaker, I worked on this problem of online short-text clustering. We developed One Pass Sentence Embedding Clustering (OPSEC), which efficiently clusters short text streams using a unique one-pass algorithm based on sentence embeddings. It was used as an internal tool to cluster questions in online classes at Auburn. Natural Language ProcessingClustering Bangla Sign Language Recognition Oct 2022 — Feb 2023 Dataset↗ Sign language, as a different form of communication, is important to large groups of people in society. Each sign is unique due to variations in hand form, motion profile, and positioning of the hand, face, and other body components, making visual sign language recognition a complex computer vision problem. In this work, we present a new word-level Bangla Sign Language (BdSL) dataset of 611 videos over 40 BdSL words, along with two approaches: a 3D Convolutional Neural Network and a novel Graph Neural Network. To the best of our knowledge, this is the first study on word-level BdSL recognition. The proposed GNN model achieved an F1 score of 89%.\n",
   "keywords": [
     
   ],
-  "articleBody": "My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in multi-modal learning, language grounding and low-resource machine learning.\nMulti-Modal Retrieval Augmentation for Open-Ended and Knowledge-Intensive Video Question Answering OngoingSept 2024 — Present Working on improving Knowledge-Intensive Video Question Answering using Multi-Modal Retrieval Augmentation. Collaborators\nHamed Zamani — Associate Professor, CICS, UMass Amherst Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering Geospatial Language Model CompletedSept 2023 — Jun 2024 Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language, which in turn helps create an address matching platform specially tuned for house addresses — where platforms like Google Maps fail. This helps optimize delivery agents to deliver orders faster and more efficiently. Collaborators\nTejas Viswanath — CTO, Chaldal Ltd. Asif Imitial — SWE, Chaldal Ltd. Natural Language ProcessingLLMsRetrieval Augmented Generation 3D Particle Picking OngoingOct 2022 — Apr 2024 Accepted at NeurIPS 2024 Workshop on Machine Learning in Structural Biology Worked on developing a semi-supervised framework for 3D particle picking from macromolecular samples, which is able to detect particles directly from subtomograms. Collaborators\nAjmain Yasar Ahmed Sahil — BUET Supervisors\nMostofa Rafid Uddin — Graduate Research Assistant, CMU Dr. Min Xu — Associate Professor, CMU Computer VisionObject DetectionImage Processing Low-resource Computer Vision aided PD Recognition CompletedMay 2022 — Aug 2023 Under review Developed `PULSAR`, an automated PD screening tool. It uses a spatio-temporal graph neural network to detect PD from videos. We were also the first to explore positive-unlabeled learning in this setting, addressing the lack of positive labels — generally the case in medical data. _**[Lead Investigator]**_ Collaborators\nMd. Saiful Islam — Graduate Research Assistant, University of Rochester Supervisors\nDr. Mohammad Saifur Rahman — Professor, BUET Dr. Ehsan Hoque — Associate Professor, University of Rochester Computer VisionAI for Healthcare Project page↗ Quartet Fiduccia-Mattheyses Revisited for Larger Phylogenetic Studies CompletedNov 2022 — Apr 2023 Accepted at Bioinformatics (Oxford University Press) Journal Our proposed method QFM-FI, a faster and improved version of the QFM algorithm, can amalgamate millions of quartets over thousands of taxa into a species tree with a great level of accuracy. This also achieves a speedup of 20,000× compared to its predecessor. Worked on providing a theoretical analysis of the running time and memory requirements of QFM-FI. Collaborators\nSharmin Akter Mim — BUET Supervisors\nDr. Mohammad Saifur Rahman — Professor, BUET Dr. Md Shamsuzzoha Bayzid — Associate Professor, BUET Dr. Rezwana Reaz — Assistant Professor, BUET BioinformaticsComputational Biology Other Research \u0026 Independent Exploration Personalized Recommendation System OngoingJun 2023 — Present Developing an in-house personalized recommender system from the ground up for the leading online platform ([Chaldal.com](https://chaldal.com/)) for grocery and delivery in Bangladesh, scaling it to serve more than one million users. Collaborators\nAnand Bhaskar — Research Scientist, Meta Rohit Vaz — VP of Engineering, Chaldal Ltd. Asif Imitial — SWE, Chaldal Ltd. Recommender SystemsReinforcement Learning Bangla Plagiarism Detection CompletedJan 2023 — Mar 2023 We created the first Bangla Plagiarism Dataset (available on [Hugging Face 🤗](https://huggingface.co/datasets/zarif98sjs/bangla-plagiarism-dataset)) using a semi-supervised approach as part of our Machine Learning project. We also proposed two distinct approaches for detecting plagiarism: the first fine-tunes Bangla BERT, while the second uses sentence embeddings for multi-document plagiarism detection. Collaborators\nRamisa Alam — BUET Supervisors\nMd. Tareq Mahmood — Assistant Professor, BUET Natural Language ProcessingPlagiarism Detection Project page↗ Dataset 🤗↗ Occam's Razor Strikes Again: Revisiting Short-Text Stream Clustering with Latest Sentence Embeddings CompletedMay 2021 — May 2022 During the height of COVID-19, online classes were the new normal. The rise of MOOCs led to an interesting research question — given a large number of questions already posed by students, how can we detect repetitive questions in real time and unify them as a single question for the instructor? Under the supervision of Prof. Subhra Kanti Karmaker, I worked on this problem of online short-text clustering. We developed One Pass Sentence Embedding Clustering (OPSEC), which efficiently clusters short text streams using a unique one-pass algorithm based on sentence embeddings. It was used as an internal tool to cluster questions in online classes at Auburn. Collaborators\nMinh Smith — Auburn University Ramisa Alam — BUET Supervisors\nDr. Shubhra Kanti Karmaker — Assistant Professor, Auburn University Dr. Anindya Iqbal — Professor, BUET Natural Language ProcessingClustering Project page↗ Bangla Sign Language Recognition CompletedOct 2022 — Feb 2023 **Sign language**, as a different form of communication, is important to large groups of people in society. Each sign is unique due to variations in hand form, motion profile, and positioning of the hand, face, and other body components, making visual sign language recognition a complex computer vision problem. In this work, we present a new **word-level Bangla Sign Language (BdSL)** [dataset](https://github.com/Patchwork53/BdSL40_Dataset_AI_for_Bangla_2.0_Honorable_Mention) of 611 videos over 40 BdSL words, along with two approaches: a 3D Convolutional Neural Network and a novel Graph Neural Network. To the best of our knowledge, this is the **first study on word-level BdSL recognition**. The proposed GNN model achieved an F1 score of 89%. Supervised 4 junior-year undergraduates in this project!\nCollaborators\nH.A.Z. Sameen Shahgir — BUET Khondker Salman Sayeed — BUET Md Toki Tahmid — BUET Tanjeem Azwad Zaman — BUET Computer VisionSign Language Recognition Dataset↗ ",
-  "wordCount" : "860",
+  "articleBody": "My research interest is in the intersection of Natural Language Processing and Computer Vision. Particularly, I am interested in agentic search , multi-modal learning and information retrieval.\nCritic-R: Improving Agentic Search using Instruction-tuned Retrievers with Natural Language Introspective Feedback Dec. 2025 - May 2026 📄 Preprint↗ 🏛️ EMNLP 2026 (Findings) Agentic search systems iteratively interact with retrieval models to answer complex queries. Despite substantial progress, optimizing retrievers for agentic search remains challenging, often requiring heavy co-training or gold-standard annotations that limit real-world applicability. We propose Critic-R, a framework that explicitly closes the feedback loop between the reasoning agent and the retrieval model during both inference and training. Critic-R introduces a critic model that evaluates the agent’s introspective reasoning trace after consuming retrieved evidence to determine whether the retrieved context sufficiently supports the next reasoning step. Critic-R has two complementary mechanisms: Critic-R-Zero, an inference-time query refinement loop that iteratively rewrites queries and retrieval instructions, and Critic-Embed, an optimization approach for retrieval models that leverages successful and failed refinement trajectories as automatic supervision without requiring manual relevance annotation. Agentic SearchRetrieval Augmented GenerationRetrieverDense Retrieval Open-Ended and Knowledge-Intensive Video Question Answering Sept. 2024 — Jan. 2025 📄 Preprint↗ Investigated knowledge-intensive video question answering (KI-VideoQA) through the lens of multi-modal retrieval-augmented generation. We particularly focused on handling open-ended questions rather than just multiple-choice formats. We highlight the critical role of query construction and retrieval depth optimization in effective knowledge integration. Through our proposed approach, we achieve a substantial 17.5% improvement in accuracy on multiple choice questions in the KnowIT VQA dataset, establishing new state-of-the-art performance levels. Vision Language ModelsRetrieval Augmented GenerationVideo Question Answering Geospatial Language Model Sept 2023 — Jun 2024 Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language (e.g. using landmarks and directions). This in turn helps create an address matching platform specially tuned for house addresses, where platforms like Google Maps fail (e.g. in places like Dhaka). This helps optimize delivery agents to deliver orders faster and more efficiently. Natural Language ProcessingLLMsRetrieval Augmented Generation TomoPicker: Annotation-Efficient Particle Picking in cryo-electron Tomograms Oct 2022 — Apr 2024 Workshop↗ Paper↗ 🏛️ NeurIPS 2024 Machine Learning in Structural Biology Workshop🏛️ Briefings in Bioinformatics (Oxford University Press) Built an annotation-efficient semi-supervised particle-picking framework for 3D object detection from macromolecular samples. The goal was to detect and classify particles from cryo-electron tomogramss having signal-to-noise ratio as low as 0.1, making it a very challenging problem Computer VisionObject DetectionImage Processing Graph based Positive Unlabeled Learning with Multi Stream Adaptive Convolutions May 2022 — Aug 2023 Project page↗ Paper↗ 🏛️ ACM Transactions on Computing for Healthcare Developed PULSAR, an automated PD screening tool. It uses spatio-temporal graph neural network to detect PD from videos. We were also the first to explore positive unlabeled learning in this setting, addressing the lack of reliable labeled data, which is generally the case in medical data. Computer VisionAI for Healthcare Quartet Fiduccia-Mattheyses Revisited for Larger Phylogenetic Studies Nov 2022 — Apr 2023 Paper↗ 🏛️ Bioinformatics (Oxford University Press) Our proposed method QFM-FI, a faster and improved version of the QFM algorithm, can amalgamate millions of quartets over thousands of taxa into a species tree with a great level of accuracy. This also achieves a speedup of 20,000× compared to its predecessor. Worked on providing a theoretical analysis of the running time and memory requirements of QFM-FI. BioinformaticsComputational Biology Other Research \u0026 Independent Exploration Personalized Recommendation System Jun 2023 — Jan. 2024 Developing an in-house personalized recommender system from the ground up for the leading online platform for grocery and delivery in Bangladesh (Chaldal[dot]com), scaling it to serve more than one million users. Recommender SystemsReinforcement Learning Bangla Plagiarism Detection Jan 2023 — Mar 2023 Project page↗ Dataset 🤗↗ We created the first Bangla Plagiarism Dataset (available on Hugging Face 🤗 ) using a semi-supervised approach as part of our Machine Learning project. We also proposed two distinct approaches for detecting plagiarism: the first fine-tunes Bangla BERT, while the second uses sentence embeddings for multi-document plagiarism detection. Natural Language ProcessingPlagiarism Detection Occam's Razor Strikes Again: Revisiting Short-Text Stream Clustering with Latest Sentence Embeddings May 2021 — May 2022 Project page↗ During the height of COVID-19, online classes were the new normal. The rise of MOOCs led to an interesting research question: Given a large number of questions already posed by students, how can we detect repetitive questions in real time and unify them as a single question for the instructor? Under the supervision of Prof. Subhra Kanti Karmaker, I worked on this problem of online short-text clustering. We developed One Pass Sentence Embedding Clustering (OPSEC), which efficiently clusters short text streams using a unique one-pass algorithm based on sentence embeddings. It was used as an internal tool to cluster questions in online classes at Auburn. Natural Language ProcessingClustering Bangla Sign Language Recognition Oct 2022 — Feb 2023 Dataset↗ Sign language, as a different form of communication, is important to large groups of people in society. Each sign is unique due to variations in hand form, motion profile, and positioning of the hand, face, and other body components, making visual sign language recognition a complex computer vision problem. In this work, we present a new word-level Bangla Sign Language (BdSL) dataset of 611 videos over 40 BdSL words, along with two approaches: a 3D Convolutional Neural Network and a novel Graph Neural Network. To the best of our knowledge, this is the first study on word-level BdSL recognition. The proposed GNN model achieved an F1 score of 89%.\nSupervised 4 junior-year undergraduates in this project, and our team got an honourable mention at the AI for Bangla 2.0 research competition!\nComputer VisionSign Language Recognition ",
+  "wordCount" : "945",
   "inLanguage": "en",
   "datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -203,23 +653,33 @@ Hamed Zamani — Associate Professor, CICS, UMass Amherst Vision Language Models
       Research 🔍
     </h1>
   </header> 
-  <div class="post-content"><p class="rsch-intro">My research interest is in the intersection of <strong>Natural Language Processing</strong> and <strong>Computer Vision</strong>. Particularly, I am interested in <strong>multi-modal learning</strong>, <strong>language grounding</strong> and <strong>low-resource machine learning</strong>.</p>
-<section class="rsch-card" id="rsch-multi-modal-retrieval-augmentation-for-open-ended-and-knowledge-intensive-video-question-answering">
+  <div class="post-content"><p class="rsch-intro">My research interest is in the intersection of <strong>Natural Language Processing</strong> and <strong>Computer Vision</strong>. Particularly, I am interested in <strong>agentic search</strong> , <strong>multi-modal learning</strong> and <strong>information retrieval</strong>.</p>
+<section class="rsch-card" id="rsch-critic-r-improving-agentic-search-using-instruction-tuned-retrievers-with-natural-language-introspective-feedback">
   <header class="rsch-head">
-    <h2 class="rsch-title">Multi-Modal Retrieval Augmentation for Open-Ended and Knowledge-Intensive Video Question Answering</h2>
-    <div class="rsch-meta">
-      <span class="rsch-status rsch-status-ongoing"><span class="rsch-dot"></span>Ongoing</span><span class="rsch-date">Sept 2024 — Present</span>
+    <h2 class="rsch-title">Critic-R: Improving Agentic Search using Instruction-tuned Retrievers with Natural Language Introspective Feedback</h2>
+    <div class="rsch-meta"><span class="rsch-date">Dec. 2025 - May 2026</span>
+      <div class="rsch-meta-links"><a class="rsch-paper-link" href="https://arxiv.org/abs/2606.00590" target="_blank" rel="noopener">📄 Preprint<span class="rsch-link-arrow">↗</span></a>
+      </div>
+    </div>
+    <div class="rsch-pub-badges"><div class="rsch-pub-badge">🏛️ EMNLP 2026 (Findings)</div>
     </div>
   </header>
-  <div class="rsch-image"><img src="/oekivqa.png" alt="Multi-Modal Retrieval Augmentation for Open-Ended and Knowledge-Intensive Video Question Answering" loading="lazy"></div>
-  <div class="rsch-body">
-Working on improving Knowledge-Intensive Video Question Answering using Multi-Modal Retrieval Augmentation.
-<p><strong>Collaborators</strong></p>
-<ul>
-<li><a href="https://groups.cs.umass.edu/zamani/" target="_blank">Hamed Zamani</a>
- — Associate Professor, CICS, UMass Amherst</li>
-</ul>
-</div>
+  <div class="rsch-image"><img src="/Critic-R.png" alt="Critic-R: Improving Agentic Search using Instruction-tuned Retrievers with Natural Language Introspective Feedback" loading="lazy"></div>
+  <div class="rsch-body">Agentic search systems iteratively interact with retrieval models to answer complex queries. Despite substantial progress, optimizing retrievers for agentic search remains challenging, often requiring heavy co-training or gold-standard annotations that limit real-world applicability. We propose <em><strong>Critic-R</strong></em>, a framework that explicitly closes the feedback loop between the reasoning agent and the retrieval model during both inference and training. Critic-R introduces a critic model that evaluates the agent&rsquo;s introspective reasoning trace after consuming retrieved evidence to determine whether the retrieved context sufficiently supports the next reasoning step. Critic-R has two complementary mechanisms: Critic-R-Zero, an inference-time query refinement loop that iteratively rewrites queries and retrieval instructions, and Critic-Embed, an optimization approach for retrieval models that leverages successful and failed refinement trajectories as automatic supervision without requiring manual relevance annotation.</div>
+  <footer class="rsch-foot">
+    <div class="rsch-tags"><span class="rsch-tag">Agentic Search</span><span class="rsch-tag">Retrieval Augmented Generation</span><span class="rsch-tag">Retriever</span><span class="rsch-tag">Dense Retrieval</span></div>
+  </footer>
+</section>
+<section class="rsch-card" id="rsch-open-ended-and-knowledge-intensive-video-question-answering">
+  <header class="rsch-head">
+    <h2 class="rsch-title">Open-Ended and Knowledge-Intensive Video Question Answering</h2>
+    <div class="rsch-meta"><span class="rsch-date">Sept. 2024 — Jan. 2025</span>
+      <div class="rsch-meta-links"><a class="rsch-paper-link" href="https://arxiv.org/pdf/2502.11747" target="_blank" rel="noopener">📄 Preprint<span class="rsch-link-arrow">↗</span></a>
+      </div>
+    </div>
+  </header>
+  <div class="rsch-image"><img src="/oekivqa.png" alt="Open-Ended and Knowledge-Intensive Video Question Answering" loading="lazy"></div>
+  <div class="rsch-body">Investigated knowledge-intensive video question answering (KI-VideoQA) through the lens of multi-modal retrieval-augmented generation. We particularly focused on handling open-ended questions rather than just multiple-choice formats. We highlight the critical role of query construction and retrieval depth optimization in effective knowledge integration. Through our proposed approach, we achieve a substantial 17.5% improvement in accuracy on multiple choice questions in the KnowIT VQA dataset, establishing new state-of-the-art performance levels.</div>
   <footer class="rsch-foot">
     <div class="rsch-tags"><span class="rsch-tag">Vision Language Models</span><span class="rsch-tag">Retrieval Augmented Generation</span><span class="rsch-tag">Video Question Answering</span></div>
   </footer>
@@ -227,124 +687,77 @@ Working on improving Knowledge-Intensive Video Question Answering using Multi-Mo
 <section class="rsch-card" id="rsch-geospatial-language-model">
   <header class="rsch-head">
     <h2 class="rsch-title">Geospatial Language Model</h2>
-    <div class="rsch-meta">
-      <span class="rsch-status rsch-status-completed"><span class="rsch-dot"></span>Completed</span><span class="rsch-date">Sept 2023 — Jun 2024</span>
+    <div class="rsch-meta"><span class="rsch-date">Sept 2023 — Jun 2024</span>
     </div>
   </header>
   <div class="rsch-image"><img src="/osm_sample_map.png" alt="Geospatial Language Model" loading="lazy"></div>
-  <div class="rsch-body">
-Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language, which in turn helps create an address matching platform specially tuned for house addresses — where platforms like Google Maps fail. This helps optimize delivery agents to deliver orders faster and more efficiently.
-<p><strong>Collaborators</strong></p>
-<ul>
-<li>Tejas Viswanath — CTO, Chaldal Ltd.</li>
-<li>Asif Imitial — SWE, Chaldal Ltd.</li>
-</ul>
-</div>
+  <div class="rsch-body">Worked on creating a geospatial language model that enhances the understanding of geo-entities in natural language (e.g. using landmarks and directions). This in turn helps create an address matching platform specially tuned for house addresses, where platforms like Google Maps fail (e.g. in places like Dhaka). This helps optimize delivery agents to deliver orders faster and more efficiently.</div>
   <footer class="rsch-foot">
     <div class="rsch-tags"><span class="rsch-tag">Natural Language Processing</span><span class="rsch-tag">LLMs</span><span class="rsch-tag">Retrieval Augmented Generation</span></div>
   </footer>
 </section>
-<section class="rsch-card" id="rsch-3d-particle-picking">
+<section class="rsch-card" id="rsch-tomopicker-annotation-efficient-particle-picking-in-cryo-electron-tomograms">
   <header class="rsch-head">
-    <h2 class="rsch-title">3D Particle Picking</h2>
-    <div class="rsch-meta">
-      <span class="rsch-status rsch-status-ongoing"><span class="rsch-dot"></span>Ongoing</span><span class="rsch-date">Oct 2022 — Apr 2024</span>
-    </div><div class="rsch-venue">Accepted at NeurIPS 2024 Workshop on Machine Learning in Structural Biology</div>
+    <h2 class="rsch-title">TomoPicker: Annotation-Efficient Particle Picking in cryo-electron Tomograms</h2>
+    <div class="rsch-meta"><span class="rsch-date">Oct 2022 — Apr 2024</span>
+      <div class="rsch-meta-links">
+        <a class="rsch-link" href="https://neurips.cc/virtual/2024/102531" target="_blank" rel="noopener">Workshop<span class="rsch-link-arrow">↗</span></a>
+        <a class="rsch-link" href="https://academic.oup.com/bib/article/26/6/bbaf630/8351049" target="_blank" rel="noopener">Paper<span class="rsch-link-arrow">↗</span></a>
+      </div>
+    </div>
+    <div class="rsch-pub-badges"><div class="rsch-pub-badge">🏛️ NeurIPS 2024 Machine Learning in Structural Biology Workshop</div><div class="rsch-pub-badge">🏛️ Briefings in Bioinformatics (Oxford University Press)</div>
+    </div>
   </header>
-  <div class="rsch-body">
-Worked on developing a semi-supervised framework for 3D particle picking from macromolecular samples, which is able to detect particles directly from subtomograms.
-<p><strong>Collaborators</strong></p>
-<ul>
-<li>Ajmain Yasar Ahmed Sahil — BUET</li>
-</ul>
-<p><strong>Supervisors</strong></p>
-<ul>
-<li><a href="https://scholar.google.com/citations?user=csnAp98AAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Mostofa Rafid Uddin</a>
- — Graduate Research Assistant, CMU</li>
-<li><a href="https://scholar.google.com/citations?user=csnAp98AAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Min Xu</a>
- — Associate Professor, CMU</li>
-</ul>
-</div>
+  <div class="rsch-body">Built an annotation-efficient semi-supervised particle-picking framework for 3D object detection from macromolecular samples. The goal was to detect and classify particles from cryo-electron tomogramss having signal-to-noise ratio as low as 0.1, making it a very challenging problem</div>
   <footer class="rsch-foot">
     <div class="rsch-tags"><span class="rsch-tag">Computer Vision</span><span class="rsch-tag">Object Detection</span><span class="rsch-tag">Image Processing</span></div>
   </footer>
 </section>
-<section class="rsch-card" id="rsch-low-resource-computer-vision-aided-pd-recognition">
+<section class="rsch-card" id="rsch-graph-based-positive-unlabeled-learning-with-multi-stream-adaptive-convolutions">
   <header class="rsch-head">
-    <h2 class="rsch-title">Low-resource Computer Vision aided PD Recognition</h2>
-    <div class="rsch-meta">
-      <span class="rsch-status rsch-status-completed"><span class="rsch-dot"></span>Completed</span><span class="rsch-date">May 2022 — Aug 2023</span>
-    </div><div class="rsch-venue">Under review</div>
+    <h2 class="rsch-title">Graph based Positive Unlabeled Learning with Multi Stream Adaptive Convolutions</h2>
+    <div class="rsch-meta"><span class="rsch-date">May 2022 — Aug 2023</span>
+      <div class="rsch-meta-links">
+        <a class="rsch-link" href="https://zarif98sjs.github.io/PULSAR/" target="_blank" rel="noopener">Project page<span class="rsch-link-arrow">↗</span></a>
+        <a class="rsch-link" href="https://dl.acm.org/doi/10.1145/3799417" target="_blank" rel="noopener">Paper<span class="rsch-link-arrow">↗</span></a>
+      </div>
+    </div>
+    <div class="rsch-pub-badges"><div class="rsch-pub-badge">🏛️ ACM Transactions on Computing for Healthcare</div>
+    </div>
   </header>
-  <div class="rsch-image"><img src="/pulsar.png" alt="Low-resource Computer Vision aided PD Recognition" loading="lazy"></div>
-  <div class="rsch-body">
-Developed `PULSAR`, an automated PD screening tool. It uses a spatio-temporal graph neural network to detect PD from videos. We were also the first to explore positive-unlabeled learning in this setting, addressing the lack of positive labels — generally the case in medical data. _**[Lead Investigator]**_
-<p><strong>Collaborators</strong></p>
-<ul>
-<li><a href="https://scholar.google.com/citations?user=ZJrR0KQAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Md. Saiful Islam</a>
- — Graduate Research Assistant, University of Rochester</li>
-</ul>
-<p><strong>Supervisors</strong></p>
-<ul>
-<li><a href="https://scholar.google.com/citations?user=9d52x-cAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Mohammad Saifur Rahman</a>
- — Professor, BUET</li>
-<li><a href="https://scholar.google.com/citations?user=ZJrR0KQAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Ehsan Hoque</a>
- — Associate Professor, University of Rochester</li>
-</ul>
-</div>
+  <div class="rsch-image"><img src="/pulsar.png" alt="Graph based Positive Unlabeled Learning with Multi Stream Adaptive Convolutions" loading="lazy"></div>
+  <div class="rsch-body">Developed PULSAR, an automated PD screening tool. It uses spatio-temporal graph neural network to detect PD from videos. We were also the first to explore positive unlabeled learning in this setting, addressing the lack of reliable labeled data, which is generally the case in medical data.</div>
   <footer class="rsch-foot">
     <div class="rsch-tags"><span class="rsch-tag">Computer Vision</span><span class="rsch-tag">AI for Healthcare</span></div>
-    <div class="rsch-links">
-      <a class="rsch-link" href="https://zarif98sjs.github.io/PULSAR/" target="_blank" rel="noopener">Project page<span class="rsch-link-arrow">↗</span></a>
-    </div>
   </footer>
 </section>
 <section class="rsch-card" id="rsch-quartet-fiduccia-mattheyses-revisited-for-larger-phylogenetic-studies">
   <header class="rsch-head">
     <h2 class="rsch-title">Quartet Fiduccia-Mattheyses Revisited for Larger Phylogenetic Studies</h2>
-    <div class="rsch-meta">
-      <span class="rsch-status rsch-status-completed"><span class="rsch-dot"></span>Completed</span><span class="rsch-date">Nov 2022 — Apr 2023</span>
-    </div><div class="rsch-venue">Accepted at Bioinformatics (Oxford University Press) Journal</div>
+    <div class="rsch-meta"><span class="rsch-date">Nov 2022 — Apr 2023</span>
+      <div class="rsch-meta-links">
+        <a class="rsch-link" href="https://academic.oup.com/bioinformatics/article/39/6/btad332/7191771" target="_blank" rel="noopener">Paper<span class="rsch-link-arrow">↗</span></a>
+      </div>
+    </div>
+    <div class="rsch-pub-badges"><div class="rsch-pub-badge">🏛️ Bioinformatics (Oxford University Press)</div>
+    </div>
   </header>
   <div class="rsch-image"><img src="/qfm-fi-avian.png" alt="Quartet Fiduccia-Mattheyses Revisited for Larger Phylogenetic Studies" loading="lazy"></div>
-  <div class="rsch-body">
-Our proposed method QFM-FI, a faster and improved version of the QFM algorithm, can amalgamate millions of quartets over thousands of taxa into a species tree with a great level of accuracy. This also achieves a speedup of 20,000× compared to its predecessor. Worked on providing a theoretical analysis of the running time and memory requirements of QFM-FI.
-<p><strong>Collaborators</strong></p>
-<ul>
-<li>Sharmin Akter Mim — BUET</li>
-</ul>
-<p><strong>Supervisors</strong></p>
-<ul>
-<li><a href="https://scholar.google.com/citations?user=9d52x-cAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Mohammad Saifur Rahman</a>
- — Professor, BUET</li>
-<li><a href="https://scholar.google.com/citations?user=h2vHz3wAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Md Shamsuzzoha Bayzid</a>
- — Associate Professor, BUET</li>
-<li><a href="https://scholar.google.com/citations?user=h2vHz3wAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Rezwana Reaz</a>
- — Assistant Professor, BUET</li>
-</ul>
-</div>
+  <div class="rsch-body">Our proposed method QFM-FI, a faster and improved version of the QFM algorithm, can amalgamate millions of quartets over thousands of taxa into a species tree with a great level of accuracy. This also achieves a speedup of 20,000× compared to its predecessor. Worked on providing a theoretical analysis of the running time and memory requirements of QFM-FI.</div>
   <footer class="rsch-foot">
     <div class="rsch-tags"><span class="rsch-tag">Bioinformatics</span><span class="rsch-tag">Computational Biology</span></div>
   </footer>
 </section>
+<div class="rsch-secondary">
 <h2 class="rsch-section">Other Research &amp; Independent Exploration</h2>
 <section class="rsch-card" id="rsch-personalized-recommendation-system">
   <header class="rsch-head">
     <h2 class="rsch-title">Personalized Recommendation System</h2>
-    <div class="rsch-meta">
-      <span class="rsch-status rsch-status-ongoing"><span class="rsch-dot"></span>Ongoing</span><span class="rsch-date">Jun 2023 — Present</span>
+    <div class="rsch-meta"><span class="rsch-date">Jun 2023 — Jan. 2024</span>
     </div>
   </header>
   <div class="rsch-image"><img src="/chaldal_catalog_search.png" alt="Personalized Recommendation System" loading="lazy"></div>
-  <div class="rsch-body">
-Developing an in-house personalized recommender system from the ground up for the leading online platform ([Chaldal.com](https://chaldal.com/)) for grocery and delivery in Bangladesh, scaling it to serve more than one million users.
-<p><strong>Collaborators</strong></p>
-<ul>
-<li>Anand Bhaskar — Research Scientist, Meta</li>
-<li>Rohit Vaz — VP of Engineering, Chaldal Ltd.</li>
-<li>Asif Imitial — SWE, Chaldal Ltd.</li>
-</ul>
-</div>
+  <div class="rsch-body">Developing an in-house personalized recommender system from the ground up for the leading online platform for grocery and delivery in Bangladesh (Chaldal[dot]com), scaling it to serve more than one million users.</div>
   <footer class="rsch-foot">
     <div class="rsch-tags"><span class="rsch-tag">Recommender Systems</span><span class="rsch-tag">Reinforcement Learning</span></div>
   </footer>
@@ -352,87 +765,54 @@ Developing an in-house personalized recommender system from the ground up for th
 <section class="rsch-card" id="rsch-bangla-plagiarism-detection">
   <header class="rsch-head">
     <h2 class="rsch-title">Bangla Plagiarism Detection</h2>
-    <div class="rsch-meta">
-      <span class="rsch-status rsch-status-completed"><span class="rsch-dot"></span>Completed</span><span class="rsch-date">Jan 2023 — Mar 2023</span>
+    <div class="rsch-meta"><span class="rsch-date">Jan 2023 — Mar 2023</span>
+      <div class="rsch-meta-links">
+        <a class="rsch-link" href="https://github.com/zarif98sjs/bangla-plag" target="_blank" rel="noopener">Project page<span class="rsch-link-arrow">↗</span></a>
+        <a class="rsch-link" href="https://huggingface.co/datasets/zarif98sjs/bangla-plagiarism-dataset" target="_blank" rel="noopener">Dataset 🤗<span class="rsch-link-arrow">↗</span></a>
+      </div>
     </div>
   </header>
   <div class="rsch-image"><img src="/bangla_plag.png" alt="Bangla Plagiarism Detection" loading="lazy"></div>
-  <div class="rsch-body">
-We created the first Bangla Plagiarism Dataset (available on [Hugging Face 🤗](https://huggingface.co/datasets/zarif98sjs/bangla-plagiarism-dataset)) using a semi-supervised approach as part of our Machine Learning project. We also proposed two distinct approaches for detecting plagiarism: the first fine-tunes Bangla BERT, while the second uses sentence embeddings for multi-document plagiarism detection.
-<p><strong>Collaborators</strong></p>
-<ul>
-<li>Ramisa Alam — BUET</li>
-</ul>
-<p><strong>Supervisors</strong></p>
-<ul>
-<li><a href="https://scholar.google.com/citations?user=45MtzeEAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Md. Tareq Mahmood</a>
- — Assistant Professor, BUET</li>
-</ul>
-</div>
+  <div class="rsch-body">We created the first Bangla Plagiarism Dataset (available on <a href="https://huggingface.co/datasets/zarif98sjs/bangla-plagiarism-dataset" target="_blank">Hugging Face 🤗</a>
+) using a semi-supervised approach as part of our Machine Learning project. We also proposed two distinct approaches for detecting plagiarism: the first fine-tunes Bangla BERT, while the second uses sentence embeddings for multi-document plagiarism detection.</div>
   <footer class="rsch-foot">
     <div class="rsch-tags"><span class="rsch-tag">Natural Language Processing</span><span class="rsch-tag">Plagiarism Detection</span></div>
-    <div class="rsch-links">
-      <a class="rsch-link" href="https://github.com/zarif98sjs/bangla-plag" target="_blank" rel="noopener">Project page<span class="rsch-link-arrow">↗</span></a>
-      <a class="rsch-link" href="https://huggingface.co/datasets/zarif98sjs/bangla-plagiarism-dataset" target="_blank" rel="noopener">Dataset 🤗<span class="rsch-link-arrow">↗</span></a>
-    </div>
   </footer>
 </section>
 <section class="rsch-card" id="rsch-occams-razor-strikes-again-revisiting-short-text-stream-clustering-with-latest-sentence-embeddings">
   <header class="rsch-head">
     <h2 class="rsch-title">Occam&#39;s Razor Strikes Again: Revisiting Short-Text Stream Clustering with Latest Sentence Embeddings</h2>
-    <div class="rsch-meta">
-      <span class="rsch-status rsch-status-completed"><span class="rsch-dot"></span>Completed</span><span class="rsch-date">May 2021 — May 2022</span>
+    <div class="rsch-meta"><span class="rsch-date">May 2021 — May 2022</span>
+      <div class="rsch-meta-links">
+        <a class="rsch-link" href="https://github.com/zarif98sjs/OPSEC" target="_blank" rel="noopener">Project page<span class="rsch-link-arrow">↗</span></a>
+      </div>
     </div>
   </header>
   <div class="rsch-image"><img src="/opsec.jpg" alt="Occam&#39;s Razor Strikes Again: Revisiting Short-Text Stream Clustering with Latest Sentence Embeddings" loading="lazy"></div>
-  <div class="rsch-body">
-During the height of COVID-19, online classes were the new normal. The rise of MOOCs led to an interesting research question — given a large number of questions already posed by students, how can we detect repetitive questions in real time and unify them as a single question for the instructor? Under the supervision of Prof. Subhra Kanti Karmaker, I worked on this problem of online short-text clustering. We developed One Pass Sentence Embedding Clustering (OPSEC), which efficiently clusters short text streams using a unique one-pass algorithm based on sentence embeddings. It was used as an internal tool to cluster questions in online classes at Auburn.
-<p><strong>Collaborators</strong></p>
-<ul>
-<li>Minh Smith — Auburn University</li>
-<li>Ramisa Alam — BUET</li>
-</ul>
-<p><strong>Supervisors</strong></p>
-<ul>
-<li><a href="https://scholar.google.com/citations?user=y6pZKT4AAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Shubhra Kanti Karmaker</a>
- — Assistant Professor, Auburn University</li>
-<li><a href="https://scholar.google.com/citations?user=jAuiNFgAAAAJ&amp;hl=en&amp;oi=ao" target="_blank">Dr. Anindya Iqbal</a>
- — Professor, BUET</li>
-</ul>
-</div>
+  <div class="rsch-body">During the height of COVID-19, online classes were the new normal. The rise of MOOCs led to an interesting research question: Given a large number of questions already posed by students, how can we detect repetitive questions in real time and unify them as a single question for the instructor? Under the supervision of Prof. Subhra Kanti Karmaker, I worked on this problem of online short-text clustering. We developed One Pass Sentence Embedding Clustering (OPSEC), which efficiently clusters short text streams using a unique one-pass algorithm based on sentence embeddings. It was used as an internal tool to cluster questions in online classes at Auburn.</div>
   <footer class="rsch-foot">
     <div class="rsch-tags"><span class="rsch-tag">Natural Language Processing</span><span class="rsch-tag">Clustering</span></div>
-    <div class="rsch-links">
-      <a class="rsch-link" href="https://github.com/zarif98sjs/OPSEC" target="_blank" rel="noopener">Project page<span class="rsch-link-arrow">↗</span></a>
-    </div>
   </footer>
 </section>
 <section class="rsch-card" id="rsch-bangla-sign-language-recognition">
   <header class="rsch-head">
     <h2 class="rsch-title">Bangla Sign Language Recognition</h2>
-    <div class="rsch-meta">
-      <span class="rsch-status rsch-status-completed"><span class="rsch-dot"></span>Completed</span><span class="rsch-date">Oct 2022 — Feb 2023</span>
+    <div class="rsch-meta"><span class="rsch-date">Oct 2022 — Feb 2023</span>
+      <div class="rsch-meta-links">
+        <a class="rsch-link" href="https://github.com/Patchwork53/BdSL40_Dataset_AI_for_Bangla_2.0_Honorable_Mention" target="_blank" rel="noopener">Dataset<span class="rsch-link-arrow">↗</span></a>
+      </div>
     </div>
   </header>
   <div class="rsch-image"><img src="/tortoise.png" alt="Bangla Sign Language Recognition" loading="lazy"></div>
-  <div class="rsch-body">
-**Sign language**, as a different form of communication, is important to large groups of people in society. Each sign is unique due to variations in hand form, motion profile, and positioning of the hand, face, and other body components, making visual sign language recognition a complex computer vision problem. In this work, we present a new **word-level Bangla Sign Language (BdSL)** [dataset](https://github.com/Patchwork53/BdSL40_Dataset_AI_for_Bangla_2.0_Honorable_Mention) of 611 videos over 40 BdSL words, along with two approaches: a 3D Convolutional Neural Network and a novel Graph Neural Network. To the best of our knowledge, this is the **first study on word-level BdSL recognition**. The proposed GNN model achieved an F1 score of 89%.
-<p><em><strong>Supervised 4 junior-year undergraduates in this project!</strong></em></p>
-<p><strong>Collaborators</strong></p>
-<ul>
-<li>H.A.Z. Sameen Shahgir — BUET</li>
-<li>Khondker Salman Sayeed — BUET</li>
-<li>Md Toki Tahmid — BUET</li>
-<li>Tanjeem Azwad Zaman — BUET</li>
-</ul>
+  <div class="rsch-body"><p><strong>Sign language</strong>, as a different form of communication, is important to large groups of people in society. Each sign is unique due to variations in hand form, motion profile, and positioning of the hand, face, and other body components, making visual sign language recognition a complex computer vision problem. In this work, we present a new <strong>word-level Bangla Sign Language (BdSL)</strong> <a href="https://github.com/Patchwork53/BdSL40_Dataset_AI_for_Bangla_2.0_Honorable_Mention" target="_blank">dataset</a>
+ of 611 videos over 40 BdSL words, along with two approaches: a 3D Convolutional Neural Network and a novel Graph Neural Network. To the best of our knowledge, this is the <strong>first study on word-level BdSL recognition</strong>. The proposed GNN model achieved an F1 score of 89%.</p>
+<p><em><strong>Supervised 4 junior-year undergraduates in this project, and our team got an honourable mention at the AI for Bangla 2.0 research competition!</strong></em></p>
 </div>
   <footer class="rsch-foot">
     <div class="rsch-tags"><span class="rsch-tag">Computer Vision</span><span class="rsch-tag">Sign Language Recognition</span></div>
-    <div class="rsch-links">
-      <a class="rsch-link" href="https://github.com/Patchwork53/BdSL40_Dataset_AI_for_Bangla_2.0_Honorable_Mention" target="_blank" rel="noopener">Dataset<span class="rsch-link-arrow">↗</span></a>
-    </div>
   </footer>
 </section>
+</div>
 
   </div>
 
