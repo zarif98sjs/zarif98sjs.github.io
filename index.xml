@@ -755,7 +755,32 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://zarif98sjs.github.io/awards/</guid>
-      <description>&lt;section class=&#34;award-card&#34; id=&#34;award-ai-for-bangla-20&#34;&gt;
+      <description>&lt;section class=&#34;award-card&#34; id=&#34;award-edward-riseman-and-allen-hanson-scholarship&#34;&gt;
+  &lt;div class=&#34;award-head&#34;&gt;&lt;span class=&#34;award-badge&#34;&gt;🎖️&lt;/span&gt;
+    &lt;div class=&#34;award-headtext&#34;&gt;
+      &lt;h2 class=&#34;award-title&#34;&gt;Edward Riseman and Allen Hanson Scholarship&lt;/h2&gt;&lt;span class=&#34;award-date&#34;&gt;Jan 2025&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;award-body&#34;&gt;Received the &lt;strong&gt;Edward Riseman and Allen Hanson Scholarship&lt;/strong&gt; at &lt;a href=&#34;https://www.umass.edu/&#34; target=&#34;_blank&#34;&gt;UMass Amherst&lt;/a&gt;
+, Jan. 2025.&lt;/div&gt;
+  &lt;footer class=&#34;award-foot&#34;&gt;
+    &lt;div class=&#34;award-tags&#34;&gt;&lt;span class=&#34;award-tag&#34;&gt;Academic&lt;/span&gt;&lt;span class=&#34;award-tag&#34;&gt;Scholarship&lt;/span&gt;&lt;/div&gt;
+  &lt;/footer&gt;
+&lt;/section&gt;
+
+&lt;section class=&#34;award-card&#34; id=&#34;award-miccai-2024-travel-grant&#34;&gt;
+  &lt;div class=&#34;award-head&#34;&gt;&lt;span class=&#34;award-badge&#34;&gt;✈️&lt;/span&gt;
+    &lt;div class=&#34;award-headtext&#34;&gt;
+      &lt;h2 class=&#34;award-title&#34;&gt;MICCAI 2024 Travel Grant&lt;/h2&gt;&lt;span class=&#34;award-date&#34;&gt;Oct 2024&lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;award-body&#34;&gt;Received a &lt;strong&gt;$2,500 Conference Registration and Travel Grant&lt;/strong&gt; from &lt;strong&gt;MICCAI 2024&lt;/strong&gt;.&lt;/div&gt;
+  &lt;footer class=&#34;award-foot&#34;&gt;
+    &lt;div class=&#34;award-tags&#34;&gt;&lt;span class=&#34;award-tag&#34;&gt;Travel Grant&lt;/span&gt;&lt;span class=&#34;award-tag&#34;&gt;Conference&lt;/span&gt;&lt;span class=&#34;award-tag&#34;&gt;Research&lt;/span&gt;&lt;/div&gt;
+  &lt;/footer&gt;
+&lt;/section&gt;
+
+&lt;section class=&#34;award-card&#34; id=&#34;award-ai-for-bangla-20&#34;&gt;
   &lt;div class=&#34;award-head&#34;&gt;&lt;span class=&#34;award-badge&#34;&gt;🏅&lt;/span&gt;
     &lt;div class=&#34;award-headtext&#34;&gt;
       &lt;h2 class=&#34;award-title&#34;&gt;AI for Bangla 2.0&lt;/h2&gt;&lt;span class=&#34;award-date&#34;&gt;Jun 2023&lt;/span&gt;
@@ -949,9 +974,26 @@
 })();
 &lt;/script&gt;
 
+&lt;section class=&#34;xp-card&#34; id=&#34;xp-snap-inc&#34;&gt;
+  &lt;header class=&#34;xp-card-head&#34;&gt;
+    &lt;span class=&#34;xp-logo&#34;&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg&#34; alt=&#34;Snap Inc. logo&#34; loading=&#34;lazy&#34;&gt;&lt;/span&gt;
+    &lt;div class=&#34;xp-card-headtext&#34;&gt;
+      &lt;h2 class=&#34;xp-org&#34;&gt;&lt;a href=&#34;https://www.snap.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Snap Inc.&lt;/a&gt;&lt;/h2&gt;&lt;/div&gt;
+  &lt;/header&gt;
+  &lt;div class=&#34;xp-roles&#34;&gt;
+&lt;div class=&#34;xp-role&#34;&gt;
+  &lt;div class=&#34;xp-role-head&#34;&gt;
+    &lt;span class=&#34;xp-role-title&#34;&gt;Research Intern&lt;/span&gt;
+    &lt;span class=&#34;xp-role-date&#34;&gt;Sept &amp;#39;26 — Present&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/section&gt;
+
 &lt;section class=&#34;xp-card&#34; id=&#34;xp-nvidia&#34;&gt;
   &lt;header class=&#34;xp-card-head&#34;&gt;
-    &lt;span class=&#34;xp-logo&#34;&gt;&lt;img src=&#34;https://zarif98sjs.github.io/nvidia.png&#34; alt=&#34;NVIDIA logo&#34; loading=&#34;lazy&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;xp-logo&#34;&gt;&lt;img src=&#34;https://zarif98sjs.github.io/nvidia-dark.png&#34; alt=&#34;NVIDIA logo&#34; loading=&#34;lazy&#34;&gt;&lt;/span&gt;
     &lt;div class=&#34;xp-card-headtext&#34;&gt;
       &lt;h2 class=&#34;xp-org&#34;&gt;&lt;a href=&#34;https://www.nvidia.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NVIDIA&lt;/a&gt;&lt;/h2&gt;&lt;/div&gt;
   &lt;/header&gt;
@@ -1112,7 +1154,7 @@
 
 &lt;section class=&#34;xp-card&#34; id=&#34;xp-unilever&#34;&gt;
   &lt;header class=&#34;xp-card-head&#34;&gt;
-    &lt;span class=&#34;xp-logo&#34;&gt;&lt;img src=&#34;https://upload.wikimedia.org/wikipedia/en/e/e4/Unilever.svg&#34; alt=&#34;Unilever logo&#34; loading=&#34;lazy&#34;&gt;&lt;/span&gt;
+    &lt;span class=&#34;xp-logo&#34;&gt;&lt;img src=&#34;https://zarif98sjs.github.io/unilever-light.svg&#34; alt=&#34;Unilever logo&#34; loading=&#34;lazy&#34;&gt;&lt;/span&gt;
     &lt;div class=&#34;xp-card-headtext&#34;&gt;
       &lt;h2 class=&#34;xp-org&#34;&gt;Unilever&lt;/h2&gt;&lt;/div&gt;
   &lt;/header&gt;
@@ -1175,6 +1217,15 @@
       <description>&lt;div class=&#34;news-timeline&#34;&gt;
 
 &lt;div class=&#34;news-item&#34;&gt;
+  &lt;div class=&#34;news-marker&#34;&gt;&lt;span class=&#34;news-icon&#34;&gt;💼&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&#34;news-content&#34;&gt;&lt;div class=&#34;news-date&#34;&gt;Sept. 2026&lt;/div&gt;
+    &lt;div class=&#34;news-text&#34;&gt;Started my research internship at &lt;a href=&#34;https://www.snap.com&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;strong&gt;Snapchat&lt;/strong&gt;&lt;/em&gt;&lt;img class=&#39;inline-logo&#39; src=&#39;https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg&#39; alt=&#39;&#39; aria-hidden=&#39;true&#39;/&gt;&lt;/a&gt;&lt;/div&gt;
+    &lt;div class=&#34;news-tags&#34;&gt;&lt;span class=&#34;news-tag&#34;&gt;Career&lt;/span&gt;&lt;span class=&#34;news-tag&#34;&gt;PhD&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+
+&lt;div class=&#34;news-item&#34;&gt;
   &lt;div class=&#34;news-marker&#34;&gt;&lt;span class=&#34;news-icon&#34;&gt;📃&lt;/span&gt;&lt;/div&gt;
   &lt;div class=&#34;news-content&#34;&gt;&lt;div class=&#34;news-date&#34;&gt;Aug. 2026&lt;/div&gt;
     &lt;div class=&#34;news-text&#34;&gt;&lt;a href=&#34;https://github.com/zarif98sjs/Critic-R&#34; target=&#34;_blank&#34;&gt;Critic-R&lt;/a&gt;
@@ -1185,9 +1236,9 @@
 
 
 &lt;div class=&#34;news-item&#34;&gt;
-  &lt;div class=&#34;news-marker&#34;&gt;&lt;span class=&#34;news-icon&#34;&gt;📈&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&#34;news-marker&#34;&gt;&lt;span class=&#34;news-icon&#34;&gt;💼&lt;/span&gt;&lt;/div&gt;
   &lt;div class=&#34;news-content&#34;&gt;&lt;div class=&#34;news-date&#34;&gt;June 2026&lt;/div&gt;
-    &lt;div class=&#34;news-text&#34;&gt;Started my research internship at &lt;a href=&#34;https://www.nvidia.com/en-us/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;strong&gt;NVIDIA&lt;/strong&gt;&lt;/em&gt;&lt;/a&gt;
+    &lt;div class=&#34;news-text&#34;&gt;Started my research internship at &lt;a href=&#34;https://www.nvidia.com/en-us/&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;&lt;strong&gt;NVIDIA&lt;/strong&gt;&lt;/em&gt;&lt;img class=&#39;inline-logo&#39; src=&#39;https://zarif98sjs.github.io/nvidia-eye.png&#39; alt=&#39;&#39; aria-hidden=&#39;true&#39;/&gt;&lt;/a&gt;
 , Santa Clara, California&lt;/div&gt;
     &lt;div class=&#34;news-tags&#34;&gt;&lt;span class=&#34;news-tag&#34;&gt;Career&lt;/span&gt;&lt;span class=&#34;news-tag&#34;&gt;PhD&lt;/span&gt;&lt;/div&gt;
   &lt;/div&gt;
@@ -1284,10 +1335,10 @@
     &lt;div class=&#34;news-tags&#34;&gt;&lt;span class=&#34;news-tag&#34;&gt;Organization&lt;/span&gt;&lt;span class=&#34;news-tag&#34;&gt;Competition&lt;/span&gt;&lt;span class=&#34;news-tag&#34;&gt;Machine Learning&lt;/span&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;
-
+ 
 
 &lt;div class=&#34;news-item&#34;&gt;
-  &lt;div class=&#34;news-marker&#34;&gt;&lt;span class=&#34;news-icon&#34;&gt;💼&lt;/span&gt;&lt;/div&gt;
+  &lt;div class=&#34;news-marker&#34;&gt;&lt;span class=&#34;news-icon&#34;&gt;🧳&lt;/span&gt;&lt;/div&gt;
   &lt;div class=&#34;news-content&#34;&gt;&lt;div class=&#34;news-date&#34;&gt;Dec 2021&lt;/div&gt;
     &lt;div class=&#34;news-text&#34;&gt;Will start working as a &lt;strong&gt;Backend Engineer&lt;/strong&gt; at IICT for an internal project of BUET!&lt;/div&gt;
     &lt;div class=&#34;news-tags&#34;&gt;&lt;span class=&#34;news-tag&#34;&gt;Career&lt;/span&gt;&lt;/div&gt;
@@ -1536,6 +1587,15 @@
   &lt;div class=&#34;rsch-image&#34;&gt;&lt;img src=&#34;https://zarif98sjs.github.io/tortoise.png&#34; alt=&#34;Bangla Sign Language Recognition&#34; loading=&#34;lazy&#34;&gt;&lt;/div&gt;
   &lt;div class=&#34;rsch-body&#34;&gt;&lt;p&gt;&lt;strong&gt;Sign language&lt;/strong&gt;, as a different form of communication, is important to large groups of people in society. Each sign is unique due to variations in hand form, motion profile, and positioning of the hand, face, and other body components, making visual sign language recognition a complex computer vision problem. In this work, we present a new &lt;strong&gt;word-level Bangla Sign Language (BdSL)&lt;/strong&gt; &lt;a href=&#34;https://github.com/Patchwork53/BdSL40_Dataset_AI_for_Bangla_2.0_Honorable_Mention&#34; target=&#34;_blank&#34;&gt;dataset&lt;/a&gt;
  of 611 videos over 40 BdSL words, along with two approaches: a 3D Convolutional Neural Network and a novel Graph Neural Network. To the best of our knowledge, this is the &lt;strong&gt;first study on word-level BdSL recognition&lt;/strong&gt;. The proposed GNN model achieved an F1 score of 89%.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Save a Child&#39;s Life (🇵🇸 🇸🇾 🇸🇩 🇧🇩 ...)</title>
+      <link>https://zarif98sjs.github.io/donate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://zarif98sjs.github.io/donate/</guid>
+      <description>Ways to help the children of Palestine.</description>
     </item>
     
   </channel>
